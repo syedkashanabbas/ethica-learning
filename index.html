@@ -95,7 +95,7 @@ object-fit: contain;
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 25s linear infinite;
+  animation: marquee 12s linear infinite;
 }
 
 .marquee-row:hover {
@@ -103,7 +103,7 @@ object-fit: contain;
 }
 
 .animate-marquee-slow {
-  animation: marquee 40s linear infinite;
+  animation: marquee 25s linear infinite;
   width: max-content;
 }
 
@@ -881,39 +881,98 @@ Be part of the world’s most powerful life transformation platform
 
 <!-- Second Marquee -->
 <section class="relative w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center">
-  
+
   <!-- Row 1 -->
   <div class="absolute top-1/4 flex space-x-6 animate-marquee">
-    <img src="https://picsum.photos/400?random=1" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=2" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=3" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=4" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=5" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=6" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=7" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=8" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
+    <!-- Repeat set 4x -->
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <!-- Duplicate sets -->
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
   </div>
 
   <!-- Row 2 -->
   <div class="absolute bottom-1/4 flex space-x-6 animate-marquee-slow">
-    <img src="https://picsum.photos/400?random=9" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=10" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=11" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=13" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=14" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=15" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=16" class="w-48 h-48 rounded-xl object-cover shadow-lg"/>
+    <!-- Same pattern (9–16 repeated 4x) -->
+    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=14" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <!-- repeat 3x more (same as row 1) -->
+    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=14" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=14" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+
+    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=14" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
+    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
   </div>
 
   <!-- Big iPhone Center -->
   <div class="z-10">
-    <img src="https://storyblok-cdn.mindvalley.com/f/60579/1116x1528/be646c55db/mvcom_mm-meditation-iphone.png?quality=60&auto=webp&dpr=1&width=1585"
+    <img src="https://storyblok-cdn.mindvalley.com/f/60579/1116x1528/be646c55db/mvcom_mm-meditation-iphone.png"
          alt="iPhone"
          class="h-[80vh] object-contain drop-shadow-2xl"/>
   </div>
 
 </section>
+
 <!-- Case Studies -->
 <section class="relative w-full py-20 bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto grid grid-cols-3 gap-8 items-center">
