@@ -71,6 +71,23 @@
   transform: translateY(-2px);
   transition: all 0.2s ease;
 }
+.featured{
+    height: 150px;
+}
+.featured .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;   /* keep one line */
+}
+
+.featured .logos img {
+  height: auto; 
+object-fit: contain;
+  flex-shrink: 0;
+}
+
 
 
 </style>
@@ -566,6 +583,23 @@ Be part of the world’s most powerful life transformation platform
             </div>
         </div>
     </section>
+
+<section class="featured py-10 bg-gray-50">
+  <div class="mt-10 text-center">
+                    <p class="text-base mb-2.5">Featured on</p>
+
+    <div class="container logos mt-5">
+      <img src="https://a.storyblok.com/f/60579/229x31/4504f459d4/logo_nyt.svg" alt="The New York Times" />
+      <img src="https://a.storyblok.com/f/60579/106x29/edff29df59/logo_forbes.svg" alt="Forbes" />
+      <img src="https://a.storyblok.com/f/60579/178x33/660efad2fd/logo_usa-today.svg" alt="USA Today" />
+      <img src="https://a.storyblok.com/f/60579/166x33/8cf263ffec/logo_entrepreneur.svg" alt="Entrepreneur" />
+      <img src="https://a.storyblok.com/f/60579/107x31/5d683c5c4d/logo-bbc.svg" alt="BBC" />
+      <img src="https://a.storyblok.com/f/60579/94x33/85550dbb85/logo-inc.svg" alt="Inc" />
+      <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
+    </div>
+  </div>
+</section>
+
 
     <!-- Feature Highlight Section  -->
     <section class="bg-white lg:py-25 md:py-22.5 py-17.5">
