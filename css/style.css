@@ -5,7 +5,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: var(--font-family--body);
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -405,7 +405,7 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  font-family: Arial, sans-serif;
+ font-family: var(--font-family--body);
   font-size: 14px;
   line-height: 20px;
   color: #333;
@@ -1512,7 +1512,7 @@ textarea.w-select {
   bottom: 0;
   left: 0;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
+  font-family: 'Grotesk', sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 300;
@@ -2164,9 +2164,9 @@ textarea.w-select {
 
 :root {
   --color--secondary-1: #f3f3e5;
-  --font-family--body: Inter, sans-serif;
+  --font-family--body: 'Grotesk', sans-serif;
   --color--gray-1: #444;
-  --font-family--heading: Cabinetgrotesk, sans-serif;
+  --font-family--heading: 'Grotesk', sans-serif;
   --color--heading: var(--color--black);
   --color--primary-2: #061d19;
   --color--white: #fff;
@@ -4282,6 +4282,9 @@ figcaption {
 
 .bg-primary-1 {
   background-color: var(--color--primary-1);
+}
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-primary-2 {
