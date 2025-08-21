@@ -19,7 +19,61 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
+<style>
+    .custom-heading {
+  font-size: 80px;     /* bada */
+  font-weight: 800;    /* super bold */
+  color: #fff;         /* white */
+  line-height: 1.1;    /* thoda tight */
+  letter-spacing: -1px;/* aur compact look */
+  text-align: center;  /* optional: center */
+}
+.custom-para {
+  font-size: 24px;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  font-weight: 500;    /* super bold */
 
+  text-decoration: none;
+  color: rgb(206, 209, 215);
+  text-align: center;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #fff;
+  color: purple;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+
+</style>
 <body>
 
     <!-- Navbar -->
@@ -479,14 +533,32 @@
                 background-position: center;" 
          class="lg:py-25 md:py-22.5 py-17.5">
          <div class="container">
-            <div class="grid lg:grid-cols-5 lg:gap-17.5 mb-12.5 gap-7.5" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out">
-                <div class="lg:col-span-3">
-                    <h1 class="lg:text-6xl md:text-5.5xl mb-2.5 text-4xl">Empower your business with Ethica Learning</h1>
-                    <p class="mb-2.5">Revolutionize your operations with our comprehensive, intuitive SaaS platform.</p>
-                </div>
+          <div class="lg:mb-10 lg:mx-auto text-center  mb-10" 
+     data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
+
+ <h2 class="custom-heading ">
+  Why choose 
+</h2>
+ <h3 class="custom-heading ">
+    Ethica Learning?
+</h3>
+<p class="custom-para">
+Be part of the world’s most powerful life transformation platform
+
+</p>
+<div class="button-wrapper">
+  <a href="#" class="btn-primary">Become a member</a>
+  <a href="#" class="btn-outline">Explore programs</a>
+</div>
+
+
+</div>
+
+
+
 
            
-            </div>
+        
 
             <div class="relative">
                 <img src="assets/12-BTUFSlC2.png" alt="" class="size-full rounded-2xl">
