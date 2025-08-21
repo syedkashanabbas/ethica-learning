@@ -770,6 +770,115 @@ Be part of the world’s most powerful life transformation platform
 
   </div>
 </section>
+
+
+<!-- Include Plyr CSS & JS -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+<section class="bg-white py-20">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <!-- Top Label -->
+    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3">
+      What the press says
+    </p>
+    
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+      The world's most effective transformation platform
+    </h2>
+    
+    <!-- Subtext -->
+    <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+      From leading media platforms like CNN, CBS to influential voices like Jay Shetty and Impact Theory, 
+      Mindvalley is recognized worldwide for empowering people to transform their mind, body, and soul—unlocking 
+      their fullest potential and leading extraordinary lives.
+    </p>
+
+    <!-- Big Video with Plyr -->
+    <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
+      <video id="main-video" playsinline controls class="w-full h-[500px] object-cover rounded-2xl">
+        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Cards -->
+     <div class="grid md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+        <div class="relative">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1944x864/fab88d7982/card-cbs.webp?quality=60&auto=webp&dpr=1&width=486"
+            alt="CNN Video"
+            class="w-full"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">CBS</h4>
+          <p class="text-gray-600">
+            Ethica Learning brings together cutting-edge technology and timeless
+            wisdom, offering tools to master meditation, relationships, fitness,
+            and more.
+          </p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+        <div class="relative">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1944x864/5550a0ad1c/card-cnn.webp?quality=60&auto=webp&dpr=1&width=486"
+            alt="CBS Video"
+            class="w-full"
+          />
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-purple-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h4 class="text-xl font-bold text-gray-900 mb-2">CNN</h4>
+          <p class="text-gray-600">
+            “This app really did change my life.” – A story about how Mindvalley
+            empowers transformation through technology and spirituality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Activate Plyr custom UI for top video
+  const player = new Plyr('#main-video');
+</script>
+
+
+
 <!-- Second Marquee -->
 <section class="relative w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center">
   
@@ -925,68 +1034,6 @@ Be part of the world’s most powerful life transformation platform
     </div>
   </div>
 </section>
-
-
-    <!-- Feature Highlight Section  -->
-    <section class="bg-white lg:py-25 md:py-22.5 py-17.5">
-        <div class="container">
-            <div class="lg:mb-10 lg:mx-auto text-center lg:w-1/2 mb-10" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
-                <h2 class="mb-2.5 lg:text-5.5xl md:text-4.6xl text-3.4xl">Why choose Ethica Learning?</h2>
-                <p class="text-base mb-2.5">Discover how Ethica Learning can transform your business operations with our innovative features. </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 lg:gap-15 md:gap-5  gap-5">
-                <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="600" data-aos-easing="ease-in-out">
-                    <div class="bg-body-bg lg:p-10 md:p-5 p-5 rounded-2xl">
-                        <div class="flex lg:gap-20 md:gap-10 md:flex-col flex-col gap-5">
-                            <div class="size-17.5 bg-dark rounded-full inline-flex items-center justify-center">
-                                <i class="iconify solar--bolt-linear size-7 text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-1.5xl mb-2.5">Comprehensive analytics</h3>
-                                <p>Gain deep insights into your business performance.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="600" data-aos-easing="ease-in-out">
-                    <div class="bg-body-bg lg:p-10 md:p-5 p-5 rounded-2xl">
-                        <div class="flex lg:gap-20 md:gap-10 md:flex-col flex-col  gap-5">
-                            <div class="size-17.5  bg-dark rounded-full inline-flex items-center justify-center">
-                                <i class="iconify solar--lightbulb-outline size-7 text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-1.5xl mb-2.5">Seamless Integrations </h3>
-                                <p>Gain deep insights into your business performance.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-in-out">
-                    <div class="bg-body-bg lg:p-10 md:p-5 p-5 rounded-2xl">
-                        <div class="flex lg:gap-20 md:gap-10 md:flex-col flex-col  gap-5">
-                            <div class="size-17.5  bg-dark rounded-full inline-flex items-center justify-center">
-                                <i class="iconify tabler--circle-check size-7 text-primary"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-1.5xl mb-2.5">Advanced security </h3>
-                                <p>It is a long established fact that a reader will be distracted. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-  
-
-
-
-
     <!-- CTA Section  -->
     <section>
         <div class="relative bg-cover bg-center lg:py-25 md:py-22.5 py-17.5 flex items-center justify-center bg-[url('../images/about/15.png')]">
