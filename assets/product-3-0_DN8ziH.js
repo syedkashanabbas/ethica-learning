@@ -1,1 +1,0 @@
-import"./app-B_Z4zGNt.js";const e=document.getElementById("myVideo"),n=document.getElementById("toggleBtn"),t=document.getElementById("playIcon"),d=document.getElementById("pauseIcon");n.addEventListener("click",()=>{e.paused?(e.play(),t.classList.add("hidden"),d.classList.remove("hidden")):(e.pause(),d.classList.add("hidden"),t.classList.remove("hidden"))});
