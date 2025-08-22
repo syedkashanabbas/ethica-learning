@@ -18,6 +18,9 @@
   <link rel="stylesheet" crossorigin href="assets/testi-swiper-BUrcyj0q.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 <style>
     .custom-heading {
@@ -115,332 +118,69 @@
 <body>
 
     <!-- Navbar -->
-    <header class="bg-white sticky transition-all text-white top-0 inset-x-0 w-screen z-20 duration-300">
-        <div class="container">
-            <div class="flex items-center justify-between py-2.5 lg:py-4.5">
-                <div class="text-lg font-bold">
-                    <a  href="index.html">
-                        <!-- <img src="assets/landinger-B3Pu9tr8.svg" alt="Logo" class="h-8.5 lg:h-9"> -->
-                         <h1 class="h-8.5 lg:h-9 text-center" >Ethica Learning</h1>
-                    </a>
-                </div>
-    
-                <div id="navbar" class="lg:flex hidden justify-center gap-5">
-    
-                    <div class="m-1  relative inline-flex  transition-all duration-300">
-                        <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle cursor-pointer text-dark flex items-center py-2.5 font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Home
-                        </button>
-    
-                    </div>
-    
-    
-                    <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex  transition-all duration-300">
-                        <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle cursor-pointer !no-underline text-dark flex items-center py-2.5 font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Product <i class="iconify tabler--chevron-down ps-5 size-4"></i>
-                        </button>
-    
-                        <div class="hs-dropdown-menu border border-neutral-200 transition-[opacity,margin] rounded-2xl duration hs-dropdown-open:opacity-100 opacity-0 hidden w-[560px] bg-white  mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
-                            <div class="grid grid-cols-2 p-5 gap-5">
-                                <div>
-                                    <img src="assets/15-gb4efDx_.svg" alt="" class="rounded-2xl w-62.5">
-                                </div>
-    
-                                <div class="flex flex-col justify-center gap-2.5 py-5">
-                                    <a href="product-1.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                        <div>
-                                            <i class="iconify tabler--carambola text-black size-8"></i>
-                                        </div>
-    
-                                        <div>
-                                            <div class="text-black">Seamless onboarding</div>
-                                            <p class="text-dark text-sm">Quick, easy setup.</p>
-                                        </div>
-                                    </a>
-    
-                                    <a href="product-1.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                        <div>
-                                            <i class="iconify tabler--settings text-black size-8"></i>
-                                        </div>
-    
-                                        <div>
-                                            <div class="text-black">Responsive design</div>
-                                            <p class="text-dark text-sm">Perfect on any device.</p>
-                                        </div>
-                                    </a>
-    
-                                    <a href="product-2.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                        <div>
-                                            <i class="iconify tabler--file-text text-black size-8"></i>
-                                        </div>
-    
-                                        <div>
-                                            <div class="text-black">Integrated analytics</div>
-                                            <p class="text-dark text-sm">Real-time insights.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="m-1  relative inline-flex">
-                        <button  type="button" class="hs-dropdown-toggle cursor-pointer text-dark flex items-center py-2.5 font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Categories
-                            
-                        </button>
-    
-                      
-                    </div>
-    
-                    <div class="m-1 relative inline-flex  transition-all duration-300">
-                        <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle cursor-pointer text-dark flex items-center py-2.5 font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            Account
-                           
-                        </button>
-    
-                       
-                    </div>
-    
-                    <a href="contact.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                        Contact us
-                    </a>
-    
-                </div>
-    
-                <div class="flex flex-row justify-center items-center md:gap-4 gap-2.5">
-                    <div class="flex items-center">
-                        <div class="text-black">Cart</div>
-                        <div class="flex justify-center items-center bg-black px-1.5 ms-2 text-1.1xl size-4.5 rounded-full">0</div>
-                    </div>
-    
-                    <div class="md:flex hidden">
-                        <a class="bg-primary text-dark hover:text-primary hover:bg-dark rounded-2xl px-7.5 py-3.5 font-medium transition-all duration-300">Sign in</a>
-                    </div>
-    
-                    <div class="flex lg:hidden">
-                        <button type="button" class="bg-dark  text-white focus:text-black focus:bg-primary inline-flex justify-center items-center rounded-2xl md:size-13 size-11 p-3.5 font-medium transition-all duration-300" aria-haspopup="dialog" aria-expanded="false" aria-controls="mobileMenuOffcanvas" data-hs-overlay="#mobileMenuOffcanvas">
-                            <span class="iconify tabler--menu-2 text-2xl size-5"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Mobile Menu (Offcanvas) -->
-    <div id="mobileMenuOffcanvas" class="hs-overlay hs-overlay-open:translate-y-0 hidden -translate-y-full fixed top-4 inset-x-4 rounded-lg overflow-hidden transition-all duration-300 transform h-80 z-80 bg-white" role="dialog" tabindex="-1" aria-labelledby="mobileMenuOffcanvas-label">
-        <div class="h-16 flex items-center justify-between px-4 border-b border-neutral-200 sticky top-0">
-            <a href="index.html">
-                <!-- <img src="assets/landinger-B3Pu9tr8.svg" alt="logo" class="h-8"> -->\
-                 <h1 class="h-8" >Ethica Learning</h1>
-            </a>
-    
-            <button type="button" class="bg-neutral-600/15 text-neutral-600 size-8 flex justify-center items-center rounded-full" aria-label="Close" data-hs-overlay="#mobileMenuOffcanvas">
-                <span class="sr-only">Close</span>
-                <i class="iconify tabler--x size-4"></i>
-            </button>
-        </div>
-    
-        <div class="flex flex-col p-4 overflow-y-auto h-[calc(100%-64px)]">
-            <div class="hs-accordion-group">
-                <div class="hs-accordion">
-                    <button class="hs-accordion-toggle text-dark w-full flex items-center justify-between py-2.5 font-medium">
-                        <span>Home</span>
-                        <i class="iconify tabler--chevron-down size-4 hs-accordion-active:rotate-180 transition-all"></i>
-                    </button>
-    
-                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height]">
-                        <a href="index.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                            Home 1
-                        </a>
-    
-                        <a href="home-2.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                            Home 2
-                        </a>
-    
-                        <a href="home-3.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                            Home 3
-                        </a>
-                    </div>
-                </div>
-    
-                <div class="hs-accordion">
-                    <button class="hs-accordion-toggle text-dark w-full flex items-center justify-between py-2.5 font-medium">
-                        <span>Product</span>
-                        <i class="iconify tabler--chevron-down size-4 hs-accordion-active:rotate-180 transition-all"></i>
-                    </button>
-    
-                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height]">
-                        <div class="flex flex-col mt-2">
-                            <a href="product-1.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                <div>
-                                    <i class="iconify tabler--carambola text-black size-8"></i>
-                                </div>
-    
-                                <div>
-                                    <div class="text-black">Seamless onboarding</div>
-                                    <p class="text-dark text-sm">Quick, easy setup.</p>
-                                </div>
-                            </a>
-    
-                            <a href="product-2.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                <div>
-                                    <i class="iconify tabler--settings text-black size-8"></i>
-                                </div>
-    
-                                <div>
-                                    <div class="text-black">Responsive design</div>
-                                    <p class="text-dark text-sm">Perfect on any device.</p>
-                                </div>
-                            </a>
-    
-                            <a href="product-3.html" class="flex items-center gap-1.25 p-4 transition-all duration-300 hover:bg-body-bg rounded-2xl">
-                                <div>
-                                    <i class="iconify tabler--file-text text-black size-8"></i>
-                                </div>
-    
-                                <div>
-                                    <div class="text-black">Integrated analytics</div>
-                                    <p class="text-dark text-sm">Real-time insights.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="hs-accordion">
-                    <button class="hs-accordion-toggle text-dark w-full flex items-center justify-between py-2.5 font-medium">
-                        <span>Pages</span>
-                        <i class="iconify tabler--chevron-down size-4 hs-accordion-active:rotate-180 transition-all"></i>
-                    </button>
-    
-                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height]">
-                        <div class="flex flex-col mt-2">
-                            <a href="product-1.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Product 1
-                            </a>
-    
-                            <a href="product-2.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Product 2
-                            </a>
-    
-                            <a href="product-3.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Product 3
-                            </a>
-    
-                            <a href="pricing-1.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Pricing 1
-                            </a>
-    
-                            <a href="pricing-2.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Pricing 2 (Ecom)
-                            </a>
-    
-                            <a href="pricing-3.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Pricing 3
-                            </a>
-    
-                            <a href="integrations.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Integrations
-                            </a>
-    
-                            <a href="request-a-demo.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Request a Demo
-                            </a>
-    
-                            <a href="reviews.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Reviews
-                            </a>
-    
-                            <a href="about.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                About
-                            </a>
-    
-                            <a href="careers.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Careers
-                            </a>
-    
-                            <a href="blog.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Blog
-                            </a>
-    
-                            <a href="faqs.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                FAQs
-                            </a>
-    
-                            <a href="contact.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Contact
-                            </a>
-    
-                            <a href="link-in-bio.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Link in Bio
-                            </a>
-    
-                            <a href="coming-soon.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Coming soon
-                            </a>
-    
-                            <a href="privacy-policy.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Privacy Policy
-                            </a>
-    
-                            <a href="log-in.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Log In
-                            </a>
-    
-                            <a href="sign-up.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Sign Up
-                            </a>
-    
-                            <a href="reset-password.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Reset Password
-                            </a>
-    
-                            <a href="update-password.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Update Password
-                            </a>
-    
-                            <a href="email-confirmation.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Email Confirmation
-                            </a>
-                            <a href="error-404.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Error 404
-                            </a>
-    
-                            <a href="hero.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Hero
-                            </a>
-    
-                            <a href="features.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Features
-                            </a>
-    
-                            <a href="statistics.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Statistics
-                            </a>
-    
-                            <a href="ctas.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                CTAs
-                            </a>
-    
-                            <a href="cards.html" class="flex items-center font-medium text-dark rounded-lg text-base py-1.25 hover:underline">
-                                Cards
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div>
-                    <a href="contact.html" class="text-dark text-base flex items-center py-2.5 font-medium hover:underline">Contact Us</a>
-                </div>
-    
-                <div class="flex md:hidden mt-1">
-                    <a class="w-full bg-primary text-center text-dark hover:text-primary hover:bg-dark rounded-lg px-7.5 py-3.5 font-medium transition-all duration-300">Sign in</a>
-                </div>
-            </div>
-        </div>
+ <!-- Navbar -->
+<header class="absolute top-0 left-0 w-full z-30" data-aos="fade-down" data-aos-duration="700">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="images/logo.png" 
+           alt="Logo" class="h-10 lg:h-12" />
     </div>
+
+    <!-- Nav Links (Desktop) -->
+    <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+      <a href="#" class="font-bold">Membership</a>
+      <a href="#" class="font-bold">Categories</a>
+      <a href="#" class="font-bold">Community</a>
+      <a href="#" class="font-bold">Results</a>
+      <a href="#" class="font-bold">At Work</a>
+      <a href="#" class="font-bold">Support</a>
+    </nav>
+
+    <!-- Right Side (Desktop) -->
+   <!-- Right Side (Desktop) -->
+<div class="hidden lg:flex items-center gap-6 text-white font-medium">
+  <div class="flex items-center gap-2 cursor-pointer">
+    <!-- Globe SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         class="h-5 w-5 text-white" 
+         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
+    </svg>
+    <span>EN</span>
+  </div>
+  <a href="#" class="font-bold">Log in</a>
+  <a href="#"
+     class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition">
+    Create an account
+  </a>
+</div>
+
+
+    <!-- Mobile Hamburger -->
+    <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl focus:outline-none">
+      <span class="iconify" data-icon="tabler:menu-2"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col bg-purple-900/95 backdrop-blur-md text-white px-6 py-4 space-y-4 lg:hidden">
+    <a href="#" class="block font-bold">Membership</a>
+    <a href="#" class="block font-bold">Categories</a>
+    <a href="#" class="block font-bold">Community</a>
+    <a href="#" class="block font-bold">Results</a>
+    <a href="#" class="block font-bold">At Work</a>
+    <a href="#" class="block font-bold">Support</a>
+    <div class="border-t border-white/30 pt-4 space-y-2">
+      <a href="#" class="block font-bold">Log in</a>
+      <a href="#" class="block px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition">
+        Create an account
+      </a>
+    </div>
+  </div>
+</header>
     <!-- Hero section  -->
     <section style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1536x1512/5103bf6cb3/mvcom_header-bg_t.jpg?quality=60&auto=webp&dpr=1&width=1585'); 
                 background-size: cover; 
@@ -461,21 +201,18 @@
 Be part of the world’s most powerful life transformation platform
 
 </p>
-<div class="button-wrapper">
-  <a href="#" class="btn-primary">Become a member</a>
-  <a href="#" class="btn-outline">Explore programs</a>
+<div class="button-wrapper flex flex-col sm:flex-row gap-4 justify-center">
+  <a href="#"
+     class="btn-primary w-48 sm:w-56 text-center py-4 rounded-full font-semibold bg-white text-purple-900 border-2 border-white hover:bg-purple-600 hover:text-white transition">
+     Become a member
+  </a>
+  <a href="#"
+     class="btn-outline w-48 sm:w-56 text-center py-4 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-purple-600 transition">
+     Explore programs
+  </a>
 </div>
-
-
 </div>
-
-
-
-
-           
-        
-
-            <div class="relative">
+   <div class="relative">
                 <img src="assets/12-BTUFSlC2.png" alt="" class="size-full rounded-2xl">
                 <img src="assets/8-I-MhDPX-.svg" alt="" class="md:absolute md:block md:end-7.5 md:bottom-6.25 hidden">
             </div>
@@ -607,9 +344,6 @@ Be part of the world’s most powerful life transformation platform
     </div>
   </div>
 </section>
-
-
-
 <!-- Apple Vision Pro Section -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6">
@@ -650,11 +384,6 @@ Be part of the world’s most powerful life transformation platform
 
   </div>
 </section>
-
-
-<!-- Include Plyr CSS & JS -->
-<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
 <section class="bg-white py-20">
   <div class="max-w-6xl mx-auto text-center px-6">
@@ -872,13 +601,6 @@ Be part of the world’s most powerful life transformation platform
 
 </section>
 
-
-<!-- Text Block -->
-
-
-
-
-
 <!-- Case Studies -->
 <section class="relative w-full py-20 bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
@@ -1002,147 +724,161 @@ Be part of the world’s most powerful life transformation platform
 </section>
     
 
-    <footer class="bg-dark pt-15 pb-10 md:pt-17.5 md:pb-10 lg:pt-25 lg:pb-10 overflow-hidden">
-        <div class="container">
-            <div class="grid md:grid-cols-2 md:gap-12.5 lg:grid-cols-8 lg:gap-5 gap-10">
-                <div class="lg:col-span-3">
-                    <a href="index.html">
-                        <img src="assets/landinger-light-BVnxQ-Hz.svg" alt="" class="h-11" />
-                    </a>
-                    <p class="mt-2.5 text-white">
-                        Trusted solutions for your growing business
-                    </p>
-                    <div class="mt-10 flex items-center gap-3.5 md:mt-15">
-                        <h2 class="md:text-5.5xl text-4xl text-white">4.8</h2>
-                        <div>
-                            <div class="mb-1 flex gap-1.5">
-                                <i class="iconify tabler--star-filled text-xl text-orange-300"></i>
-                                <i class="iconify tabler--star-filled text-xl text-orange-300"></i>
-                                <i class="iconify tabler--star-filled text-xl text-orange-300"></i>
-                                <i class="iconify tabler--star-filled text-xl text-orange-300"></i>
-                                <i class="iconify tabler--star-filled text-xl text-orange-300"></i>
-                            </div>
-                            <div class="text-white">Best rated company</div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="lg:col-span-3">
-                    <h4 class="text-1.5xl mb-5 text-white">Pages</h4>
-                    <div class="grid grid-cols-2 md:gap-12.5 lg:gap-5 gap-2.5">
-                        <div>
-                            <ul class="flex flex-col justify-start gap-2.5 leading-normal">
-                                <li>
-                                    <a href="index.html" class="text-primary">Home</a>
-                                </li>
-    
-                                <li>
-                                    <a href="home-2.html" class="hover:text-primary text-white transition-all duration-300">Home 2</a>
-                                </li>
-    
-                                <li>
-                                    <a href="home-3.html" class="hover:text-primary text-white transition-all duration-300">Home 3</a>
-                                </li>
-    
-                                <li>
-                                    <a href="product-1.html" class="hover:text-primary text-white transition-all duration-300">Product</a>
-                                </li>
-    
-                                <li>
-                                    <a href="product-2.html" class="hover:text-primary text-white transition-all duration-300">Product 2</a>
-                                </li>
-    
-                                <li>
-                                    <a href="product-3.html" class="hover:text-primary text-white transition-all duration-300">Product 3</a>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div>
-                            <ul class="flex flex-col justify-start gap-2.5 leading-normal">
-                                <li>
-                                    <a href="about.html" class="hover:text-primary text-white transition-all duration-300">About</a>
-                                </li>
-    
-                                <li>
-                                    <a href="request-a-demo.html" class="hover:text-primary text-white transition-all duration-300">Request a Demo</a>
-                                </li>
-    
-                                <li>
-                                    <a href="blog.html" class="hover:text-primary text-white transition-all duration-300">Blog
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="contact.html" class="hover:text-primary text-white transition-all duration-300">Contact</a>
-                                </li>
-    
-                                <li>
-                                    <a href="faqs.html" class="hover:text-primary text-white transition-all duration-300">FAQs
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="privacy-policy.html" class="hover:text-primary text-white transition-all duration-300">Privacy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-    
-                <div class="lg:col-span-2">
-                    <h4 class="text-1.5xl mb-5 text-white">Contact us</h4>
-                    <div>
-                        <p class="mb-3.75 text-sm text-white md:text-base">
-                            1234 Innovation drive, suite 100, tech city, CA 94043
-                        </p>
-    
-                        <p class="hover:text-primary mb-3.75 text-sm text-white transition-all duration-300 md:text-base">
-                            <a href="">(123) 456-7890</a>
-                        </p>
-    
-                        <p class="hover:text-primary mb-3.75 text-sm text-white underline transition-all duration-300 md:text-base">
-                            <a href="">example@gmail.com</a>
-                        </p>
-    
-                        <div class="mt-7.5 flex items-center gap-2.5 md:mt-12.5">
-                            <div class="flex items-center">
-                                <p class="text-lg text-white">👋 Follow Us:</p>
-                            </div>
-    
-                            <div class="flex gap-4">
-                                <a href="" class="flex">
-                                    <i class="iconify tabler--brand-meta size-5 text-white transform transition duration-300 hover:scale-110"></i>
-                                </a>
-                                <a href="" class="flex">
-                                    <i class="iconify tabler--brand-dribbble size-5 text-white transform transition duration-300 hover:scale-110"></i>
-                                </a>
-                                <a href="" class="flex">
-                                    <i class="iconify tabler--brand-linkedin size-5 text-white transform transition duration-300 hover:scale-110"></i>
-                                </a>
-                                <a href="" class="flex">
-                                    <i class="iconify tabler--brand-x size-5 text-white transform transition duration-300 hover:scale-110"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <hr class="border-top mt-7.5 border-neutral-700 md:mt-15">
-    
-            <div class="flex justify-between pt-7.5 md:pt-10">
-                <div class="text-sm text-white">
-                    ©
-                    <script>document.write(new Date().getFullYear())</script>
-                    <a href="" class="underline">Ethica Learning.</a>
-                </div>
-    
-                
-            </div>
+<section class="bg-gradient-to-b from-pink-50 to-green-50 py-16">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Image -->
+    <div class="flex justify-center">
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1536x2300/bddf3ec3ac/04-author-vishen.webp?quality=60&auto=webp&dpr=1&width=331" 
+             alt="Founder" 
+             class="w-full max-w-sm object-cover">
+        <div class="bg-black text-white text-center py-3">
+          <h3 class="text-2xl font-extrabold tracking-wide">VISHEN</h3>
+          <p class="text-xs uppercase">Founder and CEO of Ethica Learning</p>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Become 1% Better <br class="hidden sm:block"/> Every Day
+      </h2>
+      <p class="mt-4 text-lg font-semibold text-gray-800">
+        Upgrade Your Mind. Elevate Your Life. Shape the Future.
+      </p>
+      <p class="mt-4 text-gray-600 text-base leading-relaxed">
+        Welcome to Ethica Learning Daily. We’ll send you the latest breakthroughs in personal 
+        growth, performance, and transformation—straight to your inbox.
+      </p>
+
+      <!-- Form -->
+      <form class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 sm:rounded-lg sm:overflow-hidden max-w-lg mx-auto md:mx-0">
+        <input type="email" 
+               placeholder="Your email address"
+               class="flex-1 border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <button type="submit"
+                class="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-6 py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-semibold hover:opacity-90 transition">
+          Subscribe
+        </button>
+      </form>
+
+      <p class="mt-3 text-xs text-gray-500">
+        Your data is safe with us. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-white border-t border-gray-200 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
+
+    <!-- Programs -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">All Programs</a></li>
+        <li><a href="#" class="hover:text-purple-600">Download The App</a></li>
+        <li><a href="#" class="hover:text-purple-600">Become A Member</a></li>
+        <li><a href="#" class="hover:text-purple-600">Certified Coach</a></li>
+      </ul>
+    </div>
+
+    <!-- About Us -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
+        <li><a href="#" class="hover:text-purple-600">Press</a></li>
+        <li><a href="#" class="hover:text-purple-600">Careers</a></li>
+        <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Events -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Events</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Membership</a></li>
+        <li><a href="#" class="hover:text-purple-600">Events</a></li>
+        <li><a href="#" class="hover:text-purple-600">Ethica University</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
+        <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+        <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+        <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Support</a></li>
+        <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+        <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
+        <li><a href="#" class="hover:text-purple-600">Business</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Brands -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
+        <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+        <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+        <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+        <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+    <p class="font-bold">© 2025 Ethica Learning, Inc. · <a href="#" class="hover:text-purple-600">Terms</a> · <a href="#" class="hover:text-purple-600">Privacy</a></p>
+
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8" /></svg>
+        <span class="font-bold">English (EN)</span>
+      </div>
+      <div class="flex gap-4 text-gray-600">
+        <a href="#" class="hover:text-purple-600">Fb</a>
+        <a href="#" class="hover:text-purple-600">X</a>
+        <a href="#" class="hover:text-purple-600">IG</a>
+        <a href="#" class="hover:text-purple-600">YT</a>
+        <a href="#" class="hover:text-purple-600">IN</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+<script>
+  AOS.init();
+
+  // Mobile menu toggle
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+    menu.setAttribute("data-aos","fade-down");
+    menu.setAttribute("data-aos-duration","500");
+  });
+</script>
 
 </body>
 
