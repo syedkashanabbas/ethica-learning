@@ -10,9 +10,9 @@
     <meta content="Coderthemes" name="author" />
     
     <!-- Theme favicon -->
-    <link rel="shortcut icon" href="assets/favicon-BdkwmhDA.ico">
+    <link rel="shortcut icon" href="">
     <!-- App Js (Mandatory in All Pages) -->
-  <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script>
+  <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
   <script type="module" crossorigin src="assets/testi-swiper-CGY6TrK8.js"></script>
   <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css">
   <link rel="stylesheet" crossorigin href="assets/testi-swiper-BUrcyj0q.css">
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 </head>
 <style>
-    .custom-heading {
+  .custom-heading {
   font-size: 80px;     /* bada */
   font-weight: 800;    /* super bold */
   color: #fff;         /* white */
@@ -83,6 +83,8 @@
   padding: 20px 0;
 }
 
+
+
 .featured .logos {
   display: flex;
   justify-content: center;
@@ -120,8 +122,6 @@
 
 </style>
 <body>
-
-    <!-- Navbar -->
  <!-- Navbar -->
 <header class="absolute top-0 left-0 w-full z-30" data-aos="fade-down" data-aos-duration="700">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
@@ -172,32 +172,28 @@
 
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col bg-purple-900/95 backdrop-blur-md text-white px-6 py-4 space-y-4 lg:hidden">
-    <a href="#" class="block font-bold">Membership</a>
-    <a href="#" class="block font-bold">Categories</a>
-    <a href="#" class="block font-bold">Community</a>
-    <a href="#" class="block font-bold">Results</a>
-    <a href="#" class="block font-bold">At Work</a>
-    <a href="#" class="block font-bold">Support</a>
-    <div class="border-t border-white/30 pt-4 space-y-2">
-      <a href="#" class="block font-bold">Log in</a>
-      <a href="#" class="block px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition">
-        Create an account
-      </a>
-    </div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
+
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">Membership</a>
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">Categories</a>
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
+  <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
+
+  <div class="border-t border-gray-200 pt-4 space-y-3">
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
+    <a href="#"
+       class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold
+              hover:bg-purple-600 hover:text-white transition">
+      Create an account
+    </a>
   </div>
+</div>
+
 </header>
-<script>
-  const mobileBtn = document.getElementById("mobile-menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  mobileBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-</script>
-
-    <!-- Hero section  -->
+   <!-- Hero section  -->
     <section style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1536x1512/5103bf6cb3/mvcom_header-bg_t.jpg?quality=60&auto=webp&dpr=1&width=1585'); 
                 background-size: cover; 
                 background-repeat: no-repeat; 
@@ -207,7 +203,7 @@
           <div class="lg:mb-10 lg:mx-auto text-center  mb-10" 
      data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
 
- <h2 class="custom-heading ">
+ <h2 class="custom-heading  mt-5">
   Why choose 
 </h2>
  <h3 class="custom-heading ">
@@ -884,15 +880,17 @@ Be part of the world’s most powerful life transformation platform
 <script>
   AOS.init();
 
-  // Mobile menu toggle
-  const btn = document.getElementById("mobile-menu-btn");
+ const btn = document.getElementById("mobile-menu-btn");
   const menu = document.getElementById("mobile-menu");
 
   btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    menu.classList.toggle("flex");
-    menu.setAttribute("data-aos","fade-down");
-    menu.setAttribute("data-aos-duration","500");
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+      menu.classList.add("flex");
+    } else {
+      menu.classList.add("hidden");
+      menu.classList.remove("flex");
+    }
   });
 </script>
 
