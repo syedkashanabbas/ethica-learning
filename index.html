@@ -71,22 +71,25 @@
   transform: translateY(-2px);
   transition: all 0.2s ease;
 }
-.featured{
-    height: 150px;
+.featured {
+  /* height: 150px; */   /* ye hata do */
+  padding: 20px 0;
 }
+
 .featured .logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  flex-wrap: nowrap;   /* keep one line */
+  gap: 20px;
+  flex-wrap: wrap;   /* wrap allow karo */
 }
 
 .featured .logos img {
-  height: auto; 
-object-fit: contain;
-  flex-shrink: 0;
+  height: 30px; 
+  max-width: 120px;
+  object-fit: contain;
 }
+
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -877,9 +880,6 @@ Be part of the world’s most powerful life transformation platform
   const player = new Plyr('#main-video');
 </script>
 
-
-
-<!-- Second Marquee -->
 <!-- Second Marquee -->
 <section class="py-16 sm:py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
