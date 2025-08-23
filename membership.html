@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethica Learning Style Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" crossorigin src="assets/testi-swiper-CGY6TrK8.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css">
+  <link rel="stylesheet" crossorigin href="assets/testi-swiper-BUrcyj0q.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body class="bg-white text-gray-900">
+  <style>
+       .featured {
+  /* height: 150px; */   /* ye hata do */
+  padding: 20px 0;
+}
+
+
+
+.featured .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;   /* wrap allow karo */
+}
+
+ .active-tab {
+      color: #6d28d9; /* purple */
+      border-bottom: 2px solid #6d28d9;
+    }
+.featured .logos img {
+  height: 30px; 
+  max-width: 120px;
+  object-fit: contain;
+}
+
+    </style>
+  <!-- Navbar -->
+  <nav class="border-b">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-purple-500 font-bold text-xl">Ethica Learning</div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="text-sm text-gray-800 font-bold">Support</a>
+        <button class="border border-gray-400 rounded-full px-6 py-2 font-bold text-sm hover:border-gray-600 transition">Log in</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (hidden until country loads) -->
+  <section id="hero" class="max-w-7xl mx-auto text-center py-20 px-6 opacity-0 invisible" data-aos="fade-up">
+    <p id="country-text" class="text-2xl text-gray-800 mb-2 font-bold"></p>
+    <h1 class="text-8xl font-extrabold mb-4">Ethica Learning Membership</h1>
+    <p class="text-3xl text-gray-700 mb-8">Every day in every way, become better and better at living your full potential.</p>
+    <a href="#" class="bg-purple-600 hover:bg-purple-800 text-white text-lg font-bold px-8 py-4 rounded-full transition">Become a member</a>
+  </section>
+
+
+<!-- Featured Section -->
+    <section class="featured py-10 bg-gray-50">
+    <div class="mt-10 text-center">
+                    <p class="text-base mb-2.5 font-bold">Featured on</p>
+
+
+        <div class="container logos mt-5">
+        <img src="https://a.storyblok.com/f/60579/229x31/4504f459d4/logo_nyt.svg" alt="The New York Times" />
+        <img src="https://a.storyblok.com/f/60579/106x29/edff29df59/logo_forbes.svg" alt="Forbes" />
+        <img src="https://a.storyblok.com/f/60579/178x33/660efad2fd/logo_usa-today.svg" alt="USA Today" />
+        <img src="https://a.storyblok.com/f/60579/166x33/8cf263ffec/logo_entrepreneur.svg" alt="Entrepreneur" />
+        <img src="https://a.storyblok.com/f/60579/107x31/5d683c5c4d/logo-bbc.svg" alt="BBC" />
+        <img src="https://a.storyblok.com/f/60579/94x33/85550dbb85/logo-inc.svg" alt="Inc" />
+        <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
+        </div>
+    </div>
+    </section>
+<!-- Featured Section -->
+
+
+ <!-- Sticky Nav -->
+  <div class="border mt-15 bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+      <!-- Tabs -->
+      <div id="sectionTabs" class="flex gap-6 overflow-x-auto whitespace-nowrap text-sm font-medium text-gray-700">
+        <a href="#who" class="tab pb-2">Who is this for</a>
+        <a href="#membership" class="tab pb-2">Mindvalley Membership</a>
+        <a href="#people" class="tab pb-2">What people say</a>
+        <a href="#faqs" class="tab pb-2">FAQs</a>
+      </div>
+      <!-- CTA -->
+      <div class="hidden sm:flex items-center gap-4 ml-4">
+        <span class="text-xs text-gray-600 leading-tight text-right">
+          from $16.58/month<br>(billed annually)
+        </span>
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Become a member</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <section id="who" class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 py-16 px-4 sm:px-6 items-center">
+    <!-- Image for mobile first -->
+    <div class="md:hidden">
+      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1000x1000/c72223397e/mm-callout-hook-2.jpg?quality=60&auto=webp" 
+           alt="Mindvalley" 
+           class="rounded-lg shadow-lg w-full">
+    </div>
+    <!-- Text -->
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Seeking a breakthrough in your life or career?</h2>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        Mindvalley helps you get unstuck in any part of your life that’s less than perfect. Perhaps you've lost a relationship, or you feel your career isn’t growing fast enough. Maybe you’re looking to scale your business, or develop that dream body, or you’re looking to master your spiritual self.
+      </p>
+      <p class="text-gray-700 mb-4 leading-relaxed">
+        Mindvalley doesn’t just help you break through any barrier in your life, but the continuous use of Mindvalley helps you become world-class in every single area. Mindvalley is known for having the best programs in the world all in one app, and we have 20,000 browsable case studies to prove this.
+      </p>
+      <p class="font-semibold text-lg">Become the best version of yourself with Mindvalley Membership.</p>
+    </div>
+    <!-- Image for desktop -->
+    <div class="hidden md:block">
+      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1000x1000/c72223397e/mm-callout-hook-2.jpg?quality=60&auto=webp" 
+           alt="Mindvalley" 
+           class="rounded-lg shadow-lg w-full">
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="membership" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Mindvalley Membership</h2>
+    <p class="text-gray-700 leading-relaxed">This section describes the membership details...</p>
+  </section>
+
+  <!-- Section 3 -->
+  <section id="people" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">What people say</h2>
+    <p class="text-gray-700 leading-relaxed">Testimonials section...</p>
+  </section>
+
+  <!-- Section 4 -->
+  <section id="faqs" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">FAQs</h2>
+    <p class="text-gray-700 leading-relaxed">Frequently asked questions...</p>
+  </section>
+ <script>
+    const sections = document.querySelectorAll("section");
+    const tabs = document.querySelectorAll("#sectionTabs .tab");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tabs.forEach(tab => tab.classList.remove("active-tab"));
+          const activeTab = document.querySelector(`#sectionTabs a[href="#${entry.target.id}"]`);
+          if (activeTab) activeTab.classList.add("active-tab");
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(sec => observer.observe(sec));
+
+    // Smooth scroll on click
+    tabs.forEach(tab => {
+      tab.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(tab.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+
+  
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    async function setCountry() {
+      try {
+        const res = await fetch("https://get.geojs.io/v1/ip/geo.json");
+        const data = await res.json();
+        document.getElementById("country-text").textContent =
+          "Now available in " + data.country;
+      } catch (e) {
+        document.getElementById("country-text").textContent =
+          "Now available worldwide";
+      }
+
+      // Show hero + trigger animations
+      const hero = document.getElementById("hero");
+      hero.classList.remove("opacity-0", "invisible");
+      AOS.init();
+    }
+
+    setCountry();
+  </script>
+</body>
+</html>
