@@ -114,11 +114,34 @@
   animation-play-state: paused; /* stop on hover */
 }
 
+ .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
 .animate-marquee-slow {
   animation: marquee 25s linear infinite;
   width: max-content;
 }
 
+ .card {
+      position: relative;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(200, 200, 200, 0.4); /* light grey overlay */
+      transition: all 0.3s ease;
+    }
+    .card.active::after {
+      background: transparent; /* no overlay for active */
+    }
 
 </style>
 <body>
@@ -397,6 +420,142 @@ Be part of the world’s most powerful life transformation platform
 
   </div>
 </section>
+
+<section class="bg-white py-12 md:py-20 text-gray-900">
+
+  <!-- Top Text Block -->
+  <div class="mb-8 md:mb-12 max-w-6xl mx-auto text-left px-4">
+    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
+      Begin your journey
+    </p>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-4 sm:mb-6 leading-tight">
+      A better you
+    </h2>
+    <p class="text-base sm:text-lg md:text-xl text-gray-600 font-medium">
+      Grow your business, elevate your career, establish deep connections, uplift your health and more.
+      <br>
+      <strong>Tell us your goals</strong>, and become a better you like never before.
+    </p>
+  </div>
+
+  <!-- Slider -->
+  <div class="relative max-w-7xl mx-auto mt-6 sm:mt-10 px-4">
+    <div id="slider" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth">
+
+      <!-- Card -->
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m looking to</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">MASTER MY BODY</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m going through a</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">TRANSITION IN LIFE</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m looking for</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">LOVE CONNECTION</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I am a</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">SPIRITUAL SEEKER</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m seeking</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">CAREER GROWTH</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m looking to</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">GROW MY BUSINESS</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I’m searching for</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">DEEP CONNECTION</h2>
+        </div>
+      </div>
+
+      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
+             class="w-full h-full object-cover">
+        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+          <p class="text-sm sm:text-lg">I want to</p>
+          <h2 class="text-xl sm:text-4xl text-white font-extrabold">ELEVATE MY SPIRIT</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-center items-center gap-4 mt-6">
+      <button id="prev" class="bg-gray-200 w-10 h-10 rounded-full">‹</button>
+      <button class="px-4 sm:px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg text-sm sm:text-base">
+        Select path
+      </button>
+      <button id="next" class="bg-gray-200 w-10 h-10 rounded-full">›</button>
+    </div>
+  </div>
+</section>
+
+    <script>
+    const slider = document.getElementById("slider");
+    const cards = slider.children;
+    let currentIndex = 2; // start middle
+
+    function updateActive() {
+      [...cards].forEach((card, i) => {
+        card.classList.remove("active");
+        if (i === currentIndex) card.classList.add("active");
+      });
+      slider.scrollTo({
+        left: cards[currentIndex].offsetLeft - slider.offsetWidth/2 + cards[currentIndex].offsetWidth/2,
+        behavior: "smooth"
+      });
+    }
+
+    document.getElementById("prev").onclick = () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateActive();
+    };
+    document.getElementById("next").onclick = () => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateActive();
+    };
+
+    // init
+    updateActive();
+  </script>
 
 <section class="bg-white py-20">
   <div class="max-w-6xl mx-auto text-center px-6">
