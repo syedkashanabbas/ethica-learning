@@ -364,12 +364,145 @@
   </div>
 </section>
 
+<section class="w-full bg-gray-50 py-16 px-4 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4">
+      Introducing Ethica Learning Membership
+    </h2>
+    <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-6">
+      Your life-changing transformation begins with Ethica Learning Membership
+    </h3>
+    <p class="text-gray-600 leading-relaxed mb-10">
+      As a Ethica Learning Member, you get everything you need to become a better you every day.
+      Including today’s best teachers and experts as your mentors. The world’s most uplifting
+      community supporting you every step of the way. And a personalized curriculum of programs,
+      events, and experiences designed to transform every dimension of your life – and turn your
+      goals into reality.
+    </p>
+ 
+       <p class="text-3xl font-semibold text-gray-900">
+      Learn from the world’s best
+    </p>
+  </div>
+</section>
 
   <!-- Section 2 -->
-  <section id="membership" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Mindvalley Membership</h2>
-    <p class="text-gray-700 leading-relaxed">This section describes the membership details...</p>
-  </section>
+<section id="membership" class="w-full overflow-hidden">
+  <div class="slider_marquee relative w-full">
+       
+    <div class="track flex space-x-6">
+      <!-- Cards (your 3 images) -->
+    
+      <div class="min-w-[200px]">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/49bd1d8af4/mv_hp_author_shefali_2-3.jpg?quality=60&auto=webp&dpr=0.800000011920929&width=333" alt="Shefali" class="rounded-lg shadow-md">
+      </div>
+      <div class="min-w-[200px]">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/928498fdbc/mv_hp_author_michael-beckwith_2-3.jpg?quality=60&auto=webp&dpr=0.800000011920929&width=333" alt="Michael Beckwith" class="rounded-lg shadow-md">
+      </div>
+      <div class="min-w-[200px]">
+        <img src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/c05886f500/mv_hp_author_keith-ferrazzi_2-3.jpg?quality=60&auto=webp&dpr=0.800000011920929&width=333" alt="Keith Ferrazzi" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".slider_marquee .track");
+    const clone = track.cloneNode(true); // ek aur copy banayi
+    clone.classList.add("cloned");       // bas piche chipka di
+    track.parentElement.appendChild(clone);
+  });
+</script>
+
+<style>
+  @keyframes slider_marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .slider_marquee {
+    display: flex;
+    white-space: nowrap;
+  }
+  .slider_marquee .track {
+    display: flex;
+    animation: slider_marquee 40s linear infinite;
+  }
+  .slider_marquee .cloned {
+    display: flex;
+  }
+</style>
+
+
+<section class="w-full bg-white py-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12">
+    
+    <!-- Left content -->
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">01</h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">100+ programs in 6 categories</h2>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+        Transformational online programs that level up your life in just 20 minutes a day.
+      </p>
+    </div>
+
+    <!-- Right image -->
+    <div class="flex justify-center">
+      <img 
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x901/f3a2a1d21c/mm-what-you-get-03.png?quality=60&auto=webp&dpr=0.800000011920929&width=718" 
+        alt="Community Preview" 
+        class="max-w-full h-auto"
+      >
+    </div>
+
+  </div>
+  <div class="max-w-6xl mt-6 mx-auto grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12">
+    
+    <!-- Left content -->
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">02</h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Community</h2>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+        Access to Mindvalley’s private social network, where you can connect, share wisdom,
+        and grow with fellow members in your city and around the world.
+      </p>
+    </div>
+
+    <!-- Right image -->
+    <div class="flex justify-center">
+      <img 
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x901/f3a2a1d21c/mm-what-you-get-03.png?quality=60&auto=webp&dpr=0.800000011920929&width=718" 
+        alt="Community Preview" 
+        class="max-w-full h-auto"
+      >
+    </div>
+
+  </div>
+   <div class="max-w-6xl mt-6 mx-auto grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12">
+    
+    <!-- Left content -->
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">03</h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">AI guided curriculum</h2>
+      <p class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
+        Get results that last a lifetime with AI guided curriculum personalised to your needs.
+      </p>
+    </div>
+
+    <!-- Right image -->
+    <div class="flex justify-center">
+      <img 
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x900/90e50fc9d3/mm-what-you-get-04.png?quality=60&auto=webp&dpr=0.800000011920929&width=718" 
+        alt="Community Preview" 
+        class=" max-w-full h-auto"
+      >
+    </div>
+
+  </div>
+</section>
+
+
+
 
   <!-- Section 3 -->
   <section id="people" class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
