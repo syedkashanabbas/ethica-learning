@@ -41,6 +41,21 @@
   max-width: 120px;
   object-fit: contain;
 }
+  @keyframes slider_marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .slider_marquee {
+    display: flex;
+    white-space: nowrap;
+  }
+  .slider_marquee .track {
+    display: flex;
+    animation: slider_marquee 40s linear infinite;
+  }
+  .slider_marquee .cloned {
+    display: flex;
+  }
 
     </style>
   <!-- Navbar -->
@@ -413,23 +428,6 @@
   });
 </script>
 
-<style>
-  @keyframes slider_marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  .slider_marquee {
-    display: flex;
-    white-space: nowrap;
-  }
-  .slider_marquee .track {
-    display: flex;
-    animation: slider_marquee 40s linear infinite;
-  }
-  .slider_marquee .cloned {
-    display: flex;
-  }
-</style>
 
 
 <section class="w-full bg-white py-20 px-6">
