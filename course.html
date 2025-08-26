@@ -807,6 +807,102 @@
   </div>
 </section>
 
+<section class="relative bg-cover bg-center text-white py-16 px-6"
+  style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1440x536/9d5b183030/sums_vsl_ordermenu-d-1.png?quality=60&auto=webp&dpr=1&width=1585');">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Text -->
+    <div>
+      <h2 class="text-3xl md:text-4xl text-white font-bold mb-6">
+        Begin your health transformation today <br> with Mindvalley
+      </h2>
+      <p class="flex items-start mb-4">
+        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span><strong>Unlimited access</strong> to Mindvalley’s 100+ transformational programs</span>
+      </p>
+      <p class="flex items-start mb-4">
+        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span><strong>1,000+ guided meditations</strong>, hypnotherapies, breathwork & therapeutic sounds</span>
+      </p>
+      <p class="flex items-start">
+        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span><strong>Access to Mindvalley’s private social network</strong> to connect, share wisdom, and grow with other members</span>
+      </p>
+    </div>
+    
+    <!-- Right Card -->
+    <!-- Right Card -->
+<div class="bg-white text-gray-900 rounded-2xl shadow-xl p-8 max-w-sm mx-auto">
+  <div class="flex justify-center space-x-2 mb-6">
+    <button id="monthlyBtn" class="px-4 py-1 rounded-full border text-gray-600">Monthly</button>
+    <button id="yearlyBtn" class="px-4 py-1 rounded-full bg-purple-600 text-white font-semibold">Yearly</button>
+    <span class="text-sm text-orange-500 font-medium self-center">Best value</span>
+  </div>
+
+  <!-- WRAPPER with fixed height -->
+  <div class="min-h-[120px] flex flex-col justify-center">
+    <h3 id="priceBox" class="text-4xl font-bold text-center mb-2 transition-all duration-500">
+      $199<span class="text-lg font-medium">/year</span>
+    </h3>
+    <p id="priceDesc" class="text-center text-gray-600 mb-6 transition-all duration-500">
+      That’s just $16.58/month, billed annually, cancel anytime.
+    </p>
+  </div>
+
+  <button class="w-full bg-[#FF931F] hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full mb-6">
+    Become a member
+  </button>
+
+  <img src="https://res.cloudinary.com/mindvalley/image/upload/v1686125042/MV-Launches/template/logos-cc-powered-by-stripe-white.svg" 
+   alt="Stripe" 
+   class="mx-auto h-16 w-full"/>
+
+  <p class="text-xs text-center text-gray-500 mt-3">*VAT may apply based on billing address.</p>
+  <p class="text-xs text-center text-gray-500">For security, all orders are processed on a secured server.</p>
+</div>
+
+  </div>
+</section>
+
+<script>
+const monthlyBtn = document.getElementById("monthlyBtn");
+const yearlyBtn = document.getElementById("yearlyBtn");
+const priceBox = document.getElementById("priceBox");
+const priceDesc = document.getElementById("priceDesc");
+
+function toggleActive(btn1, btn2) {
+  btn1.classList.add("bg-purple-600","text-white","font-semibold");
+  btn1.classList.remove("border","text-gray-600");
+  btn2.classList.remove("bg-purple-600","text-white","font-semibold");
+  btn2.classList.add("border","text-gray-600");
+}
+
+monthlyBtn.addEventListener("click", () => {
+  toggleActive(monthlyBtn, yearlyBtn);
+  priceBox.classList.add("opacity-0","translate-y-2");
+  priceDesc.classList.add("opacity-0","translate-y-2");
+  setTimeout(()=>{
+    priceBox.innerHTML = "$29<span class='text-lg font-medium'>/month</span>";
+    priceDesc.innerText = "Billed monthly, cancel anytime.";
+    priceBox.classList.remove("opacity-0","translate-y-2");
+    priceDesc.classList.remove("opacity-0","translate-y-2");
+  },300);
+});
+
+yearlyBtn.addEventListener("click", () => {
+  toggleActive(yearlyBtn, monthlyBtn);
+  priceBox.classList.add("opacity-0","translate-y-2");
+  priceDesc.classList.add("opacity-0","translate-y-2");
+  setTimeout(()=>{
+    priceBox.innerHTML = "$199<span class='text-lg font-medium'>/year</span>";
+    priceDesc.innerText = "That’s just $16.58/month, billed annually, cancel anytime.";
+    priceBox.classList.remove("opacity-0","translate-y-2");
+    priceDesc.classList.remove("opacity-0","translate-y-2");
+  },300);
+});
+</script>
+
+
   <!-- Section 4 -->
  <section id="faq" class="bg-gray-50 py-12">
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
