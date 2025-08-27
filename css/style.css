@@ -1512,7 +1512,7 @@ textarea.w-select {
   bottom: 0;
   left: 0;
   color: #fff;
-  font-family: 'Grotesk', sans-serif;
+  font-family: 'Aeonik', sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 300;
@@ -2146,27 +2146,28 @@ textarea.w-select {
 }
 
 
-@font-face {
-  font-family: Cabinetgrotesk;
-  src: url('../fonts/CabinetGrotesk-Bold.ttf') format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+@font-face{
+  font-family:"Aeonik";
+  src: url("../fonts/aeonik/fonnts.com-Aeonik-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
 }
 
-@font-face {
-  font-family: Cabinetgrotesk;
-  src: url('../fonts/CabinetGrotesk-Regular.ttf') format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+/* Bold */
+@font-face{
+  font-family:"Aeonik";
+  src: url("../fonts/aeonik/fonnts.com-Aeonik-Bold.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
 }
 
 :root {
   --color--secondary-1: #f3f3e5;
-  --font-family--body: 'Grotesk', sans-serif;
+  --font-family--body: 'Aeonik', sans-serif;
   --color--gray-1: #444;
-  --font-family--heading: 'Grotesk', sans-serif;
+  --font-family--heading: 'Aeonik', sans-serif;
   --color--heading: var(--color--black);
   --color--primary-2: #061d19;
   --color--white: #fff;

@@ -109,8 +109,8 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-body: 'Grotesk', sans-serif;
-    --font-heading: "Cabinet Grotesk", sans-serif;
+    --font-body: 'Aeonik', sans-serif;
+    --font-heading: 'Aeonik', sans-serif;
     --color-primary: #b8ff90;
     --color-body-color: #061d19;
     --color-body-bg: #f3f3e5;
