@@ -165,123 +165,68 @@
   </style>
   <body class="bg-white">
     <!-- Navbar -->
-    <header class="absolute bg-white top-0 left-0 w-full z-30">
-      <div
-        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
-      >
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img src="images/logo-purple.png" alt="Logo" class="h-10 lg:h-12" />
-        </div>
+    <header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="images/logo-purple.png" alt="Logo" class="h-12 w-auto object-contain" />
+    </div>
 
-        <!-- Nav Links (Desktop) -->
-        <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
-          <a href="./membership.html" class="font-bold text-xl text-black"
-            >Membership</a
-          >
-          <a href="./category.html" class="font-bold text-black text-xl"
-            >Categories</a
-          >
-          <a href="#" class="font-bold text-black text-xl">Community</a>
-          <a href="#" class="font-bold text-black text-xl">Results</a>
-          <a href="#" class="font-bold text-black text-xl">At Work</a>
-          <a href="#" class="font-bold text-black text-xl">Support</a>
-        </nav>
+    <!-- Nav Links (Desktop) -->
+    <nav class="hidden lg:flex items-center gap-8 font-medium">
+      <a href="./membership.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Membership</a>
+      <a href="./category.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Categories</a>
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Community</a>
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Results</a>
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">At Work</a>
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Support</a>
+    </nav>
 
-        <!-- Right Side (Desktop) -->
-        <div class="hidden lg:flex items-center gap-6 text-dark font-medium">
-          <div class="flex items-center gap-2 cursor-pointer">
-            <!-- Globe SVG -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.6 9h16.8M3.6 15h16.8"
-              />
-            </svg>
-            <span>EN</span>
-          </div>
-          <a href="#" class="font-bold">Log in</a>
-          <a
-            href="#"
-            class="px-5 py-2 rounded-full border border-dark hover:bg-white transition"
-          >
-            Create an account
-          </a>
-        </div>
-
-        <button
-          id="mobile-menu-btn"
-          class="lg:hidden text-white text-3xl focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+    <!-- Right Side (Desktop) -->
+    <div class="hidden lg:flex items-center gap-6 text-gray-800 font-medium">
+      <div class="flex items-center gap-2 cursor-pointer">
+        <!-- Globe SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"/>
+        </svg>
+        <span>EN</span>
       </div>
+      <a href="#" class="font-semibold hover:text-purple-600 transition">Log in</a>
+      <a href="#"
+         class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+        Create an account
+      </a>
+    </div>
 
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
-      >
-        <a
-          href="./membership.html"
-          class="block font-semibold hover:text-purple-600 transition"
-          >Membership</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >Categories</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >Community</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >Results</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >At Work</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >Support</a
-        >
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="lg:hidden text-gray-800 text-3xl focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
 
-        <div class="border-t border-gray-200 pt-4 space-y-3">
-          <a
-            href="#"
-            class="block font-semibold hover:text-purple-600 transition"
-            >Log in</a
-          >
-          <a
-            href="#"
-            class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
-          >
-            Create an account
-          </a>
-        </div>
-      </div>
-    </header>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
+    <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
+    <a href="./category.html" class="block font-semibold hover:text-purple-600 transition">Categories</a>
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
+
+    <div class="border-t border-gray-200 pt-4 space-y-3">
+      <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
+      <a href="#"
+         class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+        Create an account
+      </a>
+    </div>
+  </div>
+</header>
+
 
     <section
       style="margin-top: 75px"
