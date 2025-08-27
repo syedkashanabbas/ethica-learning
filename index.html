@@ -114,24 +114,38 @@
       object-fit: contain;
     }
 
-    @keyframes marquee {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    .animate-marquee {
-      display: flex;
-      width: max-content;
-      animation: marquee 12s linear infinite;
-    }
-
-    .marquee-row:hover {
-      animation-play-state: paused; /* stop on hover */
-    }
+     .marquee-row {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  .marquee-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+  }
+  .marquee-track.reverse {
+    animation-direction: reverse;
+  }
+  .marquee-item {
+    min-width: 320px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  .marquee-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .marquee-row:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* move half bcoz content duplicated */
+  }
 
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -352,68 +366,64 @@
     </section>
     <!-- Cta Section -->
     <!-- 1st Marquee Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-8xl mx-auto px-6">
-        <!-- Left Text Block -->
-        <div class="mb-12 text-center max-w-3xl mx-auto">
-          <p
-            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
-          >
-            Growth in all areas
-          </p>
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
-            100+ of the world’s top programs for personal growth and
-            transformation
-          </h2>
-          <p class="text-lg text-gray-600 font-medium">
-            Forge lasting transformations in your mind, body, soul, love and
-            career with 20-minute micro-coaching sessions each day led by
-            top-tier teachers worldwide.
-          </p>
-        </div>
+<section class="py-20 bg-white">
+  <div class="max-w-8xl mx-auto px-6">
+    <!-- Left Text Block -->
+    <div class="mb-12 text-center max-w-3xl mx-auto">
+      <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
+        Growth in all areas
+      </p>
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
+        100+ of the world’s top programs for personal growth and transformation
+      </h2>
+      <p class="text-lg text-gray-600 font-medium">
+        Forge lasting transformations in your mind, body, soul, love and career
+        with 20-minute micro-coaching sessions each day led by top-tier teachers worldwide.
+      </p>
+    </div>
 
-        <!-- Rows -->
-        <div class="w-full space-y-12 overflow-hidden">
-          <!-- Row 1 -->
-          <div class="flex space-x-6 marquee-row animate-marquee">
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/1.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/2.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/3.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/4.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/5.png" class="w-full h-auto" />
-            </div>
-          </div>
+    <!-- Rows -->
+    <div class="w-full space-y-12 overflow-hidden">
+      <!-- Row 1 -->
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/5.png" /></div>
 
-          <!-- Row 2 -->
-          <div class="flex space-x-6 marquee-row animate-marquee">
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/6.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/1.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/2.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/3.png" class="w-full h-auto" />
-            </div>
-            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-              <img src="images/marquee/4.png" class="w-full h-auto" />
-            </div>
-          </div>
+          <!-- duplicate set for seamless loop -->
+          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/5.png" /></div>
         </div>
       </div>
-    </section>
+
+      <!-- Row 2 -->
+      <div class="marquee-row">
+        <div class="marquee-track reverse">
+          <div class="marquee-item"><img src="images/marquee/6.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+
+          <!-- duplicate set -->
+          <div class="marquee-item"><img src="images/marquee/6.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <!-- Apple Vision Pro Section -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6">
