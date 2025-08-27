@@ -1,133 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Ethica Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ethica Learning - Full-featured, professional-looking software, saas and startup website template. Multipurpose Tailwind CSS Landing Page Template">
-    <meta name="keywords" content="saas, saas template, site template, software, startup, digital product, html5, tailwindcss landing, marketing, tailwindcss, agency, digital agency, it solutions, vitejs">
-    
+    <meta
+      name="description"
+      content="Ethica Learning - Full-featured, professional-looking software, saas and startup website template. Multipurpose Tailwind CSS Landing Page Template"
+    />
+    <meta
+      name="keywords"
+      content="saas, saas template, site template, software, startup, digital product, html5, tailwindcss landing, marketing, tailwindcss, agency, digital agency, it solutions, vitejs"
+    />
+
     <meta content="Coderthemes" name="author" />
-    
+
     <!-- Theme favicon -->
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="" />
     <!-- App Js (Mandatory in All Pages) -->
-  <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
-  <script type="module" crossorigin src="assets/testi-swiper-CGY6TrK8.js"></script>
-  <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css">
-  <link rel="stylesheet" crossorigin href="assets/testi-swiper-BUrcyj0q.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-</head>
-<style>
-  .custom-heading {
-  font-size: 80px;     /* bada */
-  font-weight: 800;    /* super bold */
-  color: #fff;         /* white */
-  line-height: 1.1;    /* thoda tight */
-  letter-spacing: -1px;/* aur compact look */
-  text-align: center;  /* optional: center */
-}
-#mobile-menu {
-  transition: all 0.3s ease-in-out;
-}
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  </head>
+  <style>
+    .custom-heading {
+      font-size: 80px; /* bada */
+      font-weight: 800; /* super bold */
+      color: #fff; /* white */
+      line-height: 1.1; /* thoda tight */
+      letter-spacing: -1px; /* aur compact look */
+      text-align: center; /* optional: center */
+    }
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
 
-.custom-para {
-  font-size: 24px;
-  letter-spacing: 0.3px;
-  line-height: 30px;
-  font-weight: 500;    /* super bold */
+    .custom-para {
+      font-size: 24px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+      font-weight: 500; /* super bold */
 
-  text-decoration: none;
-  color: rgb(206, 209, 215);
-  text-align: center;
-}
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* space between buttons */
-  margin-top: 20px;
-}
+      text-decoration: none;
+      color: rgb(206, 209, 215);
+      text-align: center;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between buttons */
+      margin-top: 20px;
+    }
 
-.btn-primary {
-  background: #fff;
-  color: purple;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  border: 2px solid transparent;
-}
+    .btn-primary {
+      background: #fff;
+      color: purple;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
 
-.btn-outline {
-  background: transparent;
-  color: #fff;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  border: 2px solid #fff;
-}
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #fff;
+    }
 
-.btn-primary:hover,
-.btn-outline:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  transition: all 0.2s ease;
-}
-.featured {
-  /* height: 150px; */   /* ye hata do */
-  padding: 20px 0;
-}
+    .btn-primary:hover,
+    .btn-outline:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s ease;
+    }
+    .featured {
+      /* height: 150px; */ /* ye hata do */
+      padding: 20px 0;
+    }
 
+    .featured .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* wrap allow karo */
+    }
 
+    .featured .logos img {
+      height: 30px;
+      max-width: 120px;
+      object-fit: contain;
+    }
 
-.featured .logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;   /* wrap allow karo */
-}
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-.featured .logos img {
-  height: 30px; 
-  max-width: 120px;
-  object-fit: contain;
-}
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 12s linear infinite;
+    }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    .marquee-row:hover {
+      animation-play-state: paused; /* stop on hover */
+    }
 
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 12s linear infinite;
-}
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .animate-marquee-slow {
+      animation: marquee 25s linear infinite;
+      width: max-content;
+    }
 
-.marquee-row:hover {
-  animation-play-state: paused; /* stop on hover */
-}
-
- .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;  /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
-  }
-.animate-marquee-slow {
-  animation: marquee 25s linear infinite;
-  width: max-content;
-}
-
- .card {
+    .card {
       position: relative;
       border-radius: 0.75rem;
       overflow: hidden;
@@ -143,964 +162,1591 @@
     .card.active::after {
       background: transparent; /* no overlay for active */
     }
-
-</style>
-<body class="bg-white">
- <!-- Navbar -->
-<header class="absolute bg-white top-0 left-0 w-full z-30 ">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="images/logo-purple.png" 
-           alt="Logo" class="h-10 lg:h-12" />
-    </div>
-
-    <!-- Nav Links (Desktop) -->
-    <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
-      <a href="./membership.html" class="font-bold text-xl text-black">Membership</a>
-      <a href="./category.html" class="font-bold text-black text-xl">Categories</a>
-      <a href="#" class="font-bold text-black text-xl">Community</a>
-      <a href="#" class="font-bold text-black text-xl">Results</a>
-      <a href="#" class="font-bold text-black text-xl">At Work</a>
-      <a href="#" class="font-bold text-black text-xl">Support</a>
-    </nav>
-
-   <!-- Right Side (Desktop) -->
-<div class="hidden lg:flex items-center gap-6 text-dark font-medium">
-  <div class="flex items-center gap-2 cursor-pointer">
-    <!-- Globe SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         class="h-5 w-5 text-white" 
-         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
-    </svg>
-    <span>EN</span>
-  </div>
-  <a href="#" class="font-bold">Log in</a>
-  <a href="#"
-     class="px-5 py-2 rounded-full border border-dark hover:bg-white transition">
-    Create an account
-  </a>
-</div>
-
-
-    
-<button id="mobile-menu-btn" class="lg:hidden text-white text-3xl focus:outline-none">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-</button>
-
-  </div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
-
-  <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Categories</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
-
-  <div class="border-t border-gray-200 pt-4 space-y-3 ">
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
-    <a href="#"
-       class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold
-              hover:bg-purple-600 hover:text-white transition">
-      Create an account
-    </a>
-  </div>
-</div>
-
-</header>
-
-
-<section style="margin-top: 75px;" class="py-16 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-    
-    <!-- Left Content -->
-    <div class="text-center md:text-left">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug">
-        Get full access with <br class="hidden md:block"> Mindvalley Membership
-      </h2>
-      <p class="text-gray-600 mb-6 text-base sm:text-lg">
-        With Mindvalley Membership you get unlimited access to all quests, meditations, trainings, 
-        private social network, and a lot more – for only <strong>$0.55/day.</strong>
-      </p>
-      <button class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-full transition w-full sm:w-auto">
-        Become a member
-      </button>
-    </div>
-
-    <!-- Right Video -->
-    <div class="relative rounded-xl overflow-hidden shadow-lg">
-      <video
-        id="mindvalley-video"
-        class="video-js vjs-big-play-centered rounded-xl w-full h-auto"
-        controls
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        data-setup='{"fluid": true}'>
-        <source src="https://assets.mindvalley.com/api/v1/assets/419adf75-1cab-400c-88b0-0236c32bce03.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <!-- Overlay button -->
-      <button class="absolute top-4 left-4 bg-white/80 text-gray-800 text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full flex items-center gap-2 hover:bg-white">
-        ▶ Class Trailer
-      </button>
-
-      <!-- Caption -->
-      <div class="absolute bottom-4 left-0 w-full text-center text-white text-sm sm:text-lg font-medium drop-shadow">
-        Mindvalley Live Events Globally
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Video.js JS -->
-
-<!-- Featured Section -->
-    <section class="featured py-10 bg-gray-50">
-    <div class="mt-10 text-center">
-                    <p class="text-base mb-2.5 font-bold">Featured on</p>
-
-
-        <div class="container logos mt-5">
-        <img src="https://a.storyblok.com/f/60579/229x31/4504f459d4/logo_nyt.svg" alt="The New York Times" />
-        <img src="https://a.storyblok.com/f/60579/106x29/edff29df59/logo_forbes.svg" alt="Forbes" />
-        <img src="https://a.storyblok.com/f/60579/178x33/660efad2fd/logo_usa-today.svg" alt="USA Today" />
-        <img src="https://a.storyblok.com/f/60579/166x33/8cf263ffec/logo_entrepreneur.svg" alt="Entrepreneur" />
-        <img src="https://a.storyblok.com/f/60579/107x31/5d683c5c4d/logo-bbc.svg" alt="BBC" />
-        <img src="https://a.storyblok.com/f/60579/94x33/85550dbb85/logo-inc.svg" alt="Inc" />
-        <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
+  </style>
+  <body class="bg-white">
+    <!-- Navbar -->
+    <header class="absolute bg-white top-0 left-0 w-full z-30">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="images/logo-purple.png" alt="Logo" class="h-10 lg:h-12" />
         </div>
-    </div>
+
+        <!-- Nav Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+          <a href="./membership.html" class="font-bold text-xl text-black"
+            >Membership</a
+          >
+          <a href="./category.html" class="font-bold text-black text-xl"
+            >Categories</a
+          >
+          <a href="#" class="font-bold text-black text-xl">Community</a>
+          <a href="#" class="font-bold text-black text-xl">Results</a>
+          <a href="#" class="font-bold text-black text-xl">At Work</a>
+          <a href="#" class="font-bold text-black text-xl">Support</a>
+        </nav>
+
+        <!-- Right Side (Desktop) -->
+        <div class="hidden lg:flex items-center gap-6 text-dark font-medium">
+          <div class="flex items-center gap-2 cursor-pointer">
+            <!-- Globe SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span>EN</span>
+          </div>
+          <a href="#" class="font-bold">Log in</a>
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full border border-dark hover:bg-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-white text-3xl focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+      >
+        <a
+          href="./membership.html"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Membership</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Categories</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Community</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Results</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >At Work</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Support</a
+        >
+
+        <div class="border-t border-gray-200 pt-4 space-y-3">
+          <a
+            href="#"
+            class="block font-semibold hover:text-purple-600 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      style="margin-top: 75px"
+      class="py-16 px-4 sm:px-6 md:px-12 lg:px-20 bg-white"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Left Content -->
+        <div class="text-center md:text-left">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug"
+          >
+            Get full access with <br class="hidden md:block" />
+            Mindvalley Membership
+          </h2>
+          <p class="text-gray-600 mb-6 text-base sm:text-lg">
+            With Mindvalley Membership you get unlimited access to all quests,
+            meditations, trainings, private social network, and a lot more – for
+            only <strong>$0.55/day.</strong>
+          </p>
+          <button
+            class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-full transition w-full sm:w-auto"
+          >
+            Become a member
+          </button>
+        </div>
+
+        <!-- Right Video -->
+        <div class="relative rounded-xl overflow-hidden shadow-lg">
+          <video
+            id="mindvalley-video"
+            class="video-js vjs-big-play-centered rounded-xl w-full h-auto"
+            controls
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            data-setup='{"fluid": true}'
+          >
+            <source
+              src="https://assets.mindvalley.com/api/v1/assets/419adf75-1cab-400c-88b0-0236c32bce03.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Overlay button -->
+          <button
+            class="absolute top-4 left-4 bg-white/80 text-gray-800 text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full flex items-center gap-2 hover:bg-white"
+          >
+            ▶ Class Trailer
+          </button>
+
+          <!-- Caption -->
+          <div
+            class="absolute bottom-4 left-0 w-full text-center text-white text-sm sm:text-lg font-medium drop-shadow"
+          >
+            Mindvalley Live Events Globally
+          </div>
+        </div>
+      </div>
     </section>
-<!-- Featured Section -->
-   <section class="py-16 px-6 text-center">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore by category</h2>
-  <p class="text-lg text-gray-600 mb-8">
-    Select up to 3 areas of growth to see your personalised program recommendations
-  </p>
 
-  <div class="flex flex-wrap justify-center gap-3 max-w-6xl mx-auto">
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📖 Access (Learning)</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🏆 Achievement</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌱 Aging Better</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">✨ Altered States of Consciousness</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🎭 Authenticity</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💎 Beauty</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🍒 Better Sex</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">😴 Better Sleep</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🤯 Boost Creativity</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💼 Career Growth</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🎯 Coaching</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🧠 Cognition</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💬 Communication</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">😎 Confidence</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🤝 Connection (Sharing)</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">👫 Creating Community</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🥗 Eating Well</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">😊 Emotional Mastery</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">⚡ Engagement</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🚀 Entrepreneurial Mindset</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🕊️ Equanimity</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">❤️ Finding Relationships</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💪 Fitness</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌊 Flow</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🎯 Focus</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🕊️ Freedom</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📅 Habits & Discipline</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">😁 Happiness</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🩹 Healing and Recovery</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💔 Healing Heartbreak</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌿 Health</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌟 Impact</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💡 Influence</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📚 Influence (Teaching)</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🧠 Intelligence</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📋 Leadership</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🏛️ Legacy (Contribution)</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🏡 Lifestyle</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">😍 Look Good</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🧘 Meditation</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌀 Mind Management</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">⚡ Mind Power</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🧘 Mindset</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💸 Money & Finance</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🟢 Oneness</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">👨‍👩‍👧 Parenting</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🔥 Passion</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">👀 Perceptual Diversity</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌞 Positive Optimism</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🧩 Problem Solving</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📈 Productivity</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🎯 Purpose</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌍 Quality of Life</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🛡️ Resilience</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🏃 Running a Business</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💖 Self-Love</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">👫 Social Life & Relationships</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">⚡ Speed Learning</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🦋 Spirituality</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💞 Strengthening Relationships</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">💪 Strength of Character</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">📖 Teaching & Training</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌌 Transcendence</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">👁️ Vision</button>
-    <button class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100">🌿 Wellness</button>
-  </div>
-</section>
+    <!-- Video.js JS -->
 
+    <!-- Featured Section -->
 
-<section class="w-full bg-white py-16 px-4">
-  <div class="max-w-7xl mx-auto text-left">
-    <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
-      Mind
-    </h2>
-    <p class="mt-4 text-gray-600 max-w-5xl">
-    Upgrade your belief systems and inner programming. Retune your mindset. Harness your mind to transform your reality.
-    </p>
-
-    <!-- Cards -->
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-<section class="w-full bg-white py-16 px-4">
-  <div class="max-w-7xl mx-auto text-left">
-    <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
-      Body
-    </h2>
-    <p class="mt-4 text-gray-600 max-w-5xl">
-    Heal. Turn back the clock on aging. Get in the best shape of your life, without gruelling exercise or unsustainable dieting 
-    </p>
-
-    <!-- Cards -->
-    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Way of the Kettlebell" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Way of the Kettlebell</h3>
-        <p class="text-sm text-gray-600">Steve Cotter</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384" 
-             alt="Smarter Not Harder" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
-        <p class="text-sm text-gray-600">Dave Asprey</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384" 
-             alt="The Ultimate Guide to Supplements" class="rounded-lg w-full object-cover">
-        <h3 class="mt-3 font-bold text-gray-900">The Ultimate Guide to Supplements</h3>
-        <p class="text-sm text-gray-600">Shawn Wells</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
-<section class="py-16 px-6 md:px-12 lg:px-20 bg-white">
-  <div class="max-w-4xl mx-auto text-center mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold mb-2">Meet your trainers</h2>
-    <p class="text-gray-600">Learn from the world’s best teachers, authors, and visionaries</p>
-  </div>
-
-  <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-    
-    <!-- Card 1 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=1" alt="Trainer 1" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Alex Carter</h3>
-        <p class="text-gray-600 text-sm">Motivational Speaker</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=2" alt="Trainer 2" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Sophie Miller</h3>
-        <p class="text-gray-600 text-sm">Wellness Coach</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=3" alt="Trainer 3" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Daniel Kim</h3>
-        <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=4" alt="Trainer 4" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Maria Lopez</h3>
-        <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-      </div>
-    </div>
-
-  </div>
-  <div class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-    
-    <!-- Card 1 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=1" alt="Trainer 1" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Alex Carter</h3>
-        <p class="text-gray-600 text-sm">Motivational Speaker</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=2" alt="Trainer 2" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Sophie Miller</h3>
-        <p class="text-gray-600 text-sm">Wellness Coach</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=3" alt="Trainer 3" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Daniel Kim</h3>
-        <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=4" alt="Trainer 4" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Maria Lopez</h3>
-        <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-      </div>
-    </div>
-
-  </div>
-  <div class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-    
-    <!-- Card 1 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=1" alt="Trainer 1" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Alex Carter</h3>
-        <p class="text-gray-600 text-sm">Motivational Speaker</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=2" alt="Trainer 2" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Sophie Miller</h3>
-        <p class="text-gray-600 text-sm">Wellness Coach</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=3" alt="Trainer 3" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Daniel Kim</h3>
-        <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=4" alt="Trainer 4" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Maria Lopez</h3>
-        <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-      </div>
-    </div>
-
-  </div>
-  <div class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
-    
-    <!-- Card 1 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=1" alt="Trainer 1" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Alex Carter</h3>
-        <p class="text-gray-600 text-sm">Motivational Speaker</p>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=2" alt="Trainer 2" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Sophie Miller</h3>
-        <p class="text-gray-600 text-sm">Wellness Coach</p>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=3" alt="Trainer 3" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Daniel Kim</h3>
-        <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64">
-      <img src="https://picsum.photos/400/400?random=4" alt="Trainer 4" class="w-full h-64 object-cover">
-      <div class="p-4">
-        <h3 class="font-bold text-lg">Maria Lopez</h3>
-        <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- Case Studies -->
-<section class="relative w-full py-20 bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-    
-    <!-- Left Image -->
-    <div class="relative flex justify-center order-1 md:order-none">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1010x1604/3ada6c5e24/mvcom_hp_stories_left.jpg?quality=60&auto=webp&dpr=1&width=800" 
-           alt="Left collage"
-           class="w-full max-w-sm md:max-w-full"/>
-    </div>
-
-    <!-- Center Content -->
-    <div class="text-center order-3 md:order-none">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-purple-900">24,545</h2>
-      <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-700">Case studies of success</p>
-      <p class="mt-4 text-base sm:text-lg text-gray-500 max-w-md mx-auto">
-        Mindvalley has some of the highest success rates in the world at transforming 
-        our learners. Browse case studies and stories of success on 
-        <a href="#" class="text-purple-600 underline">stories.ethicalearning.com</a>.
+    <!-- Featured Section -->
+    <section class="py-16 px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore by category</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Select up to 3 areas of growth to see your personalised program
+        recommendations
       </p>
-      <button class="mt-8 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
-        Read stories
-      </button>
-    </div>
 
-    <!-- Right Image -->
-    <div class="relative flex justify-center order-2 md:order-none">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1192x1712/1c753e40c5/mvcom_hp_stories_right.jpg?quality=60&auto=webp&dpr=1&width=800" 
-           alt="Right collage"
-           class="w-full max-w-sm md:max-w-full"/>
-    </div>
+      <div class="flex flex-wrap justify-center gap-3 max-w-6xl mx-auto">
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📖 Access (Learning)
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🏆 Achievement
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌱 Aging Better
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          ✨ Altered States of Consciousness
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🎭 Authenticity
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💎 Beauty
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🍒 Better Sex
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          😴 Better Sleep
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🤯 Boost Creativity
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💼 Career Growth
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🎯 Coaching
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🧠 Cognition
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💬 Communication
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          😎 Confidence
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🤝 Connection (Sharing)
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          👫 Creating Community
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🥗 Eating Well
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          😊 Emotional Mastery
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          ⚡ Engagement
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🚀 Entrepreneurial Mindset
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🕊️ Equanimity
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          ❤️ Finding Relationships
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💪 Fitness
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌊 Flow
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🎯 Focus
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🕊️ Freedom
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📅 Habits & Discipline
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          😁 Happiness
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🩹 Healing and Recovery
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💔 Healing Heartbreak
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌿 Health
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌟 Impact
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💡 Influence
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📚 Influence (Teaching)
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🧠 Intelligence
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📋 Leadership
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🏛️ Legacy (Contribution)
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🏡 Lifestyle
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          😍 Look Good
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🧘 Meditation
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌀 Mind Management
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          ⚡ Mind Power
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🧘 Mindset
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💸 Money & Finance
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🟢 Oneness
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          👨‍👩‍👧 Parenting
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🔥 Passion
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          👀 Perceptual Diversity
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌞 Positive Optimism
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🧩 Problem Solving
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📈 Productivity
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🎯 Purpose
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌍 Quality of Life
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🛡️ Resilience
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🏃 Running a Business
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💖 Self-Love
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          👫 Social Life & Relationships
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          ⚡ Speed Learning
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🦋 Spirituality
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💞 Strengthening Relationships
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          💪 Strength of Character
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          📖 Teaching & Training
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌌 Transcendence
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          👁️ Vision
+        </button>
+        <button
+          class="px-4 py-2 rounded-full border border-gray-300 text-sm hover:bg-gray-100"
+        >
+          🌿 Wellness
+        </button>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <section class="w-full bg-white py-16 px-4">
+      <div class="max-w-7xl mx-auto text-left">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Mind</h2>
+        <p class="mt-4 text-gray-600 max-w-5xl">
+          Upgrade your belief systems and inner programming. Retune your
+          mindset. Harness your mind to transform your reality.
+        </p>
 
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto text-center px-6">
-    <!-- Top Label -->
-    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3">
-      What the press says
-    </p>
-    
-    <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-      The world's most effective transformation platform
-    </h2>
-    
-    <!-- Subtext -->
-    <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-      From leading media platforms like CNN, CBS to influential voices like Jay Shetty and Impact Theory, 
-      Mindvalley is recognized worldwide for empowering people to transform their mind, body, and soul—unlocking 
-      their fullest potential and leading extraordinary lives.
-    </p>
+        <!-- Cards -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
 
-    <!-- Big Video with Plyr -->
-    <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
-      <video id="main-video" playsinline controls class="w-full h-[500px] object-cover rounded-2xl">
-        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
 
-    <!-- Cards -->
-     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
-        <div class="relative">
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-white py-16 px-4">
+      <div class="max-w-7xl mx-auto text-left">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Body</h2>
+        <p class="mt-4 text-gray-600 max-w-5xl">
+          Heal. Turn back the clock on aging. Get in the best shape of your
+          life, without gruelling exercise or unsustainable dieting
+        </p>
+
+        <!-- Cards -->
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Way of the Kettlebell"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Way of the Kettlebell
+            </h3>
+            <p class="text-sm text-gray-600">Steve Cotter</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
+              alt="Smarter Not Harder"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
+            <p class="text-sm text-gray-600">Dave Asprey</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
+              alt="The Ultimate Guide to Supplements"
+              class="rounded-lg w-full object-cover"
+            />
+            <h3 class="mt-3 font-bold text-gray-900">
+              The Ultimate Guide to Supplements
+            </h3>
+            <p class="text-sm text-gray-600">Shawn Wells</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 px-6 md:px-12 lg:px-20 bg-white">
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Meet your trainers</h2>
+        <p class="text-gray-600">
+          Learn from the world’s best teachers, authors, and visionaries
+        </p>
+      </div>
+
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
           <img
-           src="./images/trump.png"
-            alt="CNN Video"
-            class="w-full"
+            src="https://picsum.photos/400/400?random=1"
+            alt="Trainer 1"
+            class="w-full h-64 object-cover"
           />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div
-              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Alex Carter</h3>
+            <p class="text-gray-600 text-sm">Motivational Speaker</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=2"
+            alt="Trainer 2"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Sophie Miller</h3>
+            <p class="text-gray-600 text-sm">Wellness Coach</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=3"
+            alt="Trainer 3"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Daniel Kim</h3>
+            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=4"
+            alt="Trainer 4"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Maria Lopez</h3>
+            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=1"
+            alt="Trainer 1"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Alex Carter</h3>
+            <p class="text-gray-600 text-sm">Motivational Speaker</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=2"
+            alt="Trainer 2"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Sophie Miller</h3>
+            <p class="text-gray-600 text-sm">Wellness Coach</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=3"
+            alt="Trainer 3"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Daniel Kim</h3>
+            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=4"
+            alt="Trainer 4"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Maria Lopez</h3>
+            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=1"
+            alt="Trainer 1"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Alex Carter</h3>
+            <p class="text-gray-600 text-sm">Motivational Speaker</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=2"
+            alt="Trainer 2"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Sophie Miller</h3>
+            <p class="text-gray-600 text-sm">Wellness Coach</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=3"
+            alt="Trainer 3"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Daniel Kim</h3>
+            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=4"
+            alt="Trainer 4"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Maria Lopez</h3>
+            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=1"
+            alt="Trainer 1"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Alex Carter</h3>
+            <p class="text-gray-600 text-sm">Motivational Speaker</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=2"
+            alt="Trainer 2"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Sophie Miller</h3>
+            <p class="text-gray-600 text-sm">Wellness Coach</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=3"
+            alt="Trainer 3"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Daniel Kim</h3>
+            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+        >
+          <img
+            src="https://picsum.photos/400/400?random=4"
+            alt="Trainer 4"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Maria Lopez</h3>
+            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="relative w-full py-20 bg-white overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        <!-- Left Image -->
+        <div class="relative flex justify-center order-1 md:order-none">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1010x1604/3ada6c5e24/mvcom_hp_stories_left.jpg?quality=60&auto=webp&dpr=1&width=800"
+            alt="Left collage"
+            class="w-full max-w-sm md:max-w-full"
+          />
+        </div>
+
+        <!-- Center Content -->
+        <div class="text-center order-3 md:order-none">
+          <h2
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-purple-900"
+          >
+            24,545
+          </h2>
+          <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-700">
+            Case studies of success
+          </p>
+          <p class="mt-4 text-base sm:text-lg text-gray-500 max-w-md mx-auto">
+            Mindvalley has some of the highest success rates in the world at
+            transforming our learners. Browse case studies and stories of
+            success on
+            <a href="#" class="text-purple-600 underline"
+              >stories.ethicalearning.com</a
+            >.
+          </p>
+          <button
+            class="mt-8 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Read stories
+          </button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="relative flex justify-center order-2 md:order-none">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1192x1712/1c753e40c5/mvcom_hp_stories_right.jpg?quality=60&auto=webp&dpr=1&width=800"
+            alt="Right collage"
+            class="w-full max-w-sm md:max-w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <!-- Top Label -->
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3"
+        >
+          What the press says
+        </p>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"
+        >
+          The world's most effective transformation platform
+        </h2>
+
+        <!-- Subtext -->
+        <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+          From leading media platforms like CNN, CBS to influential voices like
+          Jay Shetty and Impact Theory, Mindvalley is recognized worldwide for
+          empowering people to transform their mind, body, and soul—unlocking
+          their fullest potential and leading extraordinary lives.
+        </p>
+
+        <!-- Big Video with Plyr -->
+        <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
+          <video
+            id="main-video"
+            playsinline
+            controls
+            class="w-full h-[500px] object-cover rounded-2xl"
+          >
+            <source
+              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+            <div class="relative">
+              <img src="./images/trump.png" alt="CNN Video" class="w-full" />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-purple-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <img
+                class="h-7"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/59/CBS_classic_logo.svg"
+                alt="CBS"
+              />
+              <p class="text-gray-600">
+                Ethica Learning brings together cutting-edge technology and
+                timeless wisdom, offering tools to master meditation,
+                relationships, fitness, and more.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+            <div class="relative">
+              <img src="./images/elon.png" alt="CBS Video" class="w-full" />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-purple-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <img
+                src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg"
+                alt="CNN"
+              />
+              <p class="text-gray-600">
+                “This app really did change my life.” – A story about how
+                Mindvalley empowers transformation through technology and
+                spirituality.
+              </p>
             </div>
           </div>
         </div>
-        <div class="p-6">
-              <img class="h-7" src="https://upload.wikimedia.org/wikipedia/commons/5/59/CBS_classic_logo.svg" alt="CBS" />
-          <p class="text-gray-600">
-            Ethica Learning brings together cutting-edge technology and timeless
-            wisdom, offering tools to master meditation, relationships, fitness,
-            and more.
+      </div>
+    </section>
+
+    <script>
+      // Activate Plyr custom UI for top video
+      const player = new Plyr("#main-video");
+    </script>
+
+    <section class="py-16 px-6 md:px-12 lg:px-20 bg-white text-center">
+      <div class="max-w-6xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Bring Mindvalley to your workplace
+        </h2>
+        <p class="text-gray-600">
+          With over 12 million learners in 100+ different countries, we've
+          learned what it takes to help business leaders retain, empower, and
+          engage their best people — to help your people become the best
+          possible versions of themselves so they can give their best at work.
+          Bring the transformational content of Mindvalley to your team to boost
+          performance, increase happiness and improve engagement.
+        </p>
+      </div>
+
+      <!-- Images -->
+      <div
+        class="flex flex-col md:flex-row justify-center items-center relative"
+      >
+        <!-- Left -->
+        <div class="relative md:-mr-8 z-10 mb-6 md:mb-0">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/738e88c5fc/mvcom_business_01.jpg?quality=60&auto=webp&dpr=1&width=400"
+            alt="Left"
+            class="rounded-xl w-full max-w-xs md:max-w-sm object-cover shadow-md"
+          />
+        </div>
+
+        <!-- Center -->
+        <div class="relative z-20 scale-100 md:scale-105 mb-6 md:mb-0">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/efb81747c1/mvcom_business_02.jpg?quality=60&auto=webp&dpr=1&width=464"
+            alt="Center"
+            class="rounded-xl w-full max-w-sm md:max-w-md object-cover shadow-lg"
+          />
+        </div>
+
+        <!-- Right -->
+        <div class="relative md:-ml-8 z-10">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/80531109dc/mvcom_business_03.jpg?quality=60&auto=webp&dpr=1&width=400"
+            alt="Right"
+            class="rounded-xl w-full max-w-xs md:max-w-sm object-cover shadow-md"
+          />
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-10">
+        <button
+          class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-full shadow-md transition"
+        >
+          Get Mindvalley for business
+        </button>
+      </div>
+    </section>
+
+    <!-- Cta Section -->
+    <section
+      class="relative bg-cover bg-center text-white py-16 px-6"
+      style="
+        background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1440x536/9d5b183030/sums_vsl_ordermenu-d-1.png?quality=60&auto=webp&dpr=1&width=1585');
+      "
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Left Text -->
+        <div>
+          <h2 class="text-3xl md:text-4xl text-white font-bold mb-6">
+            Begin your health transformation today <br />
+            with Mindvalley
+          </h2>
+          <p class="flex items-start mb-4">
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>Unlimited access</strong> to Mindvalley’s 100+
+              transformational programs</span
+            >
+          </p>
+          <p class="flex items-start mb-4">
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>1,000+ guided meditations</strong>, hypnotherapies,
+              breathwork & therapeutic sounds</span
+            >
+          </p>
+          <p class="flex items-start">
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>Access to Mindvalley’s private social network</strong> to
+              connect, share wisdom, and grow with other members</span
+            >
+          </p>
+        </div>
+
+        <!-- Right Card -->
+        <!-- Right Card -->
+        <div
+          class="bg-white text-gray-900 rounded-2xl shadow-xl p-8 max-w-sm mx-auto"
+        >
+          <div class="flex justify-center space-x-2 mb-6">
+            <button
+              id="monthlyBtn"
+              class="px-4 py-1 rounded-full border text-gray-600"
+            >
+              Monthly
+            </button>
+            <button
+              id="yearlyBtn"
+              class="px-4 py-1 rounded-full bg-purple-600 text-white font-semibold"
+            >
+              Yearly
+            </button>
+            <span class="text-sm text-orange-500 font-medium self-center"
+              >Best value</span
+            >
+          </div>
+
+          <!-- WRAPPER with fixed height -->
+          <div class="min-h-[120px] flex flex-col justify-center">
+            <h3
+              id="priceBox"
+              class="text-4xl font-bold text-center mb-2 transition-all duration-500"
+            >
+              $199<span class="text-lg font-medium">/year</span>
+            </h3>
+            <p
+              id="priceDesc"
+              class="text-center text-gray-600 mb-6 transition-all duration-500"
+            >
+              That’s just $16.58/month, billed annually, cancel anytime.
+            </p>
+          </div>
+
+          <button
+            class="w-full bg-[#FF931F] hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full mb-6"
+          >
+            Become a member
+          </button>
+
+          <img
+            src="https://res.cloudinary.com/mindvalley/image/upload/v1686125042/MV-Launches/template/logos-cc-powered-by-stripe-white.svg"
+            alt="Stripe"
+            class="mx-auto h-16 w-full"
+          />
+
+          <p class="text-xs text-center text-gray-500 mt-3">
+            *VAT may apply based on billing address.
+          </p>
+          <p class="text-xs text-center text-gray-500">
+            For security, all orders are processed on a secured server.
           </p>
         </div>
       </div>
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
-        <div class="relative">
-          <img
-          src="./images/elon.png"
-            alt="CBS Video"
-            class="w-full"
-          />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div
-              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+    </section>
+
+    <script>
+      const monthlyBtn = document.getElementById("monthlyBtn");
+      const yearlyBtn = document.getElementById("yearlyBtn");
+      const priceBox = document.getElementById("priceBox");
+      const priceDesc = document.getElementById("priceDesc");
+
+      function toggleActive(btn1, btn2) {
+        btn1.classList.add("bg-purple-600", "text-white", "font-semibold");
+        btn1.classList.remove("border", "text-gray-600");
+        btn2.classList.remove("bg-purple-600", "text-white", "font-semibold");
+        btn2.classList.add("border", "text-gray-600");
+      }
+
+      monthlyBtn.addEventListener("click", () => {
+        toggleActive(monthlyBtn, yearlyBtn);
+        priceBox.classList.add("opacity-0", "translate-y-2");
+        priceDesc.classList.add("opacity-0", "translate-y-2");
+        setTimeout(() => {
+          priceBox.innerHTML =
+            "$29<span class='text-lg font-medium'>/month</span>";
+          priceDesc.innerText = "Billed monthly, cancel anytime.";
+          priceBox.classList.remove("opacity-0", "translate-y-2");
+          priceDesc.classList.remove("opacity-0", "translate-y-2");
+        }, 300);
+      });
+
+      yearlyBtn.addEventListener("click", () => {
+        toggleActive(yearlyBtn, monthlyBtn);
+        priceBox.classList.add("opacity-0", "translate-y-2");
+        priceDesc.classList.add("opacity-0", "translate-y-2");
+        setTimeout(() => {
+          priceBox.innerHTML =
+            "$199<span class='text-lg font-medium'>/year</span>";
+          priceDesc.innerText =
+            "That’s just $16.58/month, billed annually, cancel anytime.";
+          priceBox.classList.remove("opacity-0", "translate-y-2");
+          priceDesc.classList.remove("opacity-0", "translate-y-2");
+        }, 300);
+      });
+    </script>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
+      >
+        <!-- Programs -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a href="./course.html" class="hover:text-purple-600"
+                >All Programs</a
               >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Download The App</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Become A Member</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Certified Coach</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About Us -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
+            <li><a href="#" class="hover:text-purple-600">Press</a></li>
+            <li><a href="#" class="hover:text-purple-600">Careers</a></li>
+            <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Events -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Events</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a href="./membership.html" class="hover:text-purple-600"
+                >Membership</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-purple-600">Events</a></li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Ethica University</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
+            <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+            <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+            <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Support</a></li>
+            <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+            <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
+            <li><a href="#" class="hover:text-purple-600">Business</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Brands -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
+            <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+            <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+            <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+            <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
+      >
+        <p class="font-bold">
+          © 2025 Ethica Learning, Inc. ·
+          <a href="#" class="hover:text-purple-600">Terms</a> ·
+          <a href="#" class="hover:text-purple-600">Privacy</a>
+        </p>
+
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span class="font-bold">English (EN)</span>
+          </div>
+          <div class="flex gap-4 text-gray-600">
+            <a href="#" class="hover:text-purple-600">Fb</a>
+            <a href="#" class="hover:text-purple-600">X</a>
+            <a href="#" class="hover:text-purple-600">IG</a>
+            <a href="#" class="hover:text-purple-600">YT</a>
+            <a href="#" class="hover:text-purple-600">IN</a>
           </div>
         </div>
-        <div class="p-6">
-        <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
-          <p class="text-gray-600">
-            “This app really did change my life.” – A story about how Mindvalley
-            empowers transformation through technology and spirituality.
-          </p>
-        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-  // Activate Plyr custom UI for top video
-  const player = new Plyr('#main-video');
-</script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 
-<section class="py-16 px-6 md:px-12 lg:px-20 bg-white text-center">
-  <div class="max-w-6xl mx-auto mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Bring Mindvalley to your workplace</h2>
-    <p class="text-gray-600">
-      With over 12 million learners in 100+ different countries, we've learned what it takes to help business leaders 
-      retain, empower, and engage their best people — to help your people become the best possible versions of themselves 
-      so they can give their best at work. Bring the transformational content of Mindvalley to your team to boost 
-      performance, increase happiness and improve engagement.
-    </p>
-  </div>
+    <script>
+      AOS.init();
 
-  <!-- Images -->
-  <div class="flex flex-col md:flex-row justify-center items-center relative">
-    
-    <!-- Left -->
-    <div class="relative md:-mr-8 z-10 mb-6 md:mb-0">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/738e88c5fc/mvcom_business_01.jpg?quality=60&auto=webp&dpr=1&width=400" 
-           alt="Left" class="rounded-xl w-full max-w-xs md:max-w-sm object-cover shadow-md">
-    </div>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
 
-    <!-- Center -->
-    <div class="relative z-20 scale-100 md:scale-105 mb-6 md:mb-0">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/efb81747c1/mvcom_business_02.jpg?quality=60&auto=webp&dpr=1&width=464" 
-           alt="Center" class="rounded-xl w-full max-w-sm md:max-w-md object-cover shadow-lg">
-    </div>
-
-    <!-- Right -->
-    <div class="relative md:-ml-8 z-10">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1000x750/80531109dc/mvcom_business_03.jpg?quality=60&auto=webp&dpr=1&width=400" 
-           alt="Right" class="rounded-xl w-full max-w-xs md:max-w-sm object-cover shadow-md">
-    </div>
-
-  </div>
-
-  <!-- Button -->
-  <div class="mt-10">
-    <button class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-8 py-3 rounded-full shadow-md transition">
-      Get Mindvalley for business
-    </button>
-  </div>
-</section>
-
-
-
-
-
-<!-- Cta Section -->
-<section class="relative bg-cover bg-center text-white py-16 px-6"
-  style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1440x536/9d5b183030/sums_vsl_ordermenu-d-1.png?quality=60&auto=webp&dpr=1&width=1585');">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-    
-    <!-- Left Text -->
-    <div>
-      <h2 class="text-3xl md:text-4xl text-white font-bold mb-6">
-        Begin your health transformation today <br> with Mindvalley
-      </h2>
-      <p class="flex items-start mb-4">
-        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-        <span><strong>Unlimited access</strong> to Mindvalley’s 100+ transformational programs</span>
-      </p>
-      <p class="flex items-start mb-4">
-        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-        <span><strong>1,000+ guided meditations</strong>, hypnotherapies, breathwork & therapeutic sounds</span>
-      </p>
-      <p class="flex items-start">
-        <svg class="w-5 h-5 text-purple-400 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-        <span><strong>Access to Mindvalley’s private social network</strong> to connect, share wisdom, and grow with other members</span>
-      </p>
-    </div>
-    
-    <!-- Right Card -->
-    <!-- Right Card -->
-<div class="bg-white text-gray-900 rounded-2xl shadow-xl p-8 max-w-sm mx-auto">
-  <div class="flex justify-center space-x-2 mb-6">
-    <button id="monthlyBtn" class="px-4 py-1 rounded-full border text-gray-600">Monthly</button>
-    <button id="yearlyBtn" class="px-4 py-1 rounded-full bg-purple-600 text-white font-semibold">Yearly</button>
-    <span class="text-sm text-orange-500 font-medium self-center">Best value</span>
-  </div>
-
-  <!-- WRAPPER with fixed height -->
-  <div class="min-h-[120px] flex flex-col justify-center">
-    <h3 id="priceBox" class="text-4xl font-bold text-center mb-2 transition-all duration-500">
-      $199<span class="text-lg font-medium">/year</span>
-    </h3>
-    <p id="priceDesc" class="text-center text-gray-600 mb-6 transition-all duration-500">
-      That’s just $16.58/month, billed annually, cancel anytime.
-    </p>
-  </div>
-
-  <button class="w-full bg-[#FF931F] hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full mb-6">
-    Become a member
-  </button>
-
-  <img src="https://res.cloudinary.com/mindvalley/image/upload/v1686125042/MV-Launches/template/logos-cc-powered-by-stripe-white.svg" 
-   alt="Stripe" 
-   class="mx-auto h-16 w-full"/>
-
-  <p class="text-xs text-center text-gray-500 mt-3">*VAT may apply based on billing address.</p>
-  <p class="text-xs text-center text-gray-500">For security, all orders are processed on a secured server.</p>
-</div>
-
-  </div>
-</section>
-
-<script>
-const monthlyBtn = document.getElementById("monthlyBtn");
-const yearlyBtn = document.getElementById("yearlyBtn");
-const priceBox = document.getElementById("priceBox");
-const priceDesc = document.getElementById("priceDesc");
-
-function toggleActive(btn1, btn2) {
-  btn1.classList.add("bg-purple-600","text-white","font-semibold");
-  btn1.classList.remove("border","text-gray-600");
-  btn2.classList.remove("bg-purple-600","text-white","font-semibold");
-  btn2.classList.add("border","text-gray-600");
-}
-
-monthlyBtn.addEventListener("click", () => {
-  toggleActive(monthlyBtn, yearlyBtn);
-  priceBox.classList.add("opacity-0","translate-y-2");
-  priceDesc.classList.add("opacity-0","translate-y-2");
-  setTimeout(()=>{
-    priceBox.innerHTML = "$29<span class='text-lg font-medium'>/month</span>";
-    priceDesc.innerText = "Billed monthly, cancel anytime.";
-    priceBox.classList.remove("opacity-0","translate-y-2");
-    priceDesc.classList.remove("opacity-0","translate-y-2");
-  },300);
-});
-
-yearlyBtn.addEventListener("click", () => {
-  toggleActive(yearlyBtn, monthlyBtn);
-  priceBox.classList.add("opacity-0","translate-y-2");
-  priceDesc.classList.add("opacity-0","translate-y-2");
-  setTimeout(()=>{
-    priceBox.innerHTML = "$199<span class='text-lg font-medium'>/year</span>";
-    priceDesc.innerText = "That’s just $16.58/month, billed annually, cancel anytime.";
-    priceBox.classList.remove("opacity-0","translate-y-2");
-    priceDesc.classList.remove("opacity-0","translate-y-2");
-  },300);
-});
-</script>
-
-
-    
-
-
-
-<footer class="bg-white border-t border-gray-200 pt-12 pb-6">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
-
-    <!-- Programs -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="./course.html" class="hover:text-purple-600">All Programs</a></li>
-        <li><a href="#" class="hover:text-purple-600">Download The App</a></li>
-        <li><a href="#" class="hover:text-purple-600">Become A Member</a></li>
-        <li><a href="#" class="hover:text-purple-600">Certified Coach</a></li>
-      </ul>
-    </div>
-
-    <!-- About Us -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
-        <li><a href="#" class="hover:text-purple-600">Press</a></li>
-        <li><a href="#" class="hover:text-purple-600">Careers</a></li>
-        <li><a href="#" class="hover:text-purple-600">Blog</a></li>
-      </ul>
-    </div>
-
-    <!-- Events -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Events</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="./membership.html" class="hover:text-purple-600">Membership</a></li>
-        <li><a href="#" class="hover:text-purple-600">Events</a></li>
-        <li><a href="#" class="hover:text-purple-600">Ethica University</a></li>
-      </ul>
-    </div>
-
-    <!-- Social Media -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
-        <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
-        <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
-        <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
-        <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Support</a></li>
-        <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
-        <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
-        <li><a href="#" class="hover:text-purple-600">Business</a></li>
-      </ul>
-    </div>
-
-    <!-- Our Brands -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
-        <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
-        <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
-        <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
-        <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
-    <p class="font-bold">© 2025 Ethica Learning, Inc. · <a href="#" class="hover:text-purple-600">Terms</a> · <a href="#" class="hover:text-purple-600">Privacy</a></p>
-
-    <div class="flex items-center gap-6">
-      <div class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8" /></svg>
-        <span class="font-bold">English (EN)</span>
-      </div>
-      <div class="flex gap-4 text-gray-600">
-        <a href="#" class="hover:text-purple-600">Fb</a>
-        <a href="#" class="hover:text-purple-600">X</a>
-        <a href="#" class="hover:text-purple-600">IG</a>
-        <a href="#" class="hover:text-purple-600">YT</a>
-        <a href="#" class="hover:text-purple-600">IN</a>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-
-<script>
-  AOS.init();
-
- const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
-      menu.classList.add("flex");
-    } else {
-      menu.classList.add("hidden");
-      menu.classList.remove("flex");
-    }
-  });
-</script>
-
-</body>
-
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+          menu.classList.add("flex");
+        } else {
+          menu.classList.add("hidden");
+          menu.classList.remove("flex");
+        }
+      });
+    </script>
+  </body>
 </html>

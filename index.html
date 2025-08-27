@@ -1,132 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Ethica Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ethica Learning - Full-featured, professional-looking software, saas and startup website template. Multipurpose Tailwind CSS Landing Page Template">
-    <meta name="keywords" content="saas, saas template, site template, software, startup, digital product, html5, tailwindcss landing, marketing, tailwindcss, agency, digital agency, it solutions, vitejs">
-    
+    <meta
+      name="description"
+      content="Ethica Learning - Full-featured, professional-looking software, saas and startup website template. Multipurpose Tailwind CSS Landing Page Template"
+    />
+    <meta
+      name="keywords"
+      content="saas, saas template, site template, software, startup, digital product, html5, tailwindcss landing, marketing, tailwindcss, agency, digital agency, it solutions, vitejs"
+    />
+
     <meta content="Coderthemes" name="author" />
-    
+
     <!-- Theme favicon -->
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="" />
     <!-- App Js (Mandatory in All Pages) -->
-  <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
-  <script type="module" crossorigin src="assets/testi-swiper-CGY6TrK8.js"></script>
-  <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css">
-  <link rel="stylesheet" crossorigin href="assets/testi-swiper-BUrcyj0q.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-</head>
-<style>
-  .custom-heading {
-  font-size: 80px;     /* bada */
-  font-weight: 800;    /* super bold */
-  color: #fff;         /* white */
-  line-height: 1.1;    /* thoda tight */
-  letter-spacing: -1px;/* aur compact look */
-  text-align: center;  /* optional: center */
-}
-#mobile-menu {
-  transition: all 0.3s ease-in-out;
-}
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  </head>
+  <style>
+    .custom-heading {
+      font-size: 80px; /* bada */
+      font-weight: 800; /* super bold */
+      color: #fff; /* white */
+      line-height: 1.1; /* thoda tight */
+      letter-spacing: -1px; /* aur compact look */
+      text-align: center; /* optional: center */
+    }
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
 
-.custom-para {
-  font-size: 24px;
-  letter-spacing: 0.3px;
-  line-height: 30px;
-  font-weight: 500;    /* super bold */
+    .custom-para {
+      font-size: 24px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+      font-weight: 500; /* super bold */
 
-  text-decoration: none;
-  color: rgb(206, 209, 215);
-  text-align: center;
-}
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* space between buttons */
-  margin-top: 20px;
-}
+      text-decoration: none;
+      color: rgb(206, 209, 215);
+      text-align: center;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between buttons */
+      margin-top: 20px;
+    }
 
-.btn-primary {
-  background: #fff;
-  color: purple;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  border: 2px solid transparent;
-}
+    .btn-primary {
+      background: #fff;
+      color: purple;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
 
-.btn-outline {
-  background: transparent;
-  color: #fff;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  border: 2px solid #fff;
-}
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #fff;
+    }
 
-.btn-primary:hover,
-.btn-outline:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  transition: all 0.2s ease;
-}
-.featured {
-  /* height: 150px; */   /* ye hata do */
-  padding: 20px 0;
-}
+    .btn-primary:hover,
+    .btn-outline:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s ease;
+    }
+    .featured {
+      /* height: 150px; */ /* ye hata do */
+      padding: 20px 0;
+    }
 
+    .featured .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* wrap allow karo */
+    }
 
+    .featured .logos img {
+      height: 30px;
+      max-width: 120px;
+      object-fit: contain;
+    }
 
-.featured .logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;   /* wrap allow karo */
-}
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-.featured .logos img {
-  height: 30px; 
-  max-width: 120px;
-  object-fit: contain;
-}
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 12s linear infinite;
+    }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    .marquee-row:hover {
+      animation-play-state: paused; /* stop on hover */
+    }
 
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 12s linear infinite;
-}
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .animate-marquee-slow {
+      animation: marquee 25s linear infinite;
+      width: max-content;
+    }
 
-.marquee-row:hover {
-  animation-play-state: paused; /* stop on hover */
-}
-
- .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;  /* IE/Edge */
-    scrollbar-width: none;     /* Firefox */
-  }
-.animate-marquee-slow {
-  animation: marquee 25s linear infinite;
-  width: max-content;
-}
-
- .card {
+    .card {
       position: relative;
       border-radius: 0.75rem;
       overflow: hidden;
@@ -142,931 +161,1398 @@
     .card.active::after {
       background: transparent; /* no overlay for active */
     }
-
-</style>
-<body>
- <!-- Navbar -->
-<header class="absolute top-0 left-0 w-full z-30" data-aos="fade-down" data-aos-duration="700">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="images/logo.png" 
-           alt="Logo" class="h-10 lg:h-12" />
-    </div>
-
-    <!-- Nav Links (Desktop) -->
-    <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
-      <a href="./membership.html" class="font-bold text-xl">Membership</a>
-      <a href="./category.html" class="font-bold text-xl">Categories</a>
-      <a href="#" class="font-bold text-xl">Community</a>
-      <a href="#results" class="font-bold text-xl">Results</a>
-      <a href="#" class="font-bold text-xl">At Work</a>
-      <a href="#" class="font-bold text-xl">Support</a>
-    </nav>
-
-    <!-- Right Side (Desktop) -->
-   <!-- Right Side (Desktop) -->
-<div class="hidden lg:flex items-center gap-6 text-white font-medium">
-  <div class="flex items-center gap-2 cursor-pointer">
-    <!-- Globe SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" 
-         class="h-5 w-5 text-white" 
-         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" />
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
-    </svg>
-    <span>EN</span>
-  </div>
-  <a href="#" class="font-bold">Log in</a>
-  <a href="#"
-     class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition">
-    Create an account
-  </a>
-</div>
-
-
-    
-<button id="mobile-menu-btn" class="lg:hidden text-white text-3xl focus:outline-none">
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 6h16M4 12h16M4 18h16" />
-  </svg>
-</button>
-
-  </div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
-
-  <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Categories</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
-  <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
-
-  <div class="border-t border-gray-200 pt-4 space-y-3">
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
-    <a href="#"
-       class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold
-              hover:bg-purple-600 hover:text-white transition">
-      Create an account
-    </a>
-  </div>
-</div>
-
-</header>
-   <!-- Hero section  -->
-    <section style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1536x1512/5103bf6cb3/mvcom_header-bg_t.jpg?quality=60&auto=webp&dpr=1&width=1585'); 
-                background-size: cover; 
-                background-repeat: no-repeat; 
-                background-position: center;" 
-         class="lg:py-25 md:py-22.5 py-17.5">
-         <div class="container">
-          <div class="lg:mb-10 lg:mx-auto text-center  mb-10" 
-     data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
-
- <h2 class="custom-heading  mt-5">
-  Why choose 
-</h2>
- <h3 class="custom-heading ">
-    Ethica Learning?
-</h3>
-<p class="custom-para">
-Be part of the world’s most powerful life transformation platform
-
-</p>
-<div class="button-wrapper flex flex-col sm:flex-row gap-4 justify-center">
-  <a href="#"
-     class="btn-primary w-48 sm:w-56 text-center py-4 rounded-full font-semibold bg-white text-purple-900 border-2 border-white hover:bg-purple-600 hover:text-white transition">
-     Become a member
-  </a>
-  <a href="#"
-     class="btn-outline w-48 sm:w-56 text-center py-4 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-purple-600 transition">
-     Explore programs
-  </a>
-</div>
-</div>
-   <div class="relative">
-                <img src="assets/12-BTUFSlC2.png" alt="" class="size-full rounded-2xl">
-                <img src="assets/8-I-MhDPX-.svg" alt="" class="md:absolute md:block md:end-7.5 md:bottom-6.25 hidden">
-            </div>
+  </style>
+  <body>
+    <!-- Navbar -->
+    <header
+      class="absolute top-0 left-0 w-full z-30"
+      data-aos="fade-down"
+      data-aos-duration="700"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="images/logo.png" alt="Logo" class="h-10 lg:h-12" />
         </div>
-    </section>
-<!-- Featured Section -->
-    <section class="featured py-10 bg-gray-50">
-    <div class="mt-10 text-center">
-                    <p class="text-base mb-2.5 font-bold">Featured on</p>
 
+        <!-- Nav Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+          <a href="./membership.html" class="font-bold text-xl">Membership</a>
+          <a href="./category.html" class="font-bold text-xl">Categories</a>
+          <a href="#" class="font-bold text-xl">Community</a>
+          <a href="#results" class="font-bold text-xl">Results</a>
+          <a href="#" class="font-bold text-xl">At Work</a>
+          <a href="#" class="font-bold text-xl">Support</a>
+        </nav>
 
-        <div class="container logos mt-5">
-        <img src="https://a.storyblok.com/f/60579/229x31/4504f459d4/logo_nyt.svg" alt="The New York Times" />
-        <img src="https://a.storyblok.com/f/60579/106x29/edff29df59/logo_forbes.svg" alt="Forbes" />
-        <img src="https://a.storyblok.com/f/60579/178x33/660efad2fd/logo_usa-today.svg" alt="USA Today" />
-        <img src="https://a.storyblok.com/f/60579/166x33/8cf263ffec/logo_entrepreneur.svg" alt="Entrepreneur" />
-        <img src="https://a.storyblok.com/f/60579/107x31/5d683c5c4d/logo-bbc.svg" alt="BBC" />
-        <img src="https://a.storyblok.com/f/60579/94x33/85550dbb85/logo-inc.svg" alt="Inc" />
-        <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
+        <!-- Right Side (Desktop) -->
+        <!-- Right Side (Desktop) -->
+        <div class="hidden lg:flex items-center gap-6 text-white font-medium">
+          <div class="flex items-center gap-2 cursor-pointer">
+            <!-- Globe SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span>EN</span>
+          </div>
+          <a href="#" class="font-bold">Log in</a>
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition"
+          >
+            Create an account
+          </a>
         </div>
-    </div>
-    </section>
-<!-- Featured Section -->
 
-<!-- Cta Section -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-white text-3xl focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+      >
+        <a
+          href="./membership.html"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Membership</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Categories</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Community</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Results</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >At Work</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Support</a
+        >
+
+        <div class="border-t border-gray-200 pt-4 space-y-3">
+          <a
+            href="#"
+            class="block font-semibold hover:text-purple-600 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Hero section  -->
+    <section
+      style="
+        background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1536x1512/5103bf6cb3/mvcom_header-bg_t.jpg?quality=60&auto=webp&dpr=1&width=1585');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+      class="lg:py-25 md:py-22.5 py-17.5"
+    >
+      <div class="container">
+        <div
+          class="lg:mb-10 lg:mx-auto text-center mb-10"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+        >
+          <h2 class="custom-heading mt-5">Why choose</h2>
+          <h3 class="custom-heading">Ethica Learning?</h3>
+          <p class="custom-para">
+            Be part of the world’s most powerful life transformation platform
+          </p>
+          <div
+            class="button-wrapper flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <a
+              href="#"
+              class="btn-primary w-48 sm:w-56 text-center py-4 rounded-full font-semibold bg-white text-purple-900 border-2 border-white hover:bg-purple-600 hover:text-white transition"
+            >
+              Become a member
+            </a>
+            <a
+              href="#"
+              class="btn-outline w-48 sm:w-56 text-center py-4 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-purple-600 transition"
+            >
+              Explore programs
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="assets/12-BTUFSlC2.png"
+            alt=""
+            class="size-full rounded-2xl"
+          />
+          <img
+            src="assets/8-I-MhDPX-.svg"
+            alt=""
+            class="md:absolute md:block md:end-7.5 md:bottom-6.25 hidden"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Featured Section -->
+
+    <!-- Featured Section -->
+
+    <!-- Cta Section -->
     <section class="journey py-20 bg-white text-center">
-    <div class="w-full px-6">
+      <div class="w-full px-6">
         <!-- Heading -->
-    <h2 class="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6">
-    Begin your journey today
-    </h2>
-
+        <h2
+          class="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-6"
+        >
+          Begin your journey today
+        </h2>
 
         <!-- Subtext -->
-        <p class="text-lg md:text-xl lg:text-2xl text-gray-600 font-medium mx-auto mb-10">
-    Unlock your fullest potential in any field with only 
-    <span class="font-semibold text-gray-800">20-minutes a day</span> 
-    of invaluable coaching from the world’s best
-    </p>
-
+        <p
+          class="text-lg md:text-xl lg:text-2xl text-gray-600 font-medium mx-auto mb-10"
+        >
+          Unlock your fullest potential in any field with only
+          <span class="font-semibold text-gray-800">20-minutes a day</span>
+          of invaluable coaching from the world’s best
+        </p>
 
         <!-- CTA Button -->
         <div class="mb-8">
-        <a href="#"
-            class="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold text-lg shadow-md transition">
+          <a
+            href="#"
+            class="inline-block px-10 py-4 rounded-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold text-lg shadow-md transition"
+          >
             Become a member
-        </a>
+          </a>
         </div>
 
         <!-- Subscriber Info -->
         <div class="flex justify-center items-center space-x-3">
-        <!-- Avatars -->
-        <div class="flex -space-x-3">
-            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="user">
-            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="user">
-            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/51.jpg" alt="user">
-            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/60.jpg" alt="user">
-            <img class="w-12 h-12 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/72.jpg" alt="user">
-        </div>
+          <!-- Avatars -->
+          <div class="flex -space-x-3">
+            <img
+              class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="user"
+            />
+            <img
+              class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="user"
+            />
+            <img
+              class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://randomuser.me/api/portraits/men/51.jpg"
+              alt="user"
+            />
+            <img
+              class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://randomuser.me/api/portraits/women/60.jpg"
+              alt="user"
+            />
+            <img
+              class="w-12 h-12 rounded-full border-2 border-white"
+              src="https://randomuser.me/api/portraits/men/72.jpg"
+              alt="user"
+            />
+          </div>
 
-        <!-- Text -->
-        <p class="text-base text-gray-700">
-            <span class="font-semibold">Over 1 million subscribers</span><br>
+          <!-- Text -->
+          <p class="text-base text-gray-700">
+            <span class="font-semibold">Over 1 million subscribers</span><br />
             <span class="text-gray-500 text-sm">since 2020</span>
-        </p>
+          </p>
         </div>
-    </div>
+      </div>
     </section>
-<!-- Cta Section -->
-<!-- 1st Marquee Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-8xl mx-auto px-6">
-    <!-- Left Text Block -->
-  <div class="mb-12 text-center max-w-3xl mx-auto">
-  <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
-    Growth in all areas
-  </p>
-  <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
-    100+ of the world’s top programs for personal growth and transformation
-  </h2>
-  <p class="text-lg text-gray-600 font-medium">
-    Forge lasting transformations in your mind, body, soul, love and career with 
-    20-minute micro-coaching sessions each day led by top-tier teachers worldwide.
-  </p>
-</div>
+    <!-- Cta Section -->
+    <!-- 1st Marquee Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-8xl mx-auto px-6">
+        <!-- Left Text Block -->
+        <div class="mb-12 text-center max-w-3xl mx-auto">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            Growth in all areas
+          </p>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
+            100+ of the world’s top programs for personal growth and
+            transformation
+          </h2>
+          <p class="text-lg text-gray-600 font-medium">
+            Forge lasting transformations in your mind, body, soul, love and
+            career with 20-minute micro-coaching sessions each day led by
+            top-tier teachers worldwide.
+          </p>
+        </div>
 
+        <!-- Rows -->
+        <div class="w-full space-y-12 overflow-hidden">
+          <!-- Row 1 -->
+          <div class="flex space-x-6 marquee-row animate-marquee">
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/1.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/2.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/3.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/4.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/5.png" class="w-full h-auto" />
+            </div>
+          </div>
 
-    <!-- Rows -->
-    <div class="w-full space-y-12 overflow-hidden">
-      
+          <!-- Row 2 -->
+          <div class="flex space-x-6 marquee-row animate-marquee">
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/6.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/1.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/2.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/3.png" class="w-full h-auto" />
+            </div>
+            <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
+              <img src="images/marquee/4.png" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Apple Vision Pro Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Text -->
+        <div class="mb-12 text-left max-w-4xl">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            Now Available
+          </p>
+          <h2
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-6 leading-tight"
+          >
+            Transform your life on mobile, desktop and Apple Vision Pro
+          </h2>
+          <p class="text-lg md:text-xl text-gray-600 font-medium">
+            Whether you're on the go, in the comfort of your own home, or
+            immersed in a revolutionary virtual environment, you have the
+            flexibility to learn and grow whenever and wherever you choose.
+          </p>
+        </div>
+
+        <!-- Device Grid -->
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+          <!-- Left: Mobile big -->
+          <div class="flex">
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/972x1458/af226d6733/mvcom_device-android_d.jpg?quality=60&auto=webp&dpr=1&width=486"
+              alt="Mobile"
+              class="rounded-xl shadow-md w-full object-cover"
+            />
+          </div>
+
+          <!-- Right: Laptop + Vision Pro stacked -->
+          <div class="grid grid-rows-2 gap-6">
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1382x706/5c44b37f70/mvcom_device-laptop.jpg?quality=60&auto=webp&dpr=1&width=690"
+              alt="Laptop"
+              class="rounded-xl shadow-md w-full h-full object-cover"
+            />
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/1382x705/6beae16d3a/mvcom_device-visionpro.jpg?quality=60&auto=webp&dpr=1&width=690"
+              alt="Apple Vision Pro"
+              class="rounded-xl shadow-md w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-12 md:py-20 text-gray-900">
+      <!-- Top Text Block -->
+      <div class="mb-8 md:mb-12 max-w-6xl mx-auto text-left px-4">
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+        >
+          Begin your journey
+        </p>
+        <h2
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mt-2 mb-4 sm:mb-6 leading-tight"
+        >
+          A better you
+        </h2>
+        <p class="text-base sm:text-lg md:text-xl text-gray-600 font-medium">
+          Grow your business, elevate your career, establish deep connections,
+          uplift your health and more.
+          <br />
+          <strong>Tell us your goals</strong>, and become a better you like
+          never before.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="relative max-w-7xl mx-auto mt-6 sm:mt-10 px-4">
+        <div
+          id="slider"
+          class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
+        >
+          <!-- Card -->
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m looking to</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                MASTER MY BODY
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m going through a</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                TRANSITION IN LIFE
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m looking for</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                LOVE CONNECTION
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I am a</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                SPIRITUAL SEEKER
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m seeking</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                CAREER GROWTH
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m looking to</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                GROW MY BUSINESS
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I’m searching for</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                DEEP CONNECTION
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
+            >
+              <p class="text-sm sm:text-lg">I want to</p>
+              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+                ELEVATE MY SPIRIT
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center items-center gap-4 mt-6">
+          <button id="prev" class="bg-gray-200 w-10 h-10 rounded-full">
+            ‹
+          </button>
+          <a
+            target="_blank"
+            href="./course.html"
+            class="px-4 sm:px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg text-sm sm:text-base"
+          >
+            Select path
+          </a>
+          <button id="next" class="bg-gray-200 w-10 h-10 rounded-full">
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const slider = document.getElementById("slider");
+      const cards = slider.children;
+      let currentIndex = 2; // start middle
+
+      function updateActive() {
+        [...cards].forEach((card, i) => {
+          card.classList.remove("active");
+          if (i === currentIndex) card.classList.add("active");
+        });
+        slider.scrollTo({
+          left:
+            cards[currentIndex].offsetLeft -
+            slider.offsetWidth / 2 +
+            cards[currentIndex].offsetWidth / 2,
+          behavior: "smooth",
+        });
+      }
+
+      document.getElementById("prev").onclick = () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateActive();
+      };
+      document.getElementById("next").onclick = () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateActive();
+      };
+
+      // init
+      updateActive();
+    </script>
+
+    <section class="bg-white py-20">
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <!-- Top Label -->
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3"
+        >
+          What the press says
+        </p>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"
+        >
+          The world's most effective transformation platform
+        </h2>
+
+        <!-- Subtext -->
+        <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+          From leading media platforms like CNN, CBS to influential voices like
+          Jay Shetty and Impact Theory, Mindvalley is recognized worldwide for
+          empowering people to transform their mind, body, and soul—unlocking
+          their fullest potential and leading extraordinary lives.
+        </p>
+
+        <!-- Big Video with Plyr -->
+        <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
+          <video
+            id="main-video"
+            playsinline
+            controls
+            class="w-full h-[500px] object-cover rounded-2xl"
+          >
+            <source
+              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+            <div class="relative">
+              <img src="./images/trump.png" alt="CNN Video" class="w-full" />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-purple-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <img
+                class="h-7"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/59/CBS_classic_logo.svg"
+                alt="CBS"
+              />
+              <p class="text-gray-600">
+                Ethica Learning brings together cutting-edge technology and
+                timeless wisdom, offering tools to master meditation,
+                relationships, fitness, and more.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
+            <div class="relative">
+              <img src="./images/elon.png" alt="CBS Video" class="w-full" />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 text-purple-600"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <img
+                src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg"
+                alt="CNN"
+              />
+              <p class="text-gray-600">
+                “This app really did change my life.” – A story about how
+                Mindvalley empowers transformation through technology and
+                spirituality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Activate Plyr custom UI for top video
+      const player = new Plyr("#main-video");
+    </script>
+
+    <!-- Second Marquee -->
+    <section class="py-16 sm:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Text -->
+        <div class="text-left max-w-3xl sm:max-w-4xl">
+          <p
+            class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            immersive experiences
+          </p>
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-6 leading-snug sm:leading-tight"
+          >
+            1,000+ customised tracks to elevate your mindset and feelings
+          </h2>
+          <p class="text-base sm:text-lg md:text-xl text-gray-600 font-medium">
+            With a push of a button — experience brain changing hypnotic audios,
+            sound healings, meditations and instant mood elevations. Take charge
+            of your mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center"
+    >
       <!-- Row 1 -->
-      <div class="flex space-x-6 marquee-row animate-marquee">
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/1.png" class="w-full h-auto" />
-        </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/2.png" class="w-full h-auto" />
-        </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/3.png" class="w-full h-auto" />
-        </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/4.png" class="w-full h-auto" />
-         
-        </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/5.png" class="w-full h-auto" />
-        </div>
+      <div class="absolute top-1/4 flex space-x-6 animate-marquee">
+        <!-- Repeat set 4x -->
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=2"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=3"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=4"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=5"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=7"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=8"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <!-- Duplicate sets -->
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=2"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=3"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=4"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=5"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=7"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=8"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=2"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=3"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=4"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=5"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=7"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=8"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=2"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=3"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=4"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=5"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=1"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=7"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=8"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
       </div>
 
       <!-- Row 2 -->
-      <div class="flex space-x-6 marquee-row animate-marquee">
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/6.png" class="w-full h-auto" />
+      <div class="absolute bottom-1/4 flex space-x-6 animate-marquee-slow">
+        <!-- Same pattern (9–16 repeated 4x) -->
+        <img
+          src="https://picsum.photos/400?random=9"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=10"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=11"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=13"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=15"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=16"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <!-- repeat 3x more (same as row 1) -->
+        <img
+          src="https://picsum.photos/400?random=9"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=10"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=11"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=13"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=15"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=16"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <img
+          src="https://picsum.photos/400?random=9"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=10"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=11"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=13"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=15"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=16"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+
+        <img
+          src="https://picsum.photos/400?random=9"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=10"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=11"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=13"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=12"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=15"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+        <img
+          src="https://picsum.photos/400?random=16"
+          class="w-40 h-40 rounded-xl object-cover shadow-lg"
+        />
+      </div>
+
+      <!-- Big iPhone Center -->
+      <div class="z-10">
+        <img
+          src="images/iphone.png"
+          alt="iPhone"
+          class="h-[80vh] object-contain drop-shadow-2xl"
+        />
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section
+      id="results"
+      class="relative w-full py-20 bg-white overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        <!-- Left Image -->
+        <div class="relative flex justify-center order-1 md:order-none">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1010x1604/3ada6c5e24/mvcom_hp_stories_left.jpg?quality=60&auto=webp&dpr=1&width=800"
+            alt="Left collage"
+            class="w-full max-w-sm md:max-w-full"
+          />
         </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/1.png" class="w-full h-auto" />
+
+        <!-- Center Content -->
+        <div class="text-center order-3 md:order-none">
+          <h2
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900"
+          >
+            24,545
+          </h2>
+          <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-700">
+            Case studies of success
+          </p>
+          <p class="mt-4 text-base sm:text-lg text-gray-500 max-w-md mx-auto">
+            Mindvalley has some of the highest success rates in the world at
+            transforming our learners. Browse case studies and stories of
+            success on
+            <a href="#" class="text-purple-600 underline"
+              >stories.ethicalearning.com</a
+            >.
+          </p>
+          <button
+            class="mt-8 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Read stories
+          </button>
         </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/2.png" class="w-full h-auto" />
+
+        <!-- Right Image -->
+        <div class="relative flex justify-center order-2 md:order-none">
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/1192x1712/1c753e40c5/mvcom_hp_stories_right.jpg?quality=60&auto=webp&dpr=1&width=800"
+            alt="Right collage"
+            class="w-full max-w-sm md:max-w-full"
+          />
         </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/3.png" class="w-full h-auto" />
+      </div>
+    </section>
+
+    <!-- Cta Section -->
+    <section
+      class="w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-pink-50 to-green-50 px-4 py-12"
+    >
+      <div class="max-w-3xl text-center">
+        <!-- Heading -->
+        <h2
+          class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight"
+        >
+          Get started today
+        </h2>
+
+        <!-- Sub Text -->
+        <p
+          class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-700"
+        >
+          Starting from <span class="font-semibold">$16.58/month</span> (billed
+          annually)
+        </p>
+
+        <!-- Button -->
+        <a
+          href="./membership.html"
+          class="inline-block mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 text-white text-base sm:text-lg font-semibold shadow-lg hover:from-purple-600 hover:to-purple-700 transition"
+        >
+          Become a member
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="max-w-6xl mx-auto text-center">
+        <!-- Section Heading -->
+        <h2 class="text-6xl md:text-5xl font-extrabold text-gray-900">
+          Advanced programs
+        </h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          by Ethica Learning
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto font-bold">
+          Embark on a profound exploration of self with our advanced programs
+          and empowering experiences
+        </p>
+
+        <!-- Card Wrapper -->
+        <div class="mt-12 rounded-t-2xl overflow-hidden text-left">
+          <!-- Card Text -->
+          <div class="p-8 bg-gray-50">
+            <h3 class="text-4xl font-bold text-gray-900 mb-2">
+              Ethica Learning Mastery Degrees
+            </h3>
+            <p class="text-gray-600 mb-6">
+              When regular education can’t cope with hot, fast growing skills —
+              Ethica Learning is here to put you in the top 0.1% within 4 to 6
+              months.
+            </p>
+            <a
+              href="#"
+              class="inline-block px-6 py-2 border-2 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition"
+            >
+              Learn more
+            </a>
+          </div>
+
+          <!-- Image (bottom rounded only) -->
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/2400x1080/0c8603616c/mvcom_advanced-programs_mastery.jpg?quality=60&auto=webp&dpr=1&width=1200"
+            alt="Program image"
+            class="w-full rounded-b-2xl"
+          />
         </div>
-        <div class="min-w-[320px] rounded-xl overflow-hidden shadow-lg">
-          <img src="images/marquee/4.png" class="w-full h-auto" />
+
+        <div class="mt-12 rounded-t-2xl overflow-hidden text-left">
+          <!-- Card Text -->
+          <div class="p-8 bg-gray-50">
+            <h3 class="text-4xl font-bold text-gray-900 mb-2">
+              Become a Ethica Learning Certified Coach
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Elevate your career with Mindvalley Certified Coach: meaningful
+              work, lucrative opportunities, and flexible freedom. 6,000 new
+              coaches trained annually.
+            </p>
+            <a
+              href="#"
+              class="inline-block px-6 py-2 border-2 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition"
+            >
+              Become A Coach
+            </a>
+          </div>
+
+          <!-- Image (bottom rounded only) -->
+          <img
+            src="https://storyblok-cdn.mindvalley.com/f/60579/2400x1080/de0fce8749/mvcom_advanced-programs_certs.jpg?quality=60&auto=webp&dpr=1&width=1200"
+            alt="Program image"
+            class="w-full rounded-b-2xl"
+          />
+        </div>
+        <div class="mt-12 rounded-t-2xl overflow-hidden text-left">
+          <!-- Card Text -->
+          <div class="p-8 bg-gray-50">
+            <h3 class="text-4xl font-bold text-gray-900 mb-2">
+              Explore Ethica Learning Events
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Embark on enchantment at Mindvalley's award-winning events, where
+              connections, transformations, and wonders converge.
+            </p>
+            <a
+              href="#"
+              class="inline-block px-6 py-2 border-2 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Image (bottom rounded only) -->
+          <img
+            src="./images/events.png"
+            alt="Program image"
+            class="w-full rounded-b-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-pink-50 to-green-50 py-16">
+      <div
+        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Left Image -->
+        <div class="flex justify-center">
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="./images/person.png"
+              alt="Founder"
+              class="w-full max-w-sm object-cover"
+            />
+            <div class="bg-black text-white text-center py-3">
+              <h3 class="text-2xl text-white font-extrabold tracking-wide">
+                VISHEN
+              </h3>
+              <p class="text-xs uppercase">
+                Founder and CEO of Ethica Learning
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="text-center md:text-left">
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+          >
+            Become 1% Better <br class="hidden sm:block" />
+            Every Day
+          </h2>
+          <p class="mt-4 text-lg font-semibold text-gray-800">
+            Upgrade Your Mind. Elevate Your Life. Shape the Future.
+          </p>
+          <p class="mt-4 text-gray-600 text-base leading-relaxed">
+            Welcome to Ethica Learning Daily. We’ll send you the latest
+            breakthroughs in personal growth, performance, and
+            transformation—straight to your inbox.
+          </p>
+
+          <!-- Form -->
+          <form
+            class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 sm:rounded-lg sm:overflow-hidden max-w-lg mx-auto md:mx-0"
+          >
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="flex-1 border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+            <button
+              type="submit"
+              class="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-6 py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-semibold hover:opacity-90 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <p class="mt-3 text-xs text-gray-500">
+            Your data is safe with us. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
+      >
+        <!-- Programs -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">All Programs</a></li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Download The App</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Become A Member</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Certified Coach</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About Us -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
+            <li><a href="#" class="hover:text-purple-600">Press</a></li>
+            <li><a href="#" class="hover:text-purple-600">Careers</a></li>
+            <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Events -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Events</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a href="./membership.html" class="hover:text-purple-600"
+                >Membership</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-purple-600">Events</a></li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Ethica University</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
+            <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+            <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+            <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Support</a></li>
+            <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+            <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
+            <li><a href="#" class="hover:text-purple-600">Business</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Brands -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
+            <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+            <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+            <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+            <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
+          </ul>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-<!-- Apple Vision Pro Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6">
-    
-    <!-- Text -->
-    <div class="mb-12 text-left max-w-4xl">
-      <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
-        Now Available
-      </p>
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-6 leading-tight">
-        Transform your life on mobile, desktop and Apple Vision Pro
-      </h2>
-      <p class="text-lg md:text-xl text-gray-600 font-medium">
-        Whether you're on the go, in the comfort of your own home, or immersed in a revolutionary 
-        virtual environment, you have the flexibility to learn and grow whenever and wherever you choose.
-      </p>
-    </div>
+      <!-- Bottom Bar -->
+      <div
+        class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
+      >
+        <p class="font-bold">
+          © 2025 Ethica Learning, Inc. ·
+          <a href="#" class="hover:text-purple-600">Terms</a> ·
+          <a href="#" class="hover:text-purple-600">Privacy</a>
+        </p>
 
-    <!-- Device Grid -->
-    <div class="grid md:grid-cols-2 gap-8 items-stretch">
-      <!-- Left: Mobile big -->
-      <div class="flex">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/972x1458/af226d6733/mvcom_device-android_d.jpg?quality=60&auto=webp&dpr=1&width=486"
-             alt="Mobile"
-             class="rounded-xl shadow-md w-full object-cover"/>
-      </div>
-
-      <!-- Right: Laptop + Vision Pro stacked -->
-      <div class="grid grid-rows-2 gap-6">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1382x706/5c44b37f70/mvcom_device-laptop.jpg?quality=60&auto=webp&dpr=1&width=690"
-             alt="Laptop"
-             class="rounded-xl shadow-md w-full h-full object-cover"/>
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/1382x705/6beae16d3a/mvcom_device-visionpro.jpg?quality=60&auto=webp&dpr=1&width=690"
-             alt="Apple Vision Pro"
-             class="rounded-xl shadow-md w-full h-full object-cover"/>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="bg-white py-12 md:py-20 text-gray-900">
-
-  <!-- Top Text Block -->
-  <div class="mb-8 md:mb-12 max-w-6xl mx-auto text-left px-4">
-    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
-      Begin your journey
-    </p>
-    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mt-2 mb-4 sm:mb-6 leading-tight">
-      A better you
-    </h2>
-    <p class="text-base sm:text-lg md:text-xl text-gray-600 font-medium">
-      Grow your business, elevate your career, establish deep connections, uplift your health and more.
-      <br>
-      <strong>Tell us your goals</strong>, and become a better you like never before.
-    </p>
-  </div>
-
-  <!-- Slider -->
-  <div class="relative max-w-7xl mx-auto mt-6 sm:mt-10 px-4">
-    <div id="slider" class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth">
-
-      <!-- Card -->
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m looking to</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">MASTER MY BODY</h2>
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span class="font-bold">English (EN)</span>
+          </div>
+          <div class="flex gap-4 text-gray-600">
+            <a href="#" class="hover:text-purple-600">Fb</a>
+            <a href="#" class="hover:text-purple-600">X</a>
+            <a href="#" class="hover:text-purple-600">IG</a>
+            <a href="#" class="hover:text-purple-600">YT</a>
+            <a href="#" class="hover:text-purple-600">IN</a>
+          </div>
         </div>
       </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m going through a</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">TRANSITION IN LIFE</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m looking for</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">LOVE CONNECTION</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I am a</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">SPIRITUAL SEEKER</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m seeking</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">CAREER GROWTH</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m looking to</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">GROW MY BUSINESS</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/bc03da747c/archetype_love_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I’m searching for</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">DEEP CONNECTION</h2>
-        </div>
-      </div>
-
-      <div class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg">
-        <img src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/a6cca1e487/archetype_spirituality_bg-img_m.jpg"
-             class="w-full h-full object-cover">
-        <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
-          <p class="text-sm sm:text-lg">I want to</p>
-          <h2 class="text-xl sm:text-4xl text-white font-extrabold">ELEVATE MY SPIRIT</h2>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Buttons -->
-    <div class="flex justify-center items-center gap-4 mt-6">
-      <button id="prev" class="bg-gray-200 w-10 h-10 rounded-full">‹</button>
-      <a target="_blank" href="./course.html" class="px-4 sm:px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-full shadow-lg text-sm sm:text-base">
-        Select path
-      </a>
-      <button id="next" class="bg-gray-200 w-10 h-10 rounded-full">›</button>
-    </div>
-  </div>
-</section>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
     <script>
-    const slider = document.getElementById("slider");
-    const cards = slider.children;
-    let currentIndex = 2; // start middle
+      AOS.init();
 
-    function updateActive() {
-      [...cards].forEach((card, i) => {
-        card.classList.remove("active");
-        if (i === currentIndex) card.classList.add("active");
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+          menu.classList.add("flex");
+        } else {
+          menu.classList.add("hidden");
+          menu.classList.remove("flex");
+        }
       });
-      slider.scrollTo({
-        left: cards[currentIndex].offsetLeft - slider.offsetWidth/2 + cards[currentIndex].offsetWidth/2,
-        behavior: "smooth"
-      });
-    }
-
-    document.getElementById("prev").onclick = () => {
-      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-      updateActive();
-    };
-    document.getElementById("next").onclick = () => {
-      currentIndex = (currentIndex + 1) % cards.length;
-      updateActive();
-    };
-
-    // init
-    updateActive();
-  </script>
-
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto text-center px-6">
-    <!-- Top Label -->
-    <p class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3">
-      What the press says
-    </p>
-    
-    <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-      The world's most effective transformation platform
-    </h2>
-    
-    <!-- Subtext -->
-    <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-      From leading media platforms like CNN, CBS to influential voices like Jay Shetty and Impact Theory, 
-      Mindvalley is recognized worldwide for empowering people to transform their mind, body, and soul—unlocking 
-      their fullest potential and leading extraordinary lives.
-    </p>
-
-    <!-- Big Video with Plyr -->
-    <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
-      <video id="main-video" playsinline controls class="w-full h-[500px] object-cover rounded-2xl">
-        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <!-- Cards -->
-     <div class="grid md:grid-cols-2 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
-        <div class="relative">
-          <img
-           src="./images/trump.png"
-            alt="CNN Video"
-            class="w-full"
-          />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div
-              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-              <img class="h-7" src="https://upload.wikimedia.org/wikipedia/commons/5/59/CBS_classic_logo.svg" alt="CBS" />
-          <p class="text-gray-600">
-            Ethica Learning brings together cutting-edge technology and timeless
-            wisdom, offering tools to master meditation, relationships, fitness,
-            and more.
-          </p>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden text-left">
-        <div class="relative">
-          <img
-          src="./images/elon.png"
-            alt="CBS Video"
-            class="w-full"
-          />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div
-              class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-purple-600"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-        <img src="https://a.storyblok.com/f/60579/68x33/74c459c6fe/logo_cnn.svg" alt="CNN" />
-          <p class="text-gray-600">
-            “This app really did change my life.” – A story about how Mindvalley
-            empowers transformation through technology and spirituality.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  // Activate Plyr custom UI for top video
-  const player = new Plyr('#main-video');
-</script>
-
-<!-- Second Marquee -->
-<section class="py-16 sm:py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Text -->
-    <div class="text-left max-w-3xl sm:max-w-4xl">
-      <p class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-gray-500">
-        immersive experiences
-      </p>
-      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-6 leading-snug sm:leading-tight">
-        1,000+ customised tracks to elevate your mindset and feelings
-      </h2>
-      <p class="text-base sm:text-lg md:text-xl text-gray-600 font-medium">
-        With a push of a button — experience brain changing hypnotic audios, sound healings, meditations and instant mood elevations. Take charge of your mind.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-
-<section class="relative w-full h-[90vh] bg-white overflow-hidden flex items-center justify-center">
-
-  <!-- Row 1 -->
-  <div class="absolute top-1/4 flex space-x-6 animate-marquee">
-    <!-- Repeat set 4x -->
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <!-- Duplicate sets -->
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=2" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=3" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=4" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=5" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=1" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=7" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=8" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-  </div>
-
-  <!-- Row 2 -->
-  <div class="absolute bottom-1/4 flex space-x-6 animate-marquee-slow">
-    <!-- Same pattern (9–16 repeated 4x) -->
-    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <!-- repeat 3x more (same as row 1) -->
-    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-
-    <img src="https://picsum.photos/400?random=9" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=10" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=11" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=13" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=12" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=15" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-    <img src="https://picsum.photos/400?random=16" class="w-40 h-40 rounded-xl object-cover shadow-lg"/>
-  </div>
-
-  <!-- Big iPhone Center -->
-  <div class="z-10">
-    <img 
-    src="images/iphone.png"
-
-         alt="iPhone"
-         class="h-[80vh] object-contain drop-shadow-2xl"/>
-  </div>
-
-</section>
-
-<!-- Case Studies -->
-<section id="results" class="relative w-full py-20 bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-    
-    <!-- Left Image -->
-    <div class="relative flex justify-center order-1 md:order-none">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1010x1604/3ada6c5e24/mvcom_hp_stories_left.jpg?quality=60&auto=webp&dpr=1&width=800" 
-           alt="Left collage"
-           class="w-full max-w-sm md:max-w-full"/>
-    </div>
-
-    <!-- Center Content -->
-    <div class="text-center order-3 md:order-none">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900">24,545</h2>
-      <p class="text-lg sm:text-xl md:text-2xl font-medium text-gray-700">Case studies of success</p>
-      <p class="mt-4 text-base sm:text-lg text-gray-500 max-w-md mx-auto">
-        Mindvalley has some of the highest success rates in the world at transforming 
-        our learners. Browse case studies and stories of success on 
-        <a href="#" class="text-purple-600 underline">stories.ethicalearning.com</a>.
-      </p>
-      <button class="mt-8 px-8 sm:px-12 lg:px-16 py-3 sm:py-4 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
-        Read stories
-      </button>
-    </div>
-
-    <!-- Right Image -->
-    <div class="relative flex justify-center order-2 md:order-none">
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/1192x1712/1c753e40c5/mvcom_hp_stories_right.jpg?quality=60&auto=webp&dpr=1&width=800" 
-           alt="Right collage"
-           class="w-full max-w-sm md:max-w-full"/>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Cta Section -->
-<section class="w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-pink-50 to-green-50 px-4 py-12">
-  <div class="max-w-3xl text-center">
-    
-    <!-- Heading -->
-    <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
-      Get started today
-    </h2>
-    
-    <!-- Sub Text -->
-    <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-700">
-      Starting from <span class="font-semibold">$16.58/month</span> (billed annually)
-    </p>
-    
-    <!-- Button -->
-    <a href="./membership.html" 
-       class="inline-block mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 text-white text-base sm:text-lg font-semibold shadow-lg hover:from-purple-600 hover:to-purple-700 transition">
-      Become a member
-    </a>
-  </div>
-</section>
-
-
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto text-center">
-    <!-- Section Heading -->
-    <h2 class="text-6xl md:text-5xl font-extrabold text-gray-900">
-      Advanced programs 
-    </h2>
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-     by Ethica Learning
-    </h2>
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto font-bold">
-      Embark on a profound exploration of self with our advanced programs and empowering experiences
-    </p>
-
-    <!-- Card Wrapper -->
-    <div class="mt-12  rounded-t-2xl overflow-hidden text-left">
-      <!-- Card Text -->
-      <div class="p-8 bg-gray-50 ">
-        <h3 class="text-4xl font-bold text-gray-900 mb-2">
-          Ethica Learning Mastery Degrees
-        </h3>
-        <p class="text-gray-600 mb-6">
-          When regular education can’t cope with hot, fast growing skills — Ethica Learning is here 
-          to put you in the top 0.1% within 4 to 6 months.
-        </p>
-        <a href="#"
-           class="inline-block px-6 py-2 border-2  text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition">
-          Learn more
-        </a>
-      </div>
-
-      <!-- Image (bottom rounded only) -->
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/2400x1080/0c8603616c/mvcom_advanced-programs_mastery.jpg?quality=60&auto=webp&dpr=1&width=1200" alt="Program image" class="w-full rounded-b-2xl">
-    </div>
-
-     <div class="mt-12  rounded-t-2xl overflow-hidden text-left">
-      <!-- Card Text -->
-      <div class="p-8 bg-gray-50 ">
-        <h3 class="text-4xl font-bold text-gray-900 mb-2">
-          Become a Ethica Learning Certified Coach
-        </h3>
-        <p class="text-gray-600 mb-6">
-          Elevate your career with Mindvalley Certified Coach: meaningful work, lucrative opportunities, and flexible freedom. 6,000 new coaches trained annually.
-        </p>
-        <a href="#"
-           class="inline-block px-6 py-2 border-2  text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition">
-          Become A Coach
-        </a>
-      </div>
-
-      <!-- Image (bottom rounded only) -->
-      <img src="https://storyblok-cdn.mindvalley.com/f/60579/2400x1080/de0fce8749/mvcom_advanced-programs_certs.jpg?quality=60&auto=webp&dpr=1&width=1200" alt="Program image" class="w-full rounded-b-2xl">
-    </div>
-     <div class="mt-12  rounded-t-2xl overflow-hidden text-left">
-      <!-- Card Text -->
-      <div class="p-8 bg-gray-50 ">
-        <h3 class="text-4xl font-bold text-gray-900 mb-2">
-         Explore Ethica Learning Events
-        </h3>
-        <p class="text-gray-600 mb-6">
-         Embark on enchantment at Mindvalley's award-winning events, where connections, transformations, and wonders converge.
-        </p>
-        <a href="#"
-           class="inline-block px-6 py-2 border-2  text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition">
-        Learn More
-        </a>
-      </div>
-
-      <!-- Image (bottom rounded only) -->
-      <img src="./images/events.png" alt="Program image" class="w-full rounded-b-2xl">
-    </div>
-  </div>
-</section>
-    
-
-<section class="bg-gradient-to-b from-pink-50 to-green-50 py-16">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-
-    <!-- Left Image -->
-    <div class="flex justify-center">
-      <div class="rounded-2xl overflow-hidden shadow-lg">
-        <img 
-        src="./images/person.png"
-             alt="Founder" 
-             class="w-full max-w-sm object-cover">
-        <div class="bg-black text-white text-center py-3">
-          <h3 class="text-2xl text-white font-extrabold tracking-wide">VISHEN</h3>
-          <p class="text-xs uppercase">Founder and CEO of Ethica Learning</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right Content -->
-    <div class="text-center md:text-left">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-        Become 1% Better <br class="hidden sm:block"/> Every Day
-      </h2>
-      <p class="mt-4 text-lg font-semibold text-gray-800">
-        Upgrade Your Mind. Elevate Your Life. Shape the Future.
-      </p>
-      <p class="mt-4 text-gray-600 text-base leading-relaxed">
-        Welcome to Ethica Learning Daily. We’ll send you the latest breakthroughs in personal 
-        growth, performance, and transformation—straight to your inbox.
-      </p>
-
-      <!-- Form -->
-      <form class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 sm:rounded-lg sm:overflow-hidden max-w-lg mx-auto md:mx-0">
-        <input type="email" 
-               placeholder="Your email address"
-               class="flex-1 border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-purple-500">
-        <button type="submit"
-                class="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-6 py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-semibold hover:opacity-90 transition">
-          Subscribe
-        </button>
-      </form>
-
-      <p class="mt-3 text-xs text-gray-500">
-        Your data is safe with us. Unsubscribe anytime.
-      </p>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-white border-t border-gray-200 pt-12 pb-6">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm">
-
-    <!-- Programs -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">All Programs</a></li>
-        <li><a href="#" class="hover:text-purple-600">Download The App</a></li>
-        <li><a href="#" class="hover:text-purple-600">Become A Member</a></li>
-        <li><a href="#" class="hover:text-purple-600">Certified Coach</a></li>
-      </ul>
-    </div>
-
-    <!-- About Us -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
-        <li><a href="#" class="hover:text-purple-600">Press</a></li>
-        <li><a href="#" class="hover:text-purple-600">Careers</a></li>
-        <li><a href="#" class="hover:text-purple-600">Blog</a></li>
-      </ul>
-    </div>
-
-    <!-- Events -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Events</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="./membership.html" class="hover:text-purple-600">Membership</a></li>
-        <li><a href="#" class="hover:text-purple-600">Events</a></li>
-        <li><a href="#" class="hover:text-purple-600">Ethica University</a></li>
-      </ul>
-    </div>
-
-    <!-- Social Media -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
-        <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
-        <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
-        <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
-        <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Support</a></li>
-        <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
-        <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
-        <li><a href="#" class="hover:text-purple-600">Business</a></li>
-      </ul>
-    </div>
-
-    <!-- Our Brands -->
-    <div>
-      <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
-      <ul class="space-y-2 text-gray-600">
-        <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
-        <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
-        <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
-        <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
-        <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4">
-    <p class="font-bold">© 2025 Ethica Learning, Inc. · <a href="#" class="hover:text-purple-600">Terms</a> · <a href="#" class="hover:text-purple-600">Privacy</a></p>
-
-    <div class="flex items-center gap-6">
-      <div class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.6 9h16.8M3.6 15h16.8" /></svg>
-        <span class="font-bold">English (EN)</span>
-      </div>
-      <div class="flex gap-4 text-gray-600">
-        <a href="#" class="hover:text-purple-600">Fb</a>
-        <a href="#" class="hover:text-purple-600">X</a>
-        <a href="#" class="hover:text-purple-600">IG</a>
-        <a href="#" class="hover:text-purple-600">YT</a>
-        <a href="#" class="hover:text-purple-600">IN</a>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-
-<script>
-  AOS.init();
-
- const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
-      menu.classList.add("flex");
-    } else {
-      menu.classList.add("hidden");
-      menu.classList.remove("flex");
-    }
-  });
-</script>
-
-</body>
-
+    </script>
+  </body>
 </html>
