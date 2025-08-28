@@ -114,38 +114,42 @@
       object-fit: contain;
     }
 
-     .marquee-row {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-  }
-  .marquee-track {
-    display: flex;
-    gap: 1.5rem;
-    width: max-content;
-    animation: marquee 20s linear infinite;
-  }
-  .marquee-track.reverse {
-    animation-direction: reverse;
-  }
-  .marquee-item {
-    min-width: 320px;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  }
-  .marquee-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .marquee-row:hover .marquee-track {
-    animation-play-state: paused;
-  }
-  @keyframes marquee {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* move half bcoz content duplicated */
-  }
+    .marquee-row {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+    .marquee-track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+    }
+    .marquee-track.reverse {
+      animation-direction: reverse;
+    }
+    .marquee-item {
+      min-width: 320px;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .marquee-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .marquee-row:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      } /* move half bcoz content duplicated */
+    }
 
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -178,128 +182,275 @@
   </style>
   <body>
     <!-- Navbar -->
- <header class="absolute top-0 left-0 w-full z-30 " data-aos="fade-down" data-aos-duration="700">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    
-    <!-- Logo -->
-    <div class="flex items-center">
-      <img src="images/logo.png" alt="Logo" class="h-12 w-auto object-contain mr-3" />
-    
-    </div>
+    <header
+      class="absolute top-0 left-0 w-full z-30"
+      data-aos="fade-down"
+      data-aos-duration="700"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="h-12 w-auto object-contain mr-3"
+          />
+        </div>
 
-    <!-- Nav Links (Desktop) -->
-   <!-- Nav Links (Desktop) -->
-<nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+        <!-- Nav Links (Desktop) -->
+        <!-- Nav Links (Desktop) -->
+        <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+          <a href="./membership.html" class="hover:text-gray-200 transition"
+            >Membership</a
+          >
 
-  <a href="./membership.html" class="hover:text-gray-200 transition">Membership</a>
+          <!-- Categories Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('categoriesMenu')"
+              class="hover:text-gray-200 transition flex items-center gap-1"
+            >
+              Categories
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="categoriesMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="category.html" class="block px-4 py-2 hover:bg-gray-100"
+                >All Categories</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Mind</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Body</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Soul</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Entrepreneurship</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Career</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Relationships</a
+              >
+            </div>
+          </div>
 
-  <!-- Categories Dropdown -->
-  <div class="relative">
-    <button onclick="toggleDropdown('categoriesMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
-      Categories
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-      </svg>
-    </button>
-    <div id="categoriesMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-      <a href="category.html" class="block px-4 py-2 hover:bg-gray-100">All Categories</a>
-      <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Mind</a>
-      <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Body</a>
-      <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Soul</a>
-      <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
-      <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Career</a>
-      <a href="single-category.html" class="block  px-4 py-2 hover:bg-gray-100">Relationships</a>
-    </div>
-  </div>
+          <!-- Community Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('communityMenu')"
+              class="hover:text-gray-200 transition flex items-center gap-1"
+            >
+              Community
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="communityMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Community First</a
+              >
+              <a href="./events.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Global Events</a
+              >
+            </div>
+          </div>
 
-  <!-- Community Dropdown -->
-  <div class="relative">
-    <button onclick="toggleDropdown('communityMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
-      Community
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-      </svg>
-    </button>
-    <div id="communityMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community First</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global Events</a>
-    </div>
-  </div>
+          <!-- At Work Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('atworkMenu')"
+              class="hover:text-gray-200 transition flex items-center gap-1"
+            >
+              At Work
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="atworkMenu"
+              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Find a Coach</a
+              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Become a Coach</a
+              >
+            </div>
+          </div>
 
-  <!-- At Work Dropdown -->
-  <div class="relative">
-    <button onclick="toggleDropdown('atworkMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
-      At Work
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-      </svg>
-    </button>
-    <div id="atworkMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a Coach</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Become a Coach</a>
-    </div>
-  </div>
+          <a href="#results" class="hover:text-gray-200 transition">Results</a>
+          <a href="#" class="hover:text-gray-200 transition">Support</a>
+        </nav>
 
-  <a href="#results" class="hover:text-gray-200 transition">Results</a>
-  <a href="#" class="hover:text-gray-200 transition">Support</a>
-</nav>
+        <!-- Dropdown Toggle Script -->
+        <script>
+          function toggleDropdown(id) {
+            document.querySelectorAll('[id$="Menu"]').forEach((menu) => {
+              if (menu.id === id) {
+                menu.classList.toggle("hidden");
+              } else {
+                menu.classList.add("hidden");
+              }
+            });
+          }
+        </script>
 
-<!-- Dropdown Toggle Script -->
-<script>
-  function toggleDropdown(id) {
-    document.querySelectorAll('[id$="Menu"]').forEach(menu => {
-      if (menu.id === id) {
-        menu.classList.toggle('hidden');
-      } else {
-        menu.classList.add('hidden');
-      }
-    });
-  }
-</script>
+        <!-- Right Side (Desktop) -->
+        <div class="hidden lg:flex items-center gap-6 text-white font-medium">
+          <div class="flex items-center gap-2 cursor-pointer">
+            <!-- Globe -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span>EN</span>
+          </div>
+          <a href="#" class="font-semibold hover:text-gray-200">Log in</a>
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition"
+          >
+            Create an account
+          </a>
+        </div>
 
-
-    <!-- Right Side (Desktop) -->
-    <div class="hidden lg:flex items-center gap-6 text-white font-medium">
-      <div class="flex items-center gap-2 cursor-pointer">
-        <!-- Globe -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"/>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"/>
-        </svg>
-        <span>EN</span>
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-white text-3xl focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
-      <a href="#" class="font-semibold hover:text-gray-200">Log in</a>
-      <a href="#" class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition">
-        Create an account
-      </a>
-    </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+      >
+        <a
+          href="./membership.html"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Membership</a
+        >
+        <a
+          href="./category.html"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Categories</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Community</a
+        >
+        <a
+          href="#results"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Results</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >At Work</a
+        >
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Support</a
+        >
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
-    <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
-    <a href="./category.html" class="block font-semibold hover:text-purple-600 transition">Categories</a>
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
-    <a href="#results" class="block font-semibold hover:text-purple-600 transition">Results</a>
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
-
-    <div class="border-t border-gray-200 pt-4 space-y-3">
-      <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
-      <a href="#" class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
-        Create an account
-      </a>
-    </div>
-  </div>
-</header>
+        <div class="border-t border-gray-200 pt-4 space-y-3">
+          <a
+            href="#"
+            class="block font-semibold hover:text-purple-600 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+      </div>
+    </header>
 
     <!-- Hero section  -->
     <section
@@ -428,63 +579,66 @@
     </section>
     <!-- Cta Section -->
     <!-- 1st Marquee Section -->
-<section class="py-20 bg-white">
-  <div class="max-w-8xl mx-auto px-6">
-    <!-- Left Text Block -->
-    <div class="mb-12 text-center max-w-3xl mx-auto">
-      <p class="text-sm font-semibold uppercase tracking-widest text-gray-500">
-        Growth in all areas
-      </p>
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
-        100+ of the world’s top programs for personal growth and transformation
-      </h2>
-      <p class="text-lg text-gray-600 font-medium">
-        Forge lasting transformations in your mind, body, soul, love and career
-        with 20-minute micro-coaching sessions each day led by top-tier teachers worldwide.
-      </p>
-    </div>
+    <section class="py-20 bg-white">
+      <div class="max-w-8xl mx-auto px-6">
+        <!-- Left Text Block -->
+        <div class="mb-12 text-center max-w-3xl mx-auto">
+          <p
+            class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+          >
+            Growth in all areas
+          </p>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-6">
+            100+ of the world’s top programs for personal growth and
+            transformation
+          </h2>
+          <p class="text-lg text-gray-600 font-medium">
+            Forge lasting transformations in your mind, body, soul, love and
+            career with 20-minute micro-coaching sessions each day led by
+            top-tier teachers worldwide.
+          </p>
+        </div>
 
-    <!-- Rows -->
-    <div class="w-full space-y-12 overflow-hidden">
-      <!-- Row 1 -->
-      <div class="marquee-row">
-        <div class="marquee-track">
-          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/5.png" /></div>
+        <!-- Rows -->
+        <div class="w-full space-y-12 overflow-hidden">
+          <!-- Row 1 -->
+          <div class="marquee-row">
+            <div class="marquee-track">
+              <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/5.png" /></div>
 
-          <!-- duplicate set for seamless loop -->
-          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/5.png" /></div>
+              <!-- duplicate set for seamless loop -->
+              <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/5.png" /></div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="marquee-row">
+            <div class="marquee-track reverse">
+              <div class="marquee-item"><img src="images/marquee/6.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+
+              <!-- duplicate set -->
+              <div class="marquee-item"><img src="images/marquee/6.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/1.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/2.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/3.png" /></div>
+              <div class="marquee-item"><img src="images/marquee/4.png" /></div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Row 2 -->
-      <div class="marquee-row">
-        <div class="marquee-track reverse">
-          <div class="marquee-item"><img src="images/marquee/6.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
-
-          <!-- duplicate set -->
-          <div class="marquee-item"><img src="images/marquee/6.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/1.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/2.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/3.png" /></div>
-          <div class="marquee-item"><img src="images/marquee/4.png" /></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Apple Vision Pro Section -->
     <section class="py-20 bg-white">
@@ -1109,7 +1263,9 @@
                 >Membership</a
               >
             </li>
-            <li><a href="#" class="hover:text-purple-600">Events</a></li>
+            <li>
+              <a href="./events.html" class="hover:text-purple-600">Events</a>
+            </li>
             <li>
               <a href="#" class="hover:text-purple-600">Ethica University</a>
             </li>

@@ -165,339 +165,589 @@
   </style>
   <body class="bg-white">
     <!-- Navbar -->
-<header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
-  <div class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
+    <header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
+      <div
+        class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <!-- Left: Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img
+            src="images/logo-purple.png"
+            alt="Logo"
+            class="h-12 w-auto object-contain"
+          />
+        </div>
 
-    <!-- Left: Logo -->
-    <div class="flex-shrink-0 flex items-center">
-      <img src="images/logo-purple.png" alt="Logo" class="h-12 w-auto object-contain" />
-    </div>
+        <!-- Center: Nav Links -->
+        <nav class="hidden lg:flex items-center gap-6 font-medium">
+          <a
+            href="./membership.html"
+            class="font-semibold text-gray-800 hover:text-purple-600 transition"
+            >Membership</a
+          >
 
-    <!-- Center: Nav Links -->
-    <nav class="hidden lg:flex items-center gap-6 font-medium">
-      <a href="./membership.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Membership</a>
+          <!-- Categories Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('categoriesMenu2')"
+              class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+            >
+              Categories
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="categoriesMenu2"
+              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="category.html" class="block px-4 py-2 hover:bg-gray-100"
+                >All Categories</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Mind</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Body</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Soul</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Entrepreneurship</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Career</a
+              >
+              <a
+                href="single-category.html"
+                class="block px-4 py-2 hover:bg-gray-100"
+                >Relationships</a
+              >
+            </div>
+          </div>
 
-      <!-- Categories Dropdown -->
-      <div class="relative">
-        <button onclick="toggleDropdown('categoriesMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
-          Categories
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          <!-- Community Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('communityMenu2')"
+              class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+            >
+              Community
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="communityMenu2"
+              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Community First</a
+              >
+              <a href="./events.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Global Events</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="font-semibold text-gray-800 hover:text-purple-600 transition"
+            >Results</a
+          >
+
+          <!-- At Work Dropdown -->
+          <div class="relative">
+            <button
+              onclick="toggleDropdown('atworkMenu2')"
+              class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+            >
+              At Work
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              id="atworkMenu2"
+              class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+            >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Find a Coach</a
+              >
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                >Become a Coach</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="font-semibold text-gray-800 hover:text-purple-600 transition"
+            >Support</a
+          >
+        </nav>
+
+        <!-- Right: Globe, Login, Button -->
+        <div
+          class="hidden lg:flex items-center gap-4 text-gray-800 font-medium"
+        >
+          <div class="flex items-center gap-2 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span>EN</span>
+          </div>
+          <a href="#" class="font-semibold hover:text-purple-600 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden text-gray-800 text-3xl focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <div id="categoriesMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-          <a href="category.html" class="block px-4 py-2 hover:bg-gray-100">All Categories</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Mind</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Body</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Soul</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Career</a>
-          <a href="single-category.html" class="block px-4 py-2 hover:bg-gray-100">Relationships</a>
-        </div>
       </div>
 
-      <!-- Community Dropdown -->
-      <div class="relative">
-        <button onclick="toggleDropdown('communityMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
-          Community
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div id="communityMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community First</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global Events</a>
-        </div>
-      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+      >
+        <a
+          href="./membership.html"
+          class="block font-semibold hover:text-purple-600 transition"
+          >Membership</a
+        >
 
-      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Results</a>
-
-      <!-- At Work Dropdown -->
-      <div class="relative">
-        <button onclick="toggleDropdown('atworkMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
-          At Work
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div id="atworkMenu2" class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a Coach</a>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Become a Coach</a>
-        </div>
-      </div>
-
-      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Support</a>
-    </nav>
-
-    <!-- Right: Globe, Login, Button -->
-    <div class="hidden lg:flex items-center gap-4 text-gray-800 font-medium">
-      <div class="flex items-center gap-2 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"/>
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"/>
-        </svg>
-        <span>EN</span>
-      </div>
-      <a href="#" class="font-semibold hover:text-purple-600 transition">Log in</a>
-      <a href="#" class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
-        Create an account
-      </a>
-    </div>
-
-    <!-- Mobile Menu Button -->
-    <button id="mobile-menu-btn" class="lg:hidden text-gray-800 text-3xl focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
-    <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
-
-    <!-- Mobile Categories Dropdown -->
-    <div>
-      <button onclick="toggleDropdown('mobileCategories')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
-        Categories
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </button>
-      <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
-        <a href="#" class="block hover:text-purple-600">All Categories</a>
-        <a href="#" class="block hover:text-purple-600">Mind</a>
-        <a href="#" class="block hover:text-purple-600">Body</a>
-        <a href="#" class="block hover:text-purple-600">Soul</a>
-        <a href="#" class="block hover:text-purple-600">Entrepreneurship</a>
-        <a href="#" class="block hover:text-purple-600">Career</a>
-        <a href="#" class="block hover:text-purple-600">Relationships</a>
-      </div>
-    </div>
-
-    <!-- Mobile Community Dropdown -->
-    <div>
-      <button onclick="toggleDropdown('mobileCommunity')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
-        Community
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </button>
-      <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
-        <a href="#" class="block hover:text-purple-600">Community First</a>
-        <a href="#" class="block hover:text-purple-600">Global Events</a>
-      </div>
-    </div>
-
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
-
-    <!-- Mobile At Work Dropdown -->
-    <div>
-      <button onclick="toggleDropdown('mobileAtwork')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
-        At Work
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </button>
-      <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
-        <a href="#" class="block hover:text-purple-600">Business</a>
-        <a href="#" class="block hover:text-purple-600">Find a Coach</a>
-        <a href="#" class="block hover:text-purple-600">Become a Coach</a>
-      </div>
-    </div>
-
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
-
-    <div class="border-t border-gray-200 pt-4 space-y-3">
-      <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
-      <a href="#" class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
-        Create an account
-      </a>
-    </div>
-  </div>
-</header>
-
-<script>
-  function toggleDropdown(id) {
-    const el = document.getElementById(id);
-    if (el) {
-      el.classList.toggle('hidden');
-    }
-  }
-
-  // Mobile menu toggle
-  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-</script>
-
-<section class="px-6 py-16 text-center mt-30">
-  <!-- Top Content (max-w-7xl) -->
-  <div class="max-w-7xl mx-auto">
-    <p class="text-sm text-gray-500 mb-2">Experience Ethica Learning’s award-winning events</p>
-    <h2 class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-4">
-      Show up, level up, and leave <br class="hidden sm:block" /> 
-      with friends for a lifetime
-    </h2>
-    <p class="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
-      Discover incredible people, life-changing transformations, and magic at Ethica Learning events.
-    </p>
-
-    <!-- Button -->
-    <a href="#"
-       class="inline-block px-8 py-3 rounded-full bg-[#7A12D4] text-white font-semibold shadow-md hover:opacity-90 transition">
-      Get notified on events near you
-    </a>
-  </div>
-
-  <!-- Bottom Image (max-w-8xl) -->
-  <div class="mt-12 max-w-8xl mx-auto">
-    <img 
-    src="https://storyblok-cdn.mindvalley.com/f/60579/2000x900/c59dd59fec/events-hero-d.jpg?quality=60&auto=webp&dpr=0.8999999761581421&width=1761"
-         alt="Mindvalley Event"
-         class="w-full rounded-2xl shadow-lg object-cover">
-  </div>
-</section>
-
-
-
-<section class="max-w-7xl mx-auto px-6 py-16">
-  <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">Happening soon</h2>
-
-  <div class="flex flex-col md:flex-row gap-6 items-center md:items-start bg-white">
-
-    <!-- Left: Event Image -->
-    <div class="md:w-1/2">
-      <img 
-      src="images/event.png"
-           alt="Ethica Learning Event"
-           class="w-full h-full object-cover rounded-lg shadow-md">
-    </div>
-
-    <!-- Right: Event Details -->
-    <div class="md:w-1/2 space-y-4">
-      <span class="inline-block bg-black text-white text-xs font-semibold px-3 py-1 rounded">
-        Sep 15 – Sep 20, 2026
-      </span>
-      <h3 class="text-2xl font-bold">Ethica Learning</h3>
-      <p class="text-gray-600 font-medium">Dubai, UAE</p>
-      <p class="text-gray-700 leading-relaxed">
-        Join Ethica Learning for an immersive week of workshops, seminars, and powerful 
-        discussions designed to expand your knowledge and skills.  
-        Network with leading thinkers, innovators, and educators from around the world 
-        while experiencing a transformative journey.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        From sunrise sessions to late-night talks, this event is your opportunity to 
-        grow, connect, and be inspired with a global community of learners and leaders.
-      </p>
-
-      <a href="#"
-         class="inline-block px-8 py-3 rounded-full bg-[#7A12D4] text-white font-semibold shadow-md hover:opacity-90 transition">
-        Learn more
-      </a>
-    </div>
-
-  </div>
-</section>
-  <section class="bg-gray-50 py-16">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold mb-12">Relive the highlights</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Card 1 -->
-      <div class="space-y-3">
-        <div class="relative rounded-lg overflow-hidden shadow-lg group">
-          <img src="https://picsum.photos/600/400?random=11" 
-               alt="Event 1"
-               class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300">
-          <!-- Play button overlay -->
-          <div class="absolute inset-0 flex items-center justify-center bg-black/30">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
+        <!-- Mobile Categories Dropdown -->
+        <div>
+          <button
+            onclick="toggleDropdown('mobileCategories')"
+            class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+          >
+            Categories
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
+          </button>
+          <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
+            <a href="#" class="block hover:text-purple-600">All Categories</a>
+            <a href="#" class="block hover:text-purple-600">Mind</a>
+            <a href="#" class="block hover:text-purple-600">Body</a>
+            <a href="#" class="block hover:text-purple-600">Soul</a>
+            <a href="#" class="block hover:text-purple-600">Entrepreneurship</a>
+            <a href="#" class="block hover:text-purple-600">Career</a>
+            <a href="#" class="block hover:text-purple-600">Relationships</a>
           </div>
         </div>
-        <p class="text-gray-700 font-medium">Ethica Live Dubai 2023</p>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="space-y-3">
-        <div class="relative rounded-lg overflow-hidden shadow-lg group">
-          <img src="https://picsum.photos/600/400?random=12" 
-               alt="Event 2"
-               class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300">
-          <div class="absolute inset-0 flex items-center justify-center bg-black/30">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
+        <!-- Mobile Community Dropdown -->
+        <div>
+          <button
+            onclick="toggleDropdown('mobileCommunity')"
+            class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+          >
+            Community
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
+          </button>
+          <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
+            <a href="#" class="block hover:text-purple-600">Community First</a>
+            <a href="#" class="block hover:text-purple-600">Global Events</a>
           </div>
         </div>
-        <p class="text-gray-700 font-medium">A-Fest Colombia 2023</p>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="space-y-3">
-        <div class="relative rounded-lg overflow-hidden shadow-lg group">
-          <img src="https://picsum.photos/600/400?random=13" 
-               alt="Event 3"
-               class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300">
-          <div class="absolute inset-0 flex items-center justify-center bg-black/30">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Results</a
+        >
+
+        <!-- Mobile At Work Dropdown -->
+        <div>
+          <button
+            onclick="toggleDropdown('mobileAtwork')"
+            class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+          >
+            At Work
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
+          </button>
+          <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
+            <a href="#" class="block hover:text-purple-600">Business</a>
+            <a href="#" class="block hover:text-purple-600">Find a Coach</a>
+            <a href="#" class="block hover:text-purple-600">Become a Coach</a>
           </div>
         </div>
-        <p class="text-gray-700 font-medium">Ethica University 2022</p>
+
+        <a href="#" class="block font-semibold hover:text-purple-600 transition"
+          >Support</a
+        >
+
+        <div class="border-t border-gray-200 pt-4 space-y-3">
+          <a
+            href="#"
+            class="block font-semibold hover:text-purple-600 transition"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+          >
+            Create an account
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      function toggleDropdown(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.toggle("hidden");
+        }
+      }
+
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <section class="px-6 py-16 text-center mt-30">
+      <!-- Top Content (max-w-7xl) -->
+      <div class="max-w-7xl mx-auto">
+        <p class="text-sm text-gray-500 mb-2">
+          Experience Ethica Learning’s award-winning events
+        </p>
+        <h2
+          class="text-3xl md:text-5xl font-extrabold leading-tight text-gray-900 mb-4"
+        >
+          Show up, level up, and leave <br class="hidden sm:block" />
+          with friends for a lifetime
+        </h2>
+        <p class="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
+          Discover incredible people, life-changing transformations, and magic
+          at Ethica Learning events.
+        </p>
+
+        <!-- Button -->
+        <a
+          href="#"
+          class="inline-block px-8 py-3 rounded-full bg-[#7A12D4] text-white font-semibold shadow-md hover:opacity-90 transition"
+        >
+          Get notified on events near you
+        </a>
       </div>
 
-    </div>
-  </div>
-</section>
+      <!-- Bottom Image (max-w-8xl) -->
+      <div class="mt-12 max-w-8xl mx-auto">
+        <img
+          src="https://storyblok-cdn.mindvalley.com/f/60579/2000x900/c59dd59fec/events-hero-d.jpg?quality=60&auto=webp&dpr=0.8999999761581421&width=1761"
+          alt="Mindvalley Event"
+          class="w-full rounded-2xl shadow-lg object-cover"
+        />
+      </div>
+    </section>
 
-<section class="relative w-full bg-cover bg-center py-20 px-6" 
-         style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/2880x2100/c83c946842/events-signup-d.jpg?quality=60&auto=webp');">
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">
+        Happening soon
+      </h2>
 
+      <div
+        class="flex flex-col md:flex-row gap-6 items-center md:items-start bg-white"
+      >
+        <!-- Left: Event Image -->
+        <div class="md:w-1/2">
+          <img
+            src="images/event.png"
+            alt="Ethica Learning Event"
+            class="w-full h-full object-cover rounded-lg shadow-md"
+          />
+        </div>
 
-  <div class="relative max-w-3xl mx-auto bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-8">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2 text-center">
-      Be the first to know about Ethica Learning events in your area
-    </h2>
-    <p class="text-gray-600 text-center mb-6">
-      Experience amazing people, life-changing transformations, and magic moments at an Ethica event. Sign up now.
-    </p>
+        <!-- Right: Event Details -->
+        <div class="md:w-1/2 space-y-4">
+          <span
+            class="inline-block bg-black text-white text-xs font-semibold px-3 py-1 rounded"
+          >
+            Sep 15 – Sep 20, 2026
+          </span>
+          <h3 class="text-2xl font-bold">Ethica Learning</h3>
+          <p class="text-gray-600 font-medium">Dubai, UAE</p>
+          <p class="text-gray-700 leading-relaxed">
+            Join Ethica Learning for an immersive week of workshops, seminars,
+            and powerful discussions designed to expand your knowledge and
+            skills. Network with leading thinkers, innovators, and educators
+            from around the world while experiencing a transformative journey.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            From sunrise sessions to late-night talks, this event is your
+            opportunity to grow, connect, and be inspired with a global
+            community of learners and leaders.
+          </p>
 
-    <!-- Form -->
-    <form class="space-y-4">
-      <input type="text" placeholder="Name *" 
-             class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"/>
-      <input type="email" placeholder="Email *" 
-             class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"/>
-      <select class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none">
-        <option>Country</option>
-        <option>United Arab Emirates</option>
-        <option>Pakistan</option>
-        <option>United Kingdom</option>
-      </select>
-      <input type="tel" placeholder="Phone Number" 
-             class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"/>
-      
-      <button type="submit" 
-              class="w-full bg-[#7A12D4] text-white py-3 rounded-full font-semibold hover:opacity-90 transition">
-        Get notified on events near you
-      </button>
-    </form>
+          <a
+            href="#"
+            class="inline-block px-8 py-3 rounded-full bg-[#7A12D4] text-white font-semibold shadow-md hover:opacity-90 transition"
+          >
+            Learn more
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-12">
+          Relive the highlights
+        </h2>
 
-    <p class="text-xs text-gray-500 mt-4 text-center">
-      By subscribing you agree to receiving updates on upcoming events & promotions in your email. 
-      You can unsubscribe anytime.
-    </p>
-  </div>
-</section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="space-y-3">
+            <div class="relative rounded-lg overflow-hidden shadow-lg group">
+              <img
+                src="https://picsum.photos/600/400?random=11"
+                alt="Event 1"
+                class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <!-- Play button overlay -->
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-12 w-12 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-700 font-medium">Ethica Live Dubai 2023</p>
+          </div>
 
+          <!-- Card 2 -->
+          <div class="space-y-3">
+            <div class="relative rounded-lg overflow-hidden shadow-lg group">
+              <img
+                src="https://picsum.photos/600/400?random=12"
+                alt="Event 2"
+                class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-12 w-12 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-700 font-medium">A-Fest Colombia 2023</p>
+          </div>
 
+          <!-- Card 3 -->
+          <div class="space-y-3">
+            <div class="relative rounded-lg overflow-hidden shadow-lg group">
+              <img
+                src="https://picsum.photos/600/400?random=13"
+                alt="Event 3"
+                class="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/30"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-12 w-12 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-gray-700 font-medium">Ethica University 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative w-full bg-cover bg-center py-20 px-6"
+      style="
+        background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/2880x2100/c83c946842/events-signup-d.jpg?quality=60&auto=webp');
+      "
+    >
+      <div
+        class="relative max-w-3xl mx-auto bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-8"
+      >
+        <h2
+          class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2 text-center"
+        >
+          Be the first to know about Ethica Learning events in your area
+        </h2>
+        <p class="text-gray-600 text-center mb-6">
+          Experience amazing people, life-changing transformations, and magic
+          moments at an Ethica event. Sign up now.
+        </p>
+
+        <!-- Form -->
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Name *"
+            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Email *"
+            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"
+          />
+          <select
+            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"
+          >
+            <option>Country</option>
+            <option>United Arab Emirates</option>
+            <option>Pakistan</option>
+            <option>United Kingdom</option>
+          </select>
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-purple-600 outline-none"
+          />
+
+          <button
+            type="submit"
+            class="w-full bg-[#7A12D4] text-white py-3 rounded-full font-semibold hover:opacity-90 transition"
+          >
+            Get notified on events near you
+          </button>
+        </form>
+
+        <p class="text-xs text-gray-500 mt-4 text-center">
+          By subscribing you agree to receiving updates on upcoming events &
+          promotions in your email. You can unsubscribe anytime.
+        </p>
+      </div>
+    </section>
 
     <section class="py-16 px-6 md:px-12 lg:px-20 bg-white text-center">
       <div class="max-w-6xl mx-auto mb-12">
@@ -509,8 +759,8 @@
           learned what it takes to help business leaders retain, empower, and
           engage their best people — to help your people become the best
           possible versions of themselves so they can give their best at work.
-          Bring the transformational content of Ethica Learning to your team to boost
-          performance, increase happiness and improve engagement.
+          Bring the transformational content of Ethica Learning to your team to
+          boost performance, increase happiness and improve engagement.
         </p>
       </div>
 
@@ -555,7 +805,6 @@
         </button>
       </div>
     </section>
-
 
     <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
       <div
@@ -602,7 +851,9 @@
                 >Membership</a
               >
             </li>
-            <li><a href="#" class="hover:text-purple-600">Events</a></li>
+            <li>
+              <a href="./events.html" class="hover:text-purple-600">Events</a>
+            </li>
             <li>
               <a href="#" class="hover:text-purple-600">Ethica University</a>
             </li>
@@ -696,8 +947,6 @@
 
     <script>
       AOS.init();
-
-      
 
       btn.addEventListener("click", () => {
         if (menu.classList.contains("hidden")) {
