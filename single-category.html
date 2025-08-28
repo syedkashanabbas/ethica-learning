@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ethica Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ethica Learning - Full-featured, professional-looking software, saas and startup website template. Multipurpose Tailwind CSS Landing Page Template"
+    />
+    <meta
+      name="keywords"
+      content="saas, saas template, site template, software, startup, digital product, html5, tailwindcss landing, marketing, tailwindcss, agency, digital agency, it solutions, vitejs"
+    />
+
+    <meta content="Coderthemes" name="author" />
+
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="" />
+    <!-- App Js (Mandatory in All Pages) -->
+    <!-- <script type="module" crossorigin src="assets/app-B_Z4zGNt.js"></script> -->
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  </head>
+  <style>
+    .custom-heading {
+      font-size: 80px; /* bada */
+      font-weight: 800; /* super bold */
+      color: #fff; /* white */
+      line-height: 1.1; /* thoda tight */
+      letter-spacing: -1px; /* aur compact look */
+      text-align: center; /* optional: center */
+    }
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .custom-para {
+      font-size: 24px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+      font-weight: 500; /* super bold */
+
+      text-decoration: none;
+      color: rgb(206, 209, 215);
+      text-align: center;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between buttons */
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: purple;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #fff;
+    }
+
+    .btn-primary:hover,
+    .btn-outline:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s ease;
+    }
+    .featured {
+      /* height: 150px; */ /* ye hata do */
+      padding: 20px 0;
+    }
+
+    .featured .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* wrap allow karo */
+    }
+
+    .featured .logos img {
+      height: 30px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 12s linear infinite;
+    }
+
+    .marquee-row:hover {
+      animation-play-state: paused; /* stop on hover */
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .animate-marquee-slow {
+      animation: marquee 25s linear infinite;
+      width: max-content;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(200, 200, 200, 0.4); /* light grey overlay */
+      transition: all 0.3s ease;
+    }
+    .card.active::after {
+      background: transparent; /* no overlay for active */
+    }
+  </style>
+  <body class="bg-white">
+    <!-- Navbar -->
+<header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
+  <div class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- Left: Logo -->
+    <div class="flex-shrink-0 flex items-center">
+      <img src="images/logo-purple.png" alt="Logo" class="h-12 w-auto object-contain" />
+    </div>
+
+    <!-- Center: Nav Links -->
+    <nav class="hidden lg:flex items-center gap-6 font-medium">
+      <a href="./membership.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Membership</a>
+
+      <!-- Categories Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('categoriesMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          Categories
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="categoriesMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">All Categories</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mind</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Body</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Soul</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Career</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Relationships</a>
+        </div>
+      </div>
+
+      <!-- Community Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('communityMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          Community
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="communityMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community First</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global Events</a>
+        </div>
+      </div>
+
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Results</a>
+
+      <!-- At Work Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('atworkMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          At Work
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="atworkMenu2" class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a Coach</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Become a Coach</a>
+        </div>
+      </div>
+
+      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Support</a>
+    </nav>
+
+    <!-- Right: Globe, Login, Button -->
+    <div class="hidden lg:flex items-center gap-4 text-gray-800 font-medium">
+      <div class="flex items-center gap-2 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"/>
+        </svg>
+        <span>EN</span>
+      </div>
+      <a href="#" class="font-semibold hover:text-purple-600 transition">Log in</a>
+      <a href="#" class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+        Create an account
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="lg:hidden text-gray-800 text-3xl focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
+    <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
+
+    <!-- Mobile Categories Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileCategories')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        Categories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">All Categories</a>
+        <a href="#" class="block hover:text-purple-600">Mind</a>
+        <a href="#" class="block hover:text-purple-600">Body</a>
+        <a href="#" class="block hover:text-purple-600">Soul</a>
+        <a href="#" class="block hover:text-purple-600">Entrepreneurship</a>
+        <a href="#" class="block hover:text-purple-600">Career</a>
+        <a href="#" class="block hover:text-purple-600">Relationships</a>
+      </div>
+    </div>
+
+    <!-- Mobile Community Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileCommunity')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        Community
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">Community First</a>
+        <a href="#" class="block hover:text-purple-600">Global Events</a>
+      </div>
+    </div>
+
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
+
+    <!-- Mobile At Work Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileAtwork')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        At Work
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">Business</a>
+        <a href="#" class="block hover:text-purple-600">Find a Coach</a>
+        <a href="#" class="block hover:text-purple-600">Become a Coach</a>
+      </div>
+    </div>
+
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
+
+    <div class="border-t border-gray-200 pt-4 space-y-3">
+      <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
+      <a href="#" class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+        Create an account
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  function toggleDropdown(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle('hidden');
+    }
+  }
+
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+<section class="relative w-full flex justify-center mt-30">
+  <div class="relative max-w-6xl w-full bg-cover bg-center h-[60vh] sm:h-[70vh] md:h-[80vh] rounded-lg overflow-hidden"
+       style="background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/2400x1080/32793860fd/programs_header_mind.jpg?quality=60&auto=webp');">
+    
+    <!-- Overlay (optional if you want dim effect) -->
+    <!-- <div class="absolute inset-0 bg-black/20"></div> -->
+
+    <!-- Content -->
+    <div class="relative flex items-center justify-center h-full px-6">
+      <div class="text-center">
+        <div class="flex items-center justify-center gap-3">
+          
+          <!-- Hexagon SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-12 w-12 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+
+          <!-- Title -->
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-wide">
+            MIND
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <h2 class="text-2xl font-bold mb-6">Mind programs</h2>
+
+  <div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div>
+
+  <div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div><div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div><div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div><div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div><div class="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row gap-6">
+
+    <!-- Left: Text (50%) -->
+    <div class="flex-1 flex flex-col justify-between">
+      <div>
+        <h3 class="text-2xl font-bold mb-1">Mastering the Growth Mindset</h3>
+        <p class="text-sm text-gray-500 mb-3">Vishen</p>
+        <p class="text-gray-700 font-bold leading-relaxed mb-6">
+          Master the growth mindset and permanently rewire your Inner programming to achieve extraordinary levels 
+          of success in just 6 days. Join Mindvalley founder Vishen Lakhiani for concise lessons and powerful 
+          principles to remove fear of failure, upgrade your beliefs, increase your rate of learning, 
+          and shift your identity…
+        </p>
+      </div>
+   <a href="#"
+   class="inline-block px-9 py-2 rounded-full border-2 border-purple-400 text-purple-600 font-medium hover:bg-purple-50 transition w-fit text-lg">
+  Learn More
+</a>
+
+    </div>
+
+    <!-- Right: Images (50%) -->
+    <div class="flex-1 flex gap-4 h-64">
+      <!-- Vertical Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/fc52f926-a75a-43cf-bdaa-2ff3c8db63aa.png"
+           alt="Instructor" class="w-1/3 h-full object-cover rounded-lg">
+
+      <!-- Horizontal Image -->
+      <img src="https://res.cloudinary.com/mindvalley/image/fetch/c_scale,dpr_0.8999999761581421,f_auto,fl_lossy,q_auto,w_568/https://assets.mindvalley.com/api/v1/assets/dbd07cd3-5d17-45d1-ba56-be880b3e1e62.jpg"
+           alt="Program Banner" class="flex-1 h-full object-cover rounded-lg">
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="flex flex-col md:flex-row items-center gap-10">
+
+    <!-- Left: Image (60%) -->
+    <div class="md:w-3/5 flex justify-center">
+      <img src="https://storyblok-cdn.mindvalley.com/f/60579/2000x1125/4ee0f2c90a/global_quest-collage_isometric.jpg?quality=60&auto=webp&dpr=0.8999999761581421&width=auto"
+           alt="Mindvalley Programs Collage"
+           class="w-full h-auto object-contain">
+    </div>
+
+    <!-- Right: Text (40%) -->
+    <div class="md:w-2/5 space-y-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight text-gray-900">
+        Get full access with <br /> Mindvalley Membership
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        With Mindvalley Membership you get unlimited access to all quests, meditations, trainings, 
+        private social network, and a lot more – for only less than $1.10/day.
+      </p>
+      <a href="#"
+         class="inline-block px-8 py-3 rounded-full bg-[#7A12D4] text-white font-semibold shadow-md hover:opacity-90 transition">
+        Become a member
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  
+
+    <script>
+      // Activate Plyr custom UI for top video
+      const player = new Plyr("#main-video");
+    </script>
+
+
+    <!-- Cta Section -->
+   <section class="max-w-7xl mx-auto px-6 py-12">
+  <h2 class="text-2xl font-extrabold mb-8 text-center">Explore other categories</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+    <!-- Category Card -->
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=1" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Mind">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <!-- Hexagon SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>MIND</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=2" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Body">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>BODY</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=3" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Soul">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>SOUL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=4" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Entrepreneurship">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>ENTREPRENEURSHIP</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=5" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Career">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>CAREER</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=6" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Relationships">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>RELATIONSHIPS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=7" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Parenting">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>PARENTING</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded-lg overflow-hidden group">
+      <img src="https://picsum.photos/400/300?random=8" class="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition duration-300" alt="Partner Programs">
+      <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+        <div class="flex items-center gap-2 text-white font-extrabold text-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-6 w-6 fill-white">
+            <path d="M32 2 2 18v28l30 16 30-16V18L32 2zm0 4.6 26 13.9v25L32 59.4 6 45.5v-25L32 6.6z"/>
+            <path d="M30 11v42L8 41V23l22-12zm4 0 22 12v18L34 53V11z"/>
+          </svg>
+          <span>PARTNER PROGRAMS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
+      >
+        <!-- Programs -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a href="./course.html" class="hover:text-purple-600"
+                >All Programs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Download The App</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Become A Member</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Certified Coach</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About Us -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
+            <li><a href="#" class="hover:text-purple-600">Press</a></li>
+            <li><a href="#" class="hover:text-purple-600">Careers</a></li>
+            <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Events -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Events</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a href="./membership.html" class="hover:text-purple-600"
+                >Membership</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-purple-600">Events</a></li>
+            <li>
+              <a href="#" class="hover:text-purple-600">Ethica University</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica Show</a></li>
+            <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+            <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+            <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Support</a></li>
+            <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+            <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
+            <li><a href="#" class="hover:text-purple-600">Business</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Brands -->
+        <div>
+          <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-purple-600">Ethica States</a></li>
+            <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+            <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+            <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+            <li><a href="#" class="hover:text-purple-600">Ethica Talks</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
+      >
+        <p class="font-bold">
+          © 2025 Ethica Learning, Inc. ·
+          <a href="#" class="hover:text-purple-600">Terms</a> ·
+          <a href="#" class="hover:text-purple-600">Privacy</a>
+        </p>
+
+        <div class="flex items-center gap-6">
+          <div class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3.6 9h16.8M3.6 15h16.8"
+              />
+            </svg>
+            <span class="font-bold">English (EN)</span>
+          </div>
+          <div class="flex gap-4 text-gray-600">
+            <a href="#" class="hover:text-purple-600">Fb</a>
+            <a href="#" class="hover:text-purple-600">X</a>
+            <a href="#" class="hover:text-purple-600">IG</a>
+            <a href="#" class="hover:text-purple-600">YT</a>
+            <a href="#" class="hover:text-purple-600">IN</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+    <script>
+      AOS.init();
+
+      
+
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+          menu.classList.add("flex");
+        } else {
+          menu.classList.add("hidden");
+          menu.classList.remove("flex");
+        }
+      });
+    </script>
+  </body>
+</html>
