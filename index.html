@@ -40,78 +40,55 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   </head>
   <style>
-  
     #mobile-menu {
       transition: all 0.3s ease-in-out;
     }
-/*
-    .custom-para {
-      font-size: 24px;
-      letter-spacing: 0.3px;
-      line-height: 30px;
-      font-weight: 500;
-
-      text-decoration: none;
-      color: rgb(206, 209, 215);
-      text-align: right;
-    }
-        .custom-heading {
-      font-size: 90px;
-      font-weight: 800; 
-      color: #fff;
-      line-height: 1.1;
-      letter-spacing: -1px; 
-      text-align: left;
-      margin-left: 350px; 
-    }
-
-    */
 
     .custom-heading {
-  font-size: 36px;    /* mobile default */
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.1;
-  letter-spacing: -1px;
-  text-align: center;   /* mobile center */
-  margin: 0;            /* reset margin */
-}
+      font-size: 36px; /* mobile default */
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      text-align: center; /* mobile center */
+      margin: 0; /* reset margin */
+    }
 
-.custom-para {
-  font-size: 16px;   /* mobile default */
-  letter-spacing: 0.3px;
-  line-height: 22px;
-  font-weight: 500;
-  color: rgb(206, 209, 215);
-  text-align: center;   /* mobile center */
-  margin-top: 10px;
-}
+    .custom-para {
+      font-size: 16px; /* mobile default */
+      letter-spacing: 0.3px;
+      line-height: 22px;
+      font-weight: 500;
+      color: rgb(206, 209, 215);
+      text-align: center; /* mobile center */
+      margin-top: 10px;
+    }
 
-/* Tablet */
-@media (min-width: 768px) {
-  .custom-heading {
-    font-size: 60px;
-    text-align: left;
-    margin-left: 150px;
-  }
-  .custom-para {
-    font-size: 20px;
-    line-height: 28px;
-    text-align: right;
-  }
-}
+    /* Tablet */
+    @media (min-width: 768px) {
+      .custom-heading {
+        font-size: 60px;
+        text-align: left;
+        margin-left: 150px;
+      }
+      .custom-para {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: right;
+      }
+    }
 
-/* Laptop/Desktop */
-@media (min-width: 1024px) {
-  .custom-heading {
-    font-size: 90px;
-    margin-left: 350px;
-  }
-  .custom-para {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
+    /* Laptop/Desktop */
+    @media (min-width: 1024px) {
+      .custom-heading {
+        font-size: 90px;
+        margin-left: 350px;
+      }
+      .custom-para {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
 
     .button-wrapper {
       display: flex;
@@ -379,7 +356,9 @@
               id="atworkMenu"
               class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
             >
-              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+              <a href="business.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Business</a
+              >
               <a href="#" class="block px-4 py-2 hover:bg-gray-100"
                 >Find a Coach</a
               >
@@ -506,33 +485,31 @@
     </header>
 
     <!-- Hero section  -->
-   <section
-  style="
-    background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/2880x1920/910726d752/workway-header.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: center;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
-  "
->
-  <div class="container mb-10">
-    
-     <p class="text-xl text-white mt-5 w-fit mx-auto md:ml-105">
-      Why choose
-    </p>
-    <div class="text-center">
-      <h3 class="custom-heading">Ethica </h3>
-      <h3 class="custom-heading ">Learning? </h3>
-      <p class="custom-para ">
-      Be part of the world’s most powerful life transformation platform
-    </p>
-    
-    </div>
-  </div>
-</section>
+    <section
+      style="
+        background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/2880x1920/910726d752/workway-header.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      "
+    >
+      <div class="container mb-10">
+        <p class="text-xl text-white mt-5 w-fit mx-auto md:ml-105">
+          Why choose
+        </p>
+        <div class="text-center">
+          <h3 class="custom-heading">Ethica</h3>
+          <h3 class="custom-heading">Learning?</h3>
+          <p class="custom-para">
+            Be part of the world’s most powerful life transformation platform
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Featured Section -->
 
