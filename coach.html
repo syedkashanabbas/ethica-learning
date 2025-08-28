@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Membership at Ethica Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <style>
+      .featured {
+        /* height: 150px; */ /* ye hata do */
+        padding: 20px 0;
+      }
+
+      .featured .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap; /* wrap allow karo */
+      }
+
+      .active-tab {
+        color: #6d28d9;
+      }
+      .featured .logos img {
+        height: 30px;
+        max-width: 120px;
+        object-fit: contain;
+      }
+      @keyframes slider_marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .slider_marquee {
+        display: flex;
+        white-space: nowrap;
+      }
+      .slider_marquee .track {
+        display: flex;
+        animation: slider_marquee 40s linear infinite;
+      }
+      .slider_marquee .cloned {
+        display: flex;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE/Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+    <!-- Navbar -->
+    <nav class="border-b">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- <div class="text-purple-500 font-bold text-xl">Ethica Learning</div> -->
+        <div class="flex items-center">
+          <img src="images/logo-purple.png" alt="Logo" class="h-10 lg:h-12" />
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-sm text-gray-800 font-bold">Support</a>
+          <button
+            class="border border-gray-400 rounded-full px-6 py-2 font-bold text-sm hover:border-gray-600 transition"
+          >
+            Log in
+          </button>
+        </div>
+      </div>
+    </nav>
+
+  
+
+<section class="bg-white py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+      Be coached by the greatest minds
+    </h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Reach your personal and professional milestones with the help of these coaches
+    </p>
+
+    <!-- Avatars + count -->
+    <div class="flex items-center justify-center gap-3 mb-12">
+      <img
+        src="https://coaching.mindvalley.com/images/coaches_group-bd44c43b41b4f087b388627ae5d4d5bf.png?vsn=d"
+        alt="Coaches"
+        class="h-10 w-auto"
+      />
+      <span class="text-gray-700 text-sm">2,646 coaches and counting</span>
+    </div>
+
+    <!-- Filters + Search -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+      <!-- Buttons -->
+      <div class="flex gap-4 flex-wrap justify-center">
+        <button
+          class="inline-flex items-center justify-center border-2 border-purple-600 text-purple-600 
+                 rounded-full px-6 py-2 font-semibold hover:bg-purple-600 hover:text-white transition"
+        >
+          Country
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ml-2 h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <button
+          class="inline-flex items-center justify-center border-2 border-purple-600 text-purple-600 
+                 rounded-full px-6 py-2 font-semibold hover:bg-purple-600 hover:text-white transition"
+        >
+          Language
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ml-2 h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="relative w-full md:w-72">
+        <input
+          type="text"
+          placeholder="Search coach"
+          class="w-full rounded-full border border-gray-200 bg-gray-100 py-2.5 px-4 pr-10 text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11A6 6 0 105 11a6 6 0 0012 0z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Heading -->
+    <div class="flex items-center justify-between mb-10">
+      <h2 class="text-lg md:text-xl font-semibold text-gray-900">
+        Recommend me coaches who specialize in
+      </h2>
+
+      <!-- Dropdown -->
+      <div>
+        <button
+          class="inline-flex items-center justify-center border-2 border-purple-600 text-purple-600 
+                 rounded-full px-6 py-2 font-semibold hover:bg-purple-600 hover:text-white transition"
+        >
+          Select
+          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Coaches grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Coach Card -->
+      <div class="bg-white rounded-2xl shadow-md p-6 flex gap-6 items-start">
+        <img
+          src="https://avatar-assets.mindvalley.com/avatars/177745/d1154e2e763a41e5be6f8eab4365c803.jpg?crop=1:1,smart&quality=85&width=250"
+          alt="Isabel Harkins"
+          class="w-40 h-40 object-cover rounded-xl"
+        />
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">Isabel Harkins</h3>
+          <p class="text-sm font-semibold text-gray-700">Teacher</p>
+          <p class="text-sm text-gray-500 mb-2">Santa Fe, United States</p>
+          <p class="text-sm text-gray-600">
+            Isabel was born in Santiago, Chile and grew up in the Peruvian Andes and Amazon. 
+            She learned ancient healing ways and knew from a young age she wanted to make a difference in the world.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6 flex gap-6 items-start">
+        <img
+          src="https://avatar-assets.mindvalley.com/avatars/18766265/56324f496a0e4289bbabe41b37d62c41?crop=1:1,smart&quality=85&width=250"
+          alt="Charissa Cheong"
+          class="w-40 h-40 object-cover rounded-xl"
+        />
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">Charissa Cheong</h3>
+          <p class="text-sm font-semibold text-gray-700">Business Consultant</p>
+          <p class="text-sm text-gray-500 mb-2">Madrid, Spain</p>
+          <p class="text-sm text-gray-600">
+            A former UN professional with a Master’s in Natural Resource Management, now helping organizations 
+            thrive through coaching and business consulting with a focus on creativity and growth.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6 flex gap-6 items-start">
+        <img
+          src="https://avatar-assets.mindvalley.com/avatars/177745/d1154e2e763a41e5be6f8eab4365c803.jpg?crop=1:1,smart&quality=85&width=250"
+          alt="Vibeke Elisabeth"
+          class="w-40 h-40 object-cover rounded-xl"
+        />
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">Vibeke Elisabeth</h3>
+          <p class="text-sm font-semibold text-gray-700">Entrepreneur</p>
+          <p class="text-sm text-gray-500 mb-2">Kansas City, United States</p>
+          <p class="text-sm text-gray-600">
+            Empowering entrepreneurs to grow boldly into their destiny through strategic marketing 
+            and coaching. Focused on clarity, confidence, and unlocking opportunities.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md p-6 flex gap-6 items-start">
+        <img
+          src="https://avatar-assets.mindvalley.com/avatars/17346144/530c52d2139f4591bc9bc340857e7055.jpg?crop=1:1,smart&quality=85&width=250"
+          alt="Kelly Chapin"
+          class="w-40 h-40 object-cover rounded-xl"
+        />
+        <div>
+          <h3 class="text-xl font-bold text-gray-900">Kelly Chapin</h3>
+          <p class="text-sm font-semibold text-gray-700">Entrepreneur</p>
+          <p class="text-sm text-gray-500 mb-2">Cumberland, United States</p>
+          <p class="text-sm text-gray-600">
+            With a background in Environmental Science, Kelly has worked across marine and terrestrial 
+            projects, now coaching entrepreneurs on building sustainable growth and resilience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+      async function setCountry() {
+        try {
+          const res = await fetch("https://get.geojs.io/v1/ip/geo.json");
+          const data = await res.json();
+          document.getElementById("country-text").textContent =
+            "Now available in " + data.country;
+        } catch (e) {
+          document.getElementById("country-text").textContent =
+            "Now available worldwide";
+        }
+
+        // Show hero + trigger animations
+        const hero = document.getElementById("hero");
+        hero.classList.remove("opacity-0", "invisible");
+        AOS.init();
+      }
+
+      setCountry();
+    </script>
+
+    <footer class="border-t mt-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500"
+      >
+        <!-- Left -->
+        <div
+          class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4"
+        >
+          <span>© 2025 Ethica Lea, Inc.</span>
+          <a href="#" class="hover:text-gray-700">Terms</a>
+          <a href="#" class="hover:text-gray-700">Privacy</a>
+        </div>
+
+        <!-- Right (socials) -->
+        <div class="flex space-x-4 mt-4 sm:mt-0">
+          <!-- Facebook -->
+          <a href="#" class="hover:text-gray-700" aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12H18l-.5 3h-2.9v7A10 10 0 0 0 22 12Z"
+              />
+            </svg>
+          </a>
+          <!-- X (Twitter) -->
+          <a href="#" class="hover:text-gray-700" aria-label="X">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-5.4-7.2L4.7 22H2.6l7-7.9L2 2h7l4.9 6.6L18.9 2Zm-2.4 18h1.5L8.6 4H7L16.5 20Z"
+              />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="hover:text-gray-700" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7Zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10Zm-5 3.3A5.7 5.7 0 1 0 17.7 13 5.7 5.7 0 0 0 12 7.3Zm0 2A3.7 3.7 0 1 1 8.3 13 3.7 3.7 0 0 1 12 9.3Zm4.6-3.4a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+              />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="#" class="hover:text-gray-700" aria-label="YouTube">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M10 15V9l5.2 3L10 15Zm12-3c0-2.1-.2-3.6-.6-4.7-.3-1-1.1-1.8-2.1-2.1C18.2 5.8 12 5.8 12 5.8s-6.2 0-7.3.4c-1 .3-1.8 1.1-2.1 2.1C2.2 8.4 2 9.9 2 12c0 2.1.2 3.6.6 4.7.3 1 1.1 1.8 2.1 2.1 1.1.4 7.3.4 7.3.4s6.2 0 7.3-.4c1-.3 1.8-1.1 2.1-2.1.4-1.1.6-2.6.6-4.7Z"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="hover:text-gray-700" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.3 17v-7.2H5.8V17h2.5Zm-.1-8.2a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM18 17v-4c0-2.2-1.1-3.2-2.7-3.2-1.2 0-1.8.7-2.1 1.2v-1H10v7.2h2.5v-3.6c0-.9.6-1.4 1.3-1.4s1.2.5 1.2 1.4V17H18Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
