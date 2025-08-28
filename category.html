@@ -165,28 +165,74 @@
   </style>
   <body class="bg-white">
     <!-- Navbar -->
-    <header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    
-    <!-- Logo -->
-    <div class="flex items-center">
+<header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
+  <div class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- Left: Logo -->
+    <div class="flex-shrink-0 flex items-center">
       <img src="images/logo-purple.png" alt="Logo" class="h-12 w-auto object-contain" />
     </div>
 
-    <!-- Nav Links (Desktop) -->
-    <nav class="hidden lg:flex items-center gap-8 font-medium">
+    <!-- Center: Nav Links -->
+    <nav class="hidden lg:flex items-center gap-6 font-medium">
       <a href="./membership.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Membership</a>
-      <a href="./category.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">Categories</a>
-      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Community</a>
+
+      <!-- Categories Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('categoriesMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          Categories
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="categoriesMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">All Categories</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mind</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Body</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Soul</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Career</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Relationships</a>
+        </div>
+      </div>
+
+      <!-- Community Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('communityMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          Community
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="communityMenu2" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community First</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global Events</a>
+        </div>
+      </div>
+
       <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Results</a>
-      <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">At Work</a>
+
+      <!-- At Work Dropdown -->
+      <div class="relative">
+        <button onclick="toggleDropdown('atworkMenu2')" class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1">
+          At Work
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="atworkMenu2" class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a Coach</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Become a Coach</a>
+        </div>
+      </div>
+
       <a href="#" class="font-semibold text-gray-800 hover:text-purple-600 transition">Support</a>
     </nav>
 
-    <!-- Right Side (Desktop) -->
-    <div class="hidden lg:flex items-center gap-6 text-gray-800 font-medium">
+    <!-- Right: Globe, Login, Button -->
+    <div class="hidden lg:flex items-center gap-4 text-gray-800 font-medium">
       <div class="flex items-center gap-2 cursor-pointer">
-        <!-- Globe SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"/>
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8"/>
@@ -194,8 +240,7 @@
         <span>EN</span>
       </div>
       <a href="#" class="font-semibold hover:text-purple-600 transition">Log in</a>
-      <a href="#"
-         class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+      <a href="#" class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
         Create an account
       </a>
     </div>
@@ -211,21 +256,82 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl">
     <a href="./membership.html" class="block font-semibold hover:text-purple-600 transition">Membership</a>
-    <a href="./category.html" class="block font-semibold hover:text-purple-600 transition">Categories</a>
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">Community</a>
+
+    <!-- Mobile Categories Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileCategories')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        Categories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">All Categories</a>
+        <a href="#" class="block hover:text-purple-600">Mind</a>
+        <a href="#" class="block hover:text-purple-600">Body</a>
+        <a href="#" class="block hover:text-purple-600">Soul</a>
+        <a href="#" class="block hover:text-purple-600">Entrepreneurship</a>
+        <a href="#" class="block hover:text-purple-600">Career</a>
+        <a href="#" class="block hover:text-purple-600">Relationships</a>
+      </div>
+    </div>
+
+    <!-- Mobile Community Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileCommunity')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        Community
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">Community First</a>
+        <a href="#" class="block hover:text-purple-600">Global Events</a>
+      </div>
+    </div>
+
     <a href="#" class="block font-semibold hover:text-purple-600 transition">Results</a>
-    <a href="#" class="block font-semibold hover:text-purple-600 transition">At Work</a>
+
+    <!-- Mobile At Work Dropdown -->
+    <div>
+      <button onclick="toggleDropdown('mobileAtwork')" class="w-full flex justify-between items-center font-semibold hover:text-purple-600">
+        At Work
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
+        <a href="#" class="block hover:text-purple-600">Business</a>
+        <a href="#" class="block hover:text-purple-600">Find a Coach</a>
+        <a href="#" class="block hover:text-purple-600">Become a Coach</a>
+      </div>
+    </div>
+
     <a href="#" class="block font-semibold hover:text-purple-600 transition">Support</a>
 
     <div class="border-t border-gray-200 pt-4 space-y-3">
       <a href="#" class="block font-semibold hover:text-purple-600 transition">Log in</a>
-      <a href="#"
-         class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
+      <a href="#" class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition">
         Create an account
       </a>
     </div>
   </div>
 </header>
+
+<script>
+  function toggleDropdown(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.classList.toggle('hidden');
+    }
+  }
+
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
 
 
     <section
@@ -1615,8 +1721,7 @@
     <script>
       AOS.init();
 
-      const btn = document.getElementById("mobile-menu-btn");
-      const menu = document.getElementById("mobile-menu");
+      
 
       btn.addEventListener("click", () => {
         if (menu.classList.contains("hidden")) {

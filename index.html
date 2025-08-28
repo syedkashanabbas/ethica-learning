@@ -188,14 +188,76 @@
     </div>
 
     <!-- Nav Links (Desktop) -->
-    <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
-      <a href="./membership.html" class="hover:text-gray-200 transition">Membership</a>
-      <a href="./category.html" class="hover:text-gray-200 transition">Categories</a>
-      <a href="#" class="hover:text-gray-200 transition">Community</a>
-      <a href="#results" class="hover:text-gray-200 transition">Results</a>
-      <a href="#" class="hover:text-gray-200 transition">At Work</a>
-      <a href="#" class="hover:text-gray-200 transition">Support</a>
-    </nav>
+   <!-- Nav Links (Desktop) -->
+<nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+
+  <a href="./membership.html" class="hover:text-gray-200 transition">Membership</a>
+
+  <!-- Categories Dropdown -->
+  <div class="relative">
+    <button onclick="toggleDropdown('categoriesMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
+      Categories
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div id="categoriesMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+      <a href="category.html" class="block px-4 py-2 hover:bg-gray-100">All Categories</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Mind</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Body</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Soul</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Entrepreneurship</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Career</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Relationships</a>
+    </div>
+  </div>
+
+  <!-- Community Dropdown -->
+  <div class="relative">
+    <button onclick="toggleDropdown('communityMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
+      Community
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div id="communityMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community First</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Global Events</a>
+    </div>
+  </div>
+
+  <!-- At Work Dropdown -->
+  <div class="relative">
+    <button onclick="toggleDropdown('atworkMenu')" class="hover:text-gray-200 transition flex items-center gap-1">
+      At Work
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div id="atworkMenu" class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Find a Coach</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Become a Coach</a>
+    </div>
+  </div>
+
+  <a href="#results" class="hover:text-gray-200 transition">Results</a>
+  <a href="#" class="hover:text-gray-200 transition">Support</a>
+</nav>
+
+<!-- Dropdown Toggle Script -->
+<script>
+  function toggleDropdown(id) {
+    document.querySelectorAll('[id$="Menu"]').forEach(menu => {
+      if (menu.id === id) {
+        menu.classList.toggle('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
 
     <!-- Right Side (Desktop) -->
     <div class="hidden lg:flex items-center gap-6 text-white font-medium">
