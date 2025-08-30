@@ -38,7 +38,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -174,7 +174,11 @@
   </style>
   <body class="bg-white">
     <!-- Navbar -->
-    <header class="absolute bg-white top-0 left-0 w-full z-30 shadow-sm">
+    <!-- Navbar -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transform -translate-y-full transition-transform duration-700 ease-out"
+    >
       <div
         class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4"
       >
@@ -356,9 +360,8 @@
           <a
             href="#"
             class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+            >Create an account</a
           >
-            Create an account
-          </a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -391,7 +394,7 @@
           >Membership</a
         >
 
-        <!-- Mobile Categories Dropdown -->
+        <!-- Mobile Categories -->
         <div>
           <button
             onclick="toggleDropdown('mobileCategories')"
@@ -413,17 +416,31 @@
             </svg>
           </button>
           <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
-            <a href="#" class="block hover:text-purple-600">All Categories</a>
-            <a href="#" class="block hover:text-purple-600">Mind</a>
-            <a href="#" class="block hover:text-purple-600">Body</a>
-            <a href="#" class="block hover:text-purple-600">Soul</a>
-            <a href="#" class="block hover:text-purple-600">Entrepreneurship</a>
-            <a href="#" class="block hover:text-purple-600">Career</a>
-            <a href="#" class="block hover:text-purple-600">Relationships</a>
+            <a href="./category.html" class="block hover:text-purple-600"
+              >All Categories</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Mind</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Body</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Soul</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Entrepreneurship</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Career</a
+            >
+            <a href="./single-category.html" class="block hover:text-purple-600"
+              >Relationships</a
+            >
           </div>
         </div>
 
-        <!-- Mobile Community Dropdown -->
+        <!-- Mobile Community -->
         <div>
           <button
             onclick="toggleDropdown('mobileCommunity')"
@@ -445,8 +462,12 @@
             </svg>
           </button>
           <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
-            <a href="#" class="block hover:text-purple-600">Community First</a>
-            <a href="#" class="block hover:text-purple-600">Global Events</a>
+            <a href="./community.html" class="block hover:text-purple-600"
+              >Community First</a
+            >
+            <a href="./events.html" class="block hover:text-purple-600"
+              >Global Events</a
+            >
           </div>
         </div>
 
@@ -454,7 +475,7 @@
           >Results</a
         >
 
-        <!-- Mobile At Work Dropdown -->
+        <!-- Mobile At Work -->
         <div>
           <button
             onclick="toggleDropdown('mobileAtwork')"
@@ -476,9 +497,15 @@
             </svg>
           </button>
           <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
-            <a href="#" class="block hover:text-purple-600">Business</a>
-            <a href="#" class="block hover:text-purple-600">Find a Coach</a>
-            <a href="#" class="block hover:text-purple-600">Become a Coach</a>
+            <a href="./business.html" class="block hover:text-purple-600"
+              >Business</a
+            >
+            <a href="./coach.html" class="block hover:text-purple-600"
+              >Find a Coach</a
+            >
+            <a href="./become-coach.html" class="block hover:text-purple-600"
+              >Become a Coach</a
+            >
           </div>
         </div>
 
@@ -495,19 +522,21 @@
           <a
             href="#"
             class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+            >Create an account</a
           >
-            Create an account
-          </a>
         </div>
       </div>
     </header>
 
     <script>
+      // Drop animation on load
+      window.addEventListener("load", () => {
+        document.getElementById("navbar").classList.remove("-translate-y-full");
+      });
+
       function toggleDropdown(id) {
         const el = document.getElementById(id);
-        if (el) {
-          el.classList.toggle("hidden");
-        }
+        if (el) el.classList.toggle("hidden");
       }
 
       // Mobile menu toggle
@@ -526,27 +555,42 @@
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
       >
         <!-- Left Content -->
-        <div class="text-center md:text-left">
+        <div
+          class="text-center md:text-left"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h2
             class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-snug"
           >
             Get full access with <br class="hidden md:block" />
             Mindvalley Membership
           </h2>
-          <p class="text-gray-600 mb-6 text-base sm:text-lg">
+          <p
+            class="text-gray-600 mb-6 text-base sm:text-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             With Mindvalley Membership you get unlimited access to all quests,
             meditations, trainings, private social network, and a lot more – for
             only <strong>$0.55/day.</strong>
           </p>
           <button
             class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-full transition w-full sm:w-auto"
+            data-aos="zoom-in"
+            data-aos-delay="600"
           >
             Become a member
           </button>
         </div>
 
         <!-- Right Video -->
-        <div class="relative rounded-xl overflow-hidden shadow-lg">
+        <div
+          class="relative rounded-xl overflow-hidden shadow-lg"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+          data-aos-delay="400"
+        >
           <video
             id="mindvalley-video"
             class="video-js vjs-big-play-centered rounded-xl w-full h-auto"
@@ -568,6 +612,8 @@
           <!-- Overlay button -->
           <button
             class="absolute top-4 left-4 bg-white/80 text-gray-800 text-xs sm:text-sm px-3 sm:px-4 py-1.5 rounded-full flex items-center gap-2 hover:bg-white"
+            data-aos="fade-down"
+            data-aos-delay="700"
           >
             ▶ Class Trailer
           </button>
@@ -575,6 +621,8 @@
           <!-- Caption -->
           <div
             class="absolute bottom-4 left-0 w-full text-center text-white text-sm sm:text-lg font-medium drop-shadow"
+            data-aos="fade-up"
+            data-aos-delay="900"
           >
             Mindvalley Live Events Globally
           </div>
@@ -926,16 +974,26 @@
     <section class="w-full bg-white py-16 px-4">
       <div class="max-w-7xl mx-auto text-left">
         <!-- Heading -->
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Mind</h2>
-        <p class="mt-4 text-gray-600 max-w-5xl">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-900"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          Mind
+        </h2>
+        <p
+          class="mt-4 text-gray-600 max-w-5xl"
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           Upgrade your belief systems and inner programming. Retune your
           mindset. Harness your mind to transform your reality.
         </p>
 
-        <!-- Cards -->
+        <!-- Cards Row 1 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
               alt="The Way of the Kettlebell"
@@ -946,9 +1004,7 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
               alt="Smarter Not Harder"
@@ -957,9 +1013,7 @@
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
               alt="The Ultimate Guide to Supplements"
@@ -971,12 +1025,12 @@
             <p class="text-sm text-gray-600">Shawn Wells</p>
           </div>
         </div>
+
+        <!-- Cards Row 2 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Way of the Kettlebell"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -984,23 +1038,17 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
-              alt="Smarter Not Harder"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Ultimate Guide to Supplements"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1009,12 +1057,12 @@
             <p class="text-sm text-gray-600">Shawn Wells</p>
           </div>
         </div>
+
+        <!-- Cards Row 3 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Way of the Kettlebell"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1022,23 +1070,17 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
-              alt="Smarter Not Harder"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Ultimate Guide to Supplements"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1053,16 +1095,26 @@
     <section class="w-full bg-white py-16 px-4">
       <div class="max-w-7xl mx-auto text-left">
         <!-- Heading -->
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Body</h2>
-        <p class="mt-4 text-gray-600 max-w-5xl">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-gray-900"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          Body
+        </h2>
+        <p
+          class="mt-4 text-gray-600 max-w-5xl"
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
           Heal. Turn back the clock on aging. Get in the best shape of your
-          life, without gruelling exercise or unsustainable dieting
+          life, without gruelling exercise or unsustainable dieting.
         </p>
 
-        <!-- Cards -->
+        <!-- Row 1 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
               alt="The Way of the Kettlebell"
@@ -1073,9 +1125,7 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
               alt="Smarter Not Harder"
@@ -1084,9 +1134,7 @@
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
               alt="The Ultimate Guide to Supplements"
@@ -1098,12 +1146,12 @@
             <p class="text-sm text-gray-600">Shawn Wells</p>
           </div>
         </div>
+
+        <!-- Row 2 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Way of the Kettlebell"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1111,23 +1159,17 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
-              alt="Smarter Not Harder"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Ultimate Guide to Supplements"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1136,12 +1178,12 @@
             <p class="text-sm text-gray-600">Shawn Wells</p>
           </div>
         </div>
+
+        <!-- Row 3 -->
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/7b237311d6/twk_questcover_1920x1080_en.jpg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Way of the Kettlebell"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1149,23 +1191,17 @@
             </h3>
             <p class="text-sm text-gray-600">Steve Cotter</p>
           </div>
-
-          <!-- Card 2 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="200">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/4125f1a33b/image-1-1.png?quality=60&auto=webp&dpr=1&width=384"
-              alt="Smarter Not Harder"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">Smarter Not Harder</h3>
             <p class="text-sm text-gray-600">Dave Asprey</p>
           </div>
-
-          <!-- Card 3 -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="300">
             <img
               src="https://storyblok-cdn.mindvalley.com/f/60579/1920x1080/86660e031c/the-ultimate-guide-to-supplements-cover.jpeg?quality=60&auto=webp&dpr=1&width=384"
-              alt="The Ultimate Guide to Supplements"
               class="rounded-lg w-full object-cover"
             />
             <h3 class="mt-3 font-bold text-gray-900">
@@ -1176,20 +1212,28 @@
         </div>
       </div>
     </section>
+
     <section class="py-16 px-6 md:px-12 lg:px-20 bg-white">
-      <div class="max-w-4xl mx-auto text-center mb-12">
+      <div
+        class="max-w-4xl mx-auto text-center mb-12"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
         <h2 class="text-3xl md:text-4xl font-bold mb-2">Meet your trainers</h2>
         <p class="text-gray-600">
           Learn from the world’s best teachers, authors, and visionaries
         </p>
       </div>
 
+      <!-- Trainers Grid -->
       <div
-        class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
       >
         <!-- Card 1 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="100"
         >
           <img
             src="https://picsum.photos/400/400?random=1"
@@ -1205,6 +1249,8 @@
         <!-- Card 2 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="200"
         >
           <img
             src="https://picsum.photos/400/400?random=2"
@@ -1220,6 +1266,8 @@
         <!-- Card 3 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="300"
         >
           <img
             src="https://picsum.photos/400/400?random=3"
@@ -1235,6 +1283,8 @@
         <!-- Card 4 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="400"
         >
           <img
             src="https://picsum.photos/400/400?random=4"
@@ -1247,12 +1297,15 @@
           </div>
         </div>
       </div>
+
       <div
-        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
+        class="max-w-6xl mt-4 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
       >
         <!-- Card 1 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="100"
         >
           <img
             src="https://picsum.photos/400/400?random=1"
@@ -1268,6 +1321,8 @@
         <!-- Card 2 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="200"
         >
           <img
             src="https://picsum.photos/400/400?random=2"
@@ -1283,6 +1338,8 @@
         <!-- Card 3 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="300"
         >
           <img
             src="https://picsum.photos/400/400?random=3"
@@ -1298,132 +1355,8 @@
         <!-- Card 4 -->
         <div
           class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=4"
-            alt="Trainer 4"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Maria Lopez</h3>
-            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
-      >
-        <!-- Card 1 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=1"
-            alt="Trainer 1"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Alex Carter</h3>
-            <p class="text-gray-600 text-sm">Motivational Speaker</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=2"
-            alt="Trainer 2"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Sophie Miller</h3>
-            <p class="text-gray-600 text-sm">Wellness Coach</p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=3"
-            alt="Trainer 3"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Daniel Kim</h3>
-            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=4"
-            alt="Trainer 4"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Maria Lopez</h3>
-            <p class="text-gray-600 text-sm">Mindfulness Teacher</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="max-w-5xl mt-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center"
-      >
-        <!-- Card 1 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=1"
-            alt="Trainer 1"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Alex Carter</h3>
-            <p class="text-gray-600 text-sm">Motivational Speaker</p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=2"
-            alt="Trainer 2"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Sophie Miller</h3>
-            <p class="text-gray-600 text-sm">Wellness Coach</p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
-        >
-          <img
-            src="https://picsum.photos/400/400?random=3"
-            alt="Trainer 3"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-bold text-lg">Daniel Kim</h3>
-            <p class="text-gray-600 text-sm">Entrepreneurship Mentor</p>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div
-          class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition w-64"
+          data-aos="zoom-in"
+          data-aos-delay="400"
         >
           <img
             src="https://picsum.photos/400/400?random=4"
@@ -1444,7 +1377,11 @@
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
       >
         <!-- Left Image -->
-        <div class="relative flex justify-center order-1 md:order-none">
+        <div
+          class="relative flex justify-center order-1 md:order-none"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <img
             src="https://storyblok-cdn.mindvalley.com/f/60579/1010x1604/3ada6c5e24/mvcom_hp_stories_left.jpg?quality=60&auto=webp&dpr=1&width=800"
             alt="Left collage"
@@ -1453,7 +1390,12 @@
         </div>
 
         <!-- Center Content -->
-        <div class="text-center order-3 md:order-none">
+        <div
+          class="text-center order-3 md:order-none"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+        >
           <h2
             class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-purple-900"
           >
@@ -1466,8 +1408,8 @@
             Mindvalley has some of the highest success rates in the world at
             transforming our learners. Browse case studies and stories of
             success on
-            <a href="#" class="text-purple-600 underline"
-              >stories.ethicalearning.com</a
+            <a href="#" class="text-purple-600 underline">
+              stories.ethicalearning.com </a
             >.
           </p>
           <button
@@ -1478,7 +1420,11 @@
         </div>
 
         <!-- Right Image -->
-        <div class="relative flex justify-center order-2 md:order-none">
+        <div
+          class="relative flex justify-center order-2 md:order-none"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <img
             src="https://storyblok-cdn.mindvalley.com/f/60579/1192x1712/1c753e40c5/mvcom_hp_stories_right.jpg?quality=60&auto=webp&dpr=1&width=800"
             alt="Right collage"
@@ -1493,6 +1439,8 @@
         <!-- Top Label -->
         <p
           class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3"
+          data-aos="fade-down"
+          data-aos-duration="800"
         >
           What the press says
         </p>
@@ -1500,12 +1448,20 @@
         <!-- Heading -->
         <h2
           class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
         >
           The world's most effective transformation platform
         </h2>
 
         <!-- Subtext -->
-        <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p
+          class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
           From leading media platforms like CNN, CBS to influential voices like
           Jay Shetty and Impact Theory, Mindvalley is recognized worldwide for
           empowering people to transform their mind, body, and soul—unlocking
@@ -1513,7 +1469,12 @@
         </p>
 
         <!-- Big Video with Plyr -->
-        <div class="rounded-2xl overflow-hidden shadow-2xl mb-16">
+        <div
+          class="rounded-2xl overflow-hidden shadow-2xl mb-16"
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-delay="600"
+        >
           <video
             id="main-video"
             playsinline
@@ -1527,15 +1488,10 @@
             Your browser does not support the video tag.
           </video>
         </div>
-
-        <!-- Cards -->
       </div>
     </section>
 
-    <script>
-      // Activate Plyr custom UI for top video
-      const player = new Plyr("#main-video");
-    </script>
+    
 
     <section class="py-16 px-6 md:px-12 lg:px-20 bg-white text-center">
       <div class="max-w-6xl mx-auto mb-12">
@@ -1605,12 +1561,21 @@
         class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
       >
         <!-- Left Text -->
-        <div>
-          <h2 class="text-3xl md:text-4xl text-white font-bold mb-6">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h2
+            class="text-3xl md:text-4xl text-white font-bold mb-6"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
             Begin your health transformation today <br />
             with Mindvalley
           </h2>
-          <p class="flex items-start mb-4">
+
+          <p
+            class="flex items-start mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <svg
               class="w-5 h-5 text-purple-400 mr-3"
               fill="currentColor"
@@ -1627,7 +1592,12 @@
               transformational programs</span
             >
           </p>
-          <p class="flex items-start mb-4">
+
+          <p
+            class="flex items-start mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <svg
               class="w-5 h-5 text-purple-400 mr-3"
               fill="currentColor"
@@ -1644,7 +1614,8 @@
               breathwork & therapeutic sounds</span
             >
           </p>
-          <p class="flex items-start">
+
+          <p class="flex items-start" data-aos="fade-up" data-aos-delay="600">
             <svg
               class="w-5 h-5 text-purple-400 mr-3"
               fill="currentColor"
@@ -1664,9 +1635,11 @@
         </div>
 
         <!-- Right Card -->
-        <!-- Right Card -->
         <div
           class="bg-white text-gray-900 rounded-2xl shadow-xl p-8 max-w-sm mx-auto"
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-delay="800"
         >
           <div class="flex justify-center space-x-2 mb-6">
             <button
@@ -1681,9 +1654,9 @@
             >
               Yearly
             </button>
-            <span class="text-sm text-orange-500 font-medium self-center"
-              >Best value</span
-            >
+            <span class="text-sm text-orange-500 font-medium self-center">
+              Best value
+            </span>
           </div>
 
           <!-- WRAPPER with fixed height -->
@@ -1902,20 +1875,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-
+    
     <script>
       AOS.init();
-
-      btn.addEventListener("click", () => {
-        if (menu.classList.contains("hidden")) {
-          menu.classList.remove("hidden");
-          menu.classList.add("flex");
-        } else {
-          menu.classList.add("hidden");
-          menu.classList.remove("flex");
-        }
-      });
+ const player = new Plyr("#main-video");
+    
     </script>
   </body>
 </html>
