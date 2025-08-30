@@ -109,20 +109,27 @@
       </div>
     </nav>
 
-  
+
 
 <section class="bg-white py-20">
   <div class="max-w-6xl mx-auto px-6 text-center">
     <!-- Heading -->
-    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
+    <h2
+      class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4"
+      data-aos="fade-up"
+    >
       Be coached by the greatest minds
     </h2>
-    <p class="text-lg text-gray-600 mb-8">
+    <p class="text-lg text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
       Reach your personal and professional milestones with the help of these coaches
     </p>
 
     <!-- Avatars + count -->
-    <div class="flex items-center justify-center gap-3 mb-12">
+    <div
+      class="flex items-center justify-center gap-3 mb-12"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
       <img
         src="https://coaching.mindvalley.com/images/coaches_group-bd44c43b41b4f087b388627ae5d4d5bf.png?vsn=d"
         alt="Coaches"
@@ -132,12 +139,17 @@
     </div>
 
     <!-- Filters + Search -->
-    <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-4"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
       <!-- Buttons -->
       <div class="flex gap-4 flex-wrap justify-center">
         <button
           class="inline-flex items-center justify-center border-2 border-purple-600 text-purple-600 
                  rounded-full px-6 py-2 font-semibold hover:bg-purple-600 hover:text-white transition"
+          data-aos="fade-right"
         >
           Country
           <svg
@@ -154,6 +166,7 @@
         <button
           class="inline-flex items-center justify-center border-2 border-purple-600 text-purple-600 
                  rounded-full px-6 py-2 font-semibold hover:bg-purple-600 hover:text-white transition"
+          data-aos="fade-left"
         >
           Language
           <svg
@@ -169,7 +182,11 @@
       </div>
 
       <!-- Search Bar -->
-      <div class="relative w-full md:w-72">
+      <div
+        class="relative w-full md:w-72"
+        data-aos="zoom-in"
+        data-aos-delay="700"
+      >
         <input
           type="text"
           placeholder="Search coach"
@@ -290,24 +307,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
     <script>
-      async function setCountry() {
-        try {
-          const res = await fetch("https://get.geojs.io/v1/ip/geo.json");
-          const data = await res.json();
-          document.getElementById("country-text").textContent =
-            "Now available in " + data.country;
-        } catch (e) {
-          document.getElementById("country-text").textContent =
-            "Now available worldwide";
-        }
-
-        // Show hero + trigger animations
-        const hero = document.getElementById("hero");
-        hero.classList.remove("opacity-0", "invisible");
-        AOS.init();
-      }
-
-      setCountry();
+    AOS.init({
+    duration: 1000,
+    once: true,
+  });
     </script>
 
     <footer class="border-t mt-10">
