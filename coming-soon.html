@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coming Soon | Pharos Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Sansation", sans-serif !important;
+      }
+      .bg-slide {
+        transition: opacity 1.5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="h-screen w-full flex items-center justify-center relative overflow-hidden">
+    <!-- Background Slider -->
+    <div class="absolute inset-0">
+      <img
+        src="images/hero1.webp"
+        class="absolute inset-0 w-full h-full object-cover bg-slide opacity-100"
+      />
+      <img
+        src="images/hero2.jpg"
+        class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
+      />
+      <img
+        src="images/hero3.jpg"
+        class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
+      />
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-6">
+      <h1
+        class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight drop-shadow-2xl leading-tight"
+      >
+        Coming Soon
+      </h1>
+      <p class="mt-6 text-xl sm:text-2xl md:text-3xl text-gray-200 max-w-3xl mx-auto">
+        Something amazing is on its way. Stay tuned!
+      </p>
+      <a
+        href="index.html"
+        class="mt-10 inline-block px-10 py-4 rounded-full bg-white text-purple-700 text-lg sm:text-xl font-semibold shadow-lg hover:bg-purple-100 transition"
+      >
+        Back to Home
+      </a>
+    </div>
+
+    <script>
+      const slides = document.querySelectorAll(".bg-slide");
+      let current = 0;
+
+      function changeSlide() {
+        slides[current].classList.remove("opacity-100");
+        slides[current].classList.add("opacity-0");
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.remove("opacity-0");
+        slides[current].classList.add("opacity-100");
+      }
+
+      setInterval(changeSlide, 3000); 
+    </script>
+  </body>
+</html>
