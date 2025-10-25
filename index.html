@@ -30,186 +30,188 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Pharos Learning is a modern e-learning platform that helps students and educators connect, grow, and achieve success through interactive courses and smart tools." />
+
   </head>
-  <style>
-    #mobile-menu {
-      transition: all 0.3s ease-in-out;
-    }
-    * {
-      font-family: "Sansation", sans-serif !important;
-    }
+    <style>
+      #mobile-menu {
+        transition: all 0.3s ease-in-out;
+      }
+      * {
+        font-family: "Sansation", sans-serif !important;
+      }
 
-    .custom-heading {
-      font-size: 36px; /* mobile default */
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.1;
-      letter-spacing: -1px;
-      text-align: center; /* mobile center */
-      margin: 0; /* reset margin */
-    }
-
-    .custom-para {
-      font-size: 16px; /* mobile default */
-      letter-spacing: 0.3px;
-      line-height: 22px;
-      font-weight: 500;
-      color: rgb(206, 209, 215);
-      text-align: center; /* mobile center */
-      margin-top: 10px;
-    }
-
-    /* Tablet */
-    @media (min-width: 768px) {
       .custom-heading {
-        font-size: 60px;
-        text-align: left;
-        margin-left: 150px;
+        font-size: 36px; /* mobile default */
+        font-weight: 800;
+        color: #fff;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        text-align: center; /* mobile center */
+        margin: 0; /* reset margin */
       }
+
       .custom-para {
-        font-size: 20px;
-        line-height: 28px;
-        text-align: right;
+        font-size: 16px; /* mobile default */
+        letter-spacing: 0.3px;
+        line-height: 22px;
+        font-weight: 500;
+        color: rgb(206, 209, 215);
+        text-align: center; /* mobile center */
+        margin-top: 10px;
       }
-    }
 
-    /* Laptop/Desktop */
-    @media (min-width: 1024px) {
-      .custom-heading {
-        font-size: 90px;
-        margin-left: 350px;
+      /* Tablet */
+      @media (min-width: 768px) {
+        .custom-heading {
+          font-size: 60px;
+          text-align: left;
+          margin-left: 150px;
+        }
+        .custom-para {
+          font-size: 20px;
+          line-height: 28px;
+          text-align: right;
+        }
       }
-      .custom-para {
-        font-size: 24px;
-        line-height: 30px;
+
+      /* Laptop/Desktop */
+      @media (min-width: 1024px) {
+        .custom-heading {
+          font-size: 90px;
+          margin-left: 350px;
+        }
+        .custom-para {
+          font-size: 24px;
+          line-height: 30px;
+        }
       }
-    }
 
-    .button-wrapper {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* space between buttons */
-      margin-top: 20px;
-    }
-
-    .btn-primary {
-      background: #fff;
-      color: purple;
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      border: 2px solid transparent;
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: #fff;
-      font-weight: 600;
-      padding: 12px 24px;
-      border-radius: 50px;
-      text-decoration: none;
-      border: 2px solid #fff;
-    }
-
-    .btn-primary:hover,
-    .btn-outline:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-      transition: all 0.2s ease;
-    }
-    .featured {
-      /* height: 150px; */ /* ye hata do */
-      padding: 20px 0;
-    }
-
-    .featured .logos {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap; /* wrap allow karo */
-    }
-
-    .featured .logos img {
-      height: 30px;
-      max-width: 120px;
-      object-fit: contain;
-    }
-
-    .marquee-row {
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-    }
-    .marquee-track {
-      display: flex;
-      gap: 1.5rem;
-      width: max-content;
-      animation: marquee 20s linear infinite;
-    }
-    .marquee-track.reverse {
-      animation-direction: reverse;
-    }
-    .marquee-item {
-      min-width: 320px;
-      border-radius: 0.75rem;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    .marquee-item img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .marquee-row:hover .marquee-track {
-      animation-play-state: paused;
-    }
-    @keyframes marquee {
-      0% {
-        transform: translateX(0);
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* space between buttons */
+        margin-top: 20px;
       }
-      100% {
-        transform: translateX(-50%);
-      } /* move half bcoz content duplicated */
-    }
 
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE/Edge */
-      scrollbar-width: none; /* Firefox */
-    }
-    .animate-marquee-slow {
-      animation: marquee 25s linear infinite;
-      width: max-content;
-    }
+      .btn-primary {
+        background: #fff;
+        color: purple;
+        font-weight: 600;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        border: 2px solid transparent;
+      }
 
-    .card {
-      position: relative;
-      border-radius: 0.75rem;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    .card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(200, 200, 200, 0.4); /* light grey overlay */
-      transition: all 0.3s ease;
-    }
-    .card.active::after {
-      background: transparent; /* no overlay for active */
-    }
-  </style>
+      .btn-outline {
+        background: transparent;
+        color: #fff;
+        font-weight: 600;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        border: 2px solid #fff;
+      }
+
+      .btn-primary:hover,
+      .btn-outline:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        transition: all 0.2s ease;
+      }
+      .featured {
+        /* height: 150px; */ /* ye hata do */
+        padding: 20px 0;
+      }
+
+      .featured .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap; /* wrap allow karo */
+      }
+
+      .featured .logos img {
+        height: 30px;
+        max-width: 120px;
+        object-fit: contain;
+      }
+
+      .marquee-row {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+      }
+      .marquee-track {
+        display: flex;
+        gap: 1.5rem;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+      }
+      .marquee-track.reverse {
+        animation-direction: reverse;
+      }
+      .marquee-item {
+        min-width: 320px;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      .marquee-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .marquee-row:hover .marquee-track {
+        animation-play-state: paused;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* move half bcoz content duplicated */
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE/Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .animate-marquee-slow {
+        animation: marquee 25s linear infinite;
+        width: max-content;
+      }
+
+      .card {
+        position: relative;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(200, 200, 200, 0.4); /* light grey overlay */
+        transition: all 0.3s ease;
+      }
+      .card.active::after {
+        background: transparent; /* no overlay for active */
+      }
+    </style>
   <body>
     <!-- Navbar -->
     <header
@@ -221,13 +223,14 @@
         class="max-w-8xl mt-auto mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- Logo -->
-        <div class="flex items-center">
-          <img
-            src="images/logo.png"
-            alt="Logo"
-            class="h-22 w-auto object-contain mr-3"
-          />
-        </div>
+      <div class="flex items-center justify-center justify-md-start">
+  <img
+    src="images/logo.png"
+    alt="Logo"
+    class="h-22 w-auto object-contain mr-3 max-w-full"
+  />
+</div>
+
 
         <!-- Nav Links (Desktop) -->
         <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
@@ -601,15 +604,15 @@
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-100"
     />
     <img
-      src="https://images.pexels.com/photos/207700/pexels-photo-207700.jpeg"
+      src="images/bookbg.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <img
-      src="https://images.pexels.com/photos/10424708/pexels-photo-10424708.jpeg"
+      src="images/pendulums.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <img
-      src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg"
+      src="images/book2.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <!-- Dark overlay -->
@@ -1302,10 +1305,10 @@
       </div>
     </section> -->
 
-    <script>
-      // Activate Plyr custom UI for top video
+    <!-- <script>
+
       const player = new Plyr("#main-video");
-    </script>
+    </script> -->
 
     <!-- Second Marquee -->
     <!-- <section class="py-16 sm:py-20 bg-white">
@@ -1815,7 +1818,7 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <!-- <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script> -->
 
     <script>
       AOS.init();
@@ -1823,6 +1826,14 @@
       const btn = document.getElementById("mobile-menu-btn");
       const menu = document.getElementById("mobile-menu");
 
+        document.addEventListener("DOMContentLoaded", () => {
+          const images = document.querySelectorAll("img");
+        images.forEach((img, index) => {
+          if (!img.hasAttribute("alt") || img.alt.trim() === "") {
+            img.alt = `Image ${index + 1}`; // Default alt text
+          }
+        });
+      });
       btn.addEventListener("click", () => {
         if (menu.classList.contains("hidden")) {
           menu.classList.remove("hidden");
