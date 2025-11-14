@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Pharos Learning</title>
+   <title>Pharos Learning – Transforming Online Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Pharos Learning offers accessible and engaging digital education solutions for students and professionals — discover more today.">
+
+    <meta name="keywords" />
 
     <meta content="Heckto" name="author" />
+    
 
     <!-- Theme favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" />
@@ -16,6 +20,8 @@
       src="assets/testi-swiper-CGY6TrK8.js"
     ></script>
     <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link rel="canonical" href="https://pharoslearning.com/" />
+
     <link
       rel="stylesheet"
       crossorigin
@@ -28,188 +34,186 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" /> -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="Pharos Learning is a modern e-learning platform that helps students and educators connect, grow, and achieve success through interactive courses and smart tools." />
-
   </head>
-    <style>
-      #mobile-menu {
-        transition: all 0.3s ease-in-out;
-      }
-      * {
-        font-family: "Sansation", sans-serif !important;
-      }
+  <style>
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
+    * {
+      font-family: "Sansation", sans-serif !important;
+    }
 
+    .custom-heading {
+      font-size: 36px; /* mobile default */
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      text-align: center; /* mobile center */
+      margin: 0; /* reset margin */
+    }
+
+    .custom-para {
+      font-size: 16px; /* mobile default */
+      letter-spacing: 0.3px;
+      line-height: 22px;
+      font-weight: 500;
+      color: rgb(206, 209, 215);
+      text-align: center; /* mobile center */
+      margin-top: 10px;
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
       .custom-heading {
-        font-size: 36px; /* mobile default */
-        font-weight: 800;
-        color: #fff;
-        line-height: 1.1;
-        letter-spacing: -1px;
-        text-align: center; /* mobile center */
-        margin: 0; /* reset margin */
+        font-size: 60px;
+        text-align: left;
+        margin-left: 150px;
       }
-
       .custom-para {
-        font-size: 16px; /* mobile default */
-        letter-spacing: 0.3px;
-        line-height: 22px;
-        font-weight: 500;
-        color: rgb(206, 209, 215);
-        text-align: center; /* mobile center */
-        margin-top: 10px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: right;
       }
+    }
 
-      /* Tablet */
-      @media (min-width: 768px) {
-        .custom-heading {
-          font-size: 60px;
-          text-align: left;
-          margin-left: 150px;
-        }
-        .custom-para {
-          font-size: 20px;
-          line-height: 28px;
-          text-align: right;
-        }
+    /* Laptop/Desktop */
+    @media (min-width: 1024px) {
+      .custom-heading {
+        font-size: 90px;
+        margin-left: 350px;
       }
+      .custom-para {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
 
-      /* Laptop/Desktop */
-      @media (min-width: 1024px) {
-        .custom-heading {
-          font-size: 90px;
-          margin-left: 350px;
-        }
-        .custom-para {
-          font-size: 24px;
-          line-height: 30px;
-        }
-      }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between buttons */
+      margin-top: 20px;
+    }
 
-      .button-wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* space between buttons */
-        margin-top: 20px;
-      }
+    .btn-primary {
+      background: #fff;
+      color: purple;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
 
-      .btn-primary {
-        background: #fff;
-        color: purple;
-        font-weight: 600;
-        padding: 12px 24px;
-        border-radius: 50px;
-        text-decoration: none;
-        border: 2px solid transparent;
-      }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #fff;
+    }
 
-      .btn-outline {
-        background: transparent;
-        color: #fff;
-        font-weight: 600;
-        padding: 12px 24px;
-        border-radius: 50px;
-        text-decoration: none;
-        border: 2px solid #fff;
-      }
+    .btn-primary:hover,
+    .btn-outline:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s ease;
+    }
+    .featured {
+      /* height: 150px; */ /* ye hata do */
+      padding: 20px 0;
+    }
 
-      .btn-primary:hover,
-      .btn-outline:hover {
-        opacity: 0.9;
-        transform: translateY(-2px);
-        transition: all 0.2s ease;
-      }
-      .featured {
-        /* height: 150px; */ /* ye hata do */
-        padding: 20px 0;
-      }
+    .featured .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* wrap allow karo */
+    }
 
-      .featured .logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap; /* wrap allow karo */
-      }
+    .featured .logos img {
+      height: 30px;
+      max-width: 120px;
+      object-fit: contain;
+    }
 
-      .featured .logos img {
-        height: 30px;
-        max-width: 120px;
-        object-fit: contain;
+    .marquee-row {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+    .marquee-track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+      animation: marquee 20s linear infinite;
+    }
+    .marquee-track.reverse {
+      animation-direction: reverse;
+    }
+    .marquee-item {
+      min-width: 320px;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .marquee-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .marquee-row:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
       }
+      100% {
+        transform: translateX(-50%);
+      } /* move half bcoz content duplicated */
+    }
 
-      .marquee-row {
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-      }
-      .marquee-track {
-        display: flex;
-        gap: 1.5rem;
-        width: max-content;
-        animation: marquee 20s linear infinite;
-      }
-      .marquee-track.reverse {
-        animation-direction: reverse;
-      }
-      .marquee-item {
-        min-width: 320px;
-        border-radius: 0.75rem;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      }
-      .marquee-item img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-      .marquee-row:hover .marquee-track {
-        animation-play-state: paused;
-      }
-      @keyframes marquee {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        } /* move half bcoz content duplicated */
-      }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .animate-marquee-slow {
+      animation: marquee 25s linear infinite;
+      width: max-content;
+    }
 
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none; /* IE/Edge */
-        scrollbar-width: none; /* Firefox */
-      }
-      .animate-marquee-slow {
-        animation: marquee 25s linear infinite;
-        width: max-content;
-      }
-
-      .card {
-        position: relative;
-        border-radius: 0.75rem;
-        overflow: hidden;
-        transition: all 0.3s ease;
-      }
-      .card::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(200, 200, 200, 0.4); /* light grey overlay */
-        transition: all 0.3s ease;
-      }
-      .card.active::after {
-        background: transparent; /* no overlay for active */
-      }
-    </style>
+    .card {
+      position: relative;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(200, 200, 200, 0.4); /* light grey overlay */
+      transition: all 0.3s ease;
+    }
+    .card.active::after {
+      background: transparent; /* no overlay for active */
+    }
+  </style>
   <body>
     <!-- Navbar -->
     <header
@@ -221,14 +225,13 @@
         class="max-w-8xl mt-auto mx-auto flex items-center justify-between px-6 py-4"
       >
         <!-- Logo -->
-      <div class="flex items-center justify-center justify-md-start">
-  <img
-    src="images/logo.png"
-    alt="Logo"
-    class="h-22 w-auto object-contain mr-3 max-w-full"
-  />
-</div>
-
+        <div class="flex items-center">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="h-22 w-auto object-contain mr-3"
+          />
+        </div>
 
         <!-- Nav Links (Desktop) -->
         <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
@@ -549,7 +552,7 @@
           Why choose
         </p>
 
-        <h3
+        <h1
           class="custom-heading"
           style="
             text-align: left !important;
@@ -561,9 +564,9 @@
           data-aos-delay="200"
         >
           Pharos
-        </h3>
+        </h1>
 
-        <h3
+        <h1
           class="custom-heading"
           style="
             text-align: left !important;
@@ -575,7 +578,7 @@
           data-aos-delay="400"
         >
           Learning?
-        </h3>
+        </h1>
 
         <p
           class="custom-para"
@@ -602,15 +605,15 @@
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-100"
     />
     <img
-      src="images/bookbg.jpeg"
+      src="https://images.pexels.com/photos/207700/pexels-photo-207700.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <img
-      src="images/pendulums.jpeg"
+      src="https://images.pexels.com/photos/10424708/pexels-photo-10424708.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <img
-      src="images/book2.jpeg"
+      src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg"
       class="absolute inset-0 w-full h-full object-cover bg-slide opacity-0"
     />
     <!-- Dark overlay -->
@@ -632,7 +635,7 @@
           Why choose
         </p>
 
-        <h3
+        <h1
           class="custom-heading"
           style="
             text-align: left !important;
@@ -644,9 +647,9 @@
           data-aos-delay="200"
         >
           Pharos
-        </h3>
+        </h1>
 
-        <h3
+        <h1
           class="custom-heading"
           style="
             text-align: left !important;
@@ -658,7 +661,7 @@
           data-aos-delay="400"
         >
           Learning?
-        </h3>
+        </h1>
 
         <p
           class="custom-para"
@@ -1202,9 +1205,8 @@
           <a
             target="_blank"
             href="./course.html"
-            class="px-4 sm:px-6 py-2 bg-[#166fe5] hover:bg-[#0d4fbf] text-white font-semibold text-base rounded-full shadow-lg"
+            class="px-4 sm:px-6 py-2 bg-[#1877F2] hover:bg-[#0F5DC8] text-white rounded-full shadow-lg text-sm sm:text-base"
           >
-          
             Select path
           </a>
 
@@ -1304,10 +1306,10 @@
       </div>
     </section> -->
 
-    <!-- <script>
-
+    <script>
+      // Activate Plyr custom UI for top video
       const player = new Plyr("#main-video");
-    </script> -->
+    </script>
 
     <!-- Second Marquee -->
     <!-- <section class="py-16 sm:py-20 bg-white">
@@ -1689,7 +1691,7 @@
       >
         <!-- Programs -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">Programs</p>
+          <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
           <ul class="space-y-2 text-gray-600">
             <li><a href="#" class="hover:text-purple-600">All Programs</a></li>
             <li>
@@ -1706,7 +1708,7 @@
 
         <!-- About Us -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">About Us</p>
+          <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
           <ul class="space-y-2 text-gray-600">
             <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
             <li><a href="#" class="hover:text-purple-600">Press</a></li>
@@ -1717,7 +1719,7 @@
 
         <!-- Events -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">Events</p>
+          <h4 class="font-bold mb-3 text-gray-900">Events</h4>
           <ul class="space-y-2 text-gray-600">
             <li>
               <a href="./membership.html" class="hover:text-purple-600"
@@ -1737,7 +1739,7 @@
 
         <!-- Social Media -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">Social Media</p>
+          <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
           <ul class="space-y-2 text-gray-600">
             <li><a href="#" class="hover:text-purple-600">Pharos Show</a></li>
             <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
@@ -1749,7 +1751,7 @@
 
         <!-- Contact -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">Contact Us</p>
+          <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
           <ul class="space-y-2 text-gray-600">
             <li><a href="#" class="hover:text-purple-600">Support</a></li>
             <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
@@ -1760,7 +1762,7 @@
 
         <!-- Our Brands -->
         <div>
-          <p class="font-bold mb-3 text-gray-900">Our Brands</p>
+          <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
           <ul class="space-y-2 text-gray-600">
             <li><a href="#" class="hover:text-purple-600">Pharos States</a></li>
             <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
@@ -1817,7 +1819,7 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script> -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 
     <script>
       AOS.init();
@@ -1825,14 +1827,6 @@
       const btn = document.getElementById("mobile-menu-btn");
       const menu = document.getElementById("mobile-menu");
 
-        document.addEventListener("DOMContentLoaded", () => {
-          const images = document.querySelectorAll("img");
-        images.forEach((img, index) => {
-          if (!img.hasAttribute("alt") || img.alt.trim() === "") {
-            img.alt = `Image ${index + 1}`; // Default alt text
-          }
-        });
-      });
       btn.addEventListener("click", () => {
         if (menu.classList.contains("hidden")) {
           menu.classList.remove("hidden");
