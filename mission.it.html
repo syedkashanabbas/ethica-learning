@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  <title>Our Mission – Empowering Education through Pharos Learning</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Pharos Learning’s mission to empower learners everywhere through innovative, inclusive and high-quality online education.">
+
+    <meta name="keywords" />
+
+    <meta content="Heckto" name="author" />
+
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  </head>
+  <style>
+    * {
+      font-family: "Sansation", sans-serif !important;
+    }
+    .custom-heading {
+      font-size: 80px; /* bada */
+      font-weight: 800; /* super bold */
+      color: #fff; /* white */
+      line-height: 1.1; /* thoda tight */
+      letter-spacing: -1px; /* aur compact look */
+      text-align: center; /* optional: center */
+    }
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .custom-para {
+      font-size: 24px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+      font-weight: 500; /* super bold */
+
+      text-decoration: none;
+      color: rgb(206, 209, 215);
+      text-align: center;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* space between buttons */
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: purple;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid #fff;
+    }
+
+    .btn-primary:hover,
+    .btn-outline:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      transition: all 0.2s ease;
+    }
+    .featured {
+      /* height: 150px; */ /* ye hata do */
+      padding: 20px 0;
+    }
+
+    .featured .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; /* wrap allow karo */
+    }
+
+    .featured .logos img {
+      height: 30px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 12s linear infinite;
+    }
+
+    .marquee-row:hover {
+      animation-play-state: paused; /* stop on hover */
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE/Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .animate-marquee-slow {
+      animation: marquee 25s linear infinite;
+      width: max-content;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(200, 200, 200, 0.4); /* light grey overlay */
+      transition: all 0.3s ease;
+    }
+    .card.active::after {
+      background: transparent; /* no overlay for active */
+    }
+  </style>
+  <body class="bg-white">
+    <!-- Navbar -->
+    <header
+  id="navbar"
+  class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transform -translate-y-full transition-transform duration-700 ease-out"
+>
+  <div class="max-w-8xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Left: Logo -->
+    <div class="flex-shrink-0 flex items-center">
+      <a href="./index.it.html">
+        <img
+          src="images/logo-purple.png"
+          alt="Logo"
+          class="h-12 w-auto object-contain"
+        />
+      </a>
+    </div>
+
+    <!-- Center: Nav Links -->
+    <nav class="hidden lg:flex items-center gap-6 font-medium">
+      <a
+        href="./membership.it.html"
+        class="font-semibold text-gray-800 hover:text-purple-600 transition"
+      >
+        Abbonamento
+      </a>
+
+      <!-- Categories Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleDropdown('categoriesMenu2')"
+          class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+        >
+          Categorie
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          id="categoriesMenu2"
+          class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Tutte le Categorie</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Mente</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Corpo</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Anima</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Imprenditorialità</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Carriera</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+          <a href="./coming-soon.it.html" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+            <span>Relazioni</span>
+            <span class="text-xs text-gray-500 italic">presto</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Community Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleDropdown('communityMenu2')"
+          class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+        >
+          Comunità
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          id="communityMenu2"
+          class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a href="./coming-soon.it.html" class="block px-4 py-2 hover:bg-gray-100">
+            Comunità Prima
+          </a>
+          <a href="./coming-soon.it.html" class="block px-4 py-2 hover:bg-gray-100">
+            Eventi Globali
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="./coming-soon.it.html"
+        class="font-semibold text-gray-800 hover:text-purple-600 transition"
+      >
+        Risultati
+      </a>
+
+      <!-- At Work Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleDropdown('atworkMenu2')"
+          class="font-semibold text-gray-800 hover:text-purple-600 transition flex items-center gap-1"
+        >
+          Al Lavoro
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          id="atworkMenu2"
+          class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a href="./coming-soon.it.html" class="block px-4 py-2 hover:bg-gray-100">Business</a>
+          <a href="./coming-soon.it.html" class="block px-4 py-2 hover:bg-gray-100">Trova un Coach</a>
+          <a href="./coming-soon.it.html" class="block px-4 py-2 hover:bg-gray-100">Diventa Coach</a>
+        </div>
+      </div>
+
+      <a href="mission.it.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">
+        Missione
+      </a>
+
+      <a href="vision.it.html" class="font-semibold text-gray-800 hover:text-purple-600 transition">
+        Visione
+      </a>
+    </nav>
+
+    <!-- Right: Language Switch, Login -->
+    <div class="hidden lg:flex items-center gap-4 text-gray-800 font-medium">
+      <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
+        </svg>
+        <span>IT</span>
+      </div>
+
+      <a href="#" class="font-semibold hover:text-purple-600 transition">Accedi</a>
+
+      <a
+        href="#"
+        class="px-5 py-2 rounded-full border-2 border-[#1877F2] text-[#1877F2] font-semibold hover:bg-[#1877F2] hover:text-white transition"
+      >
+        Crea un account
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="lg:hidden text-gray-800 text-3xl focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+  >
+    <a href="./membership.it.html" class="block font-semibold hover:text-purple-600 transition">
+      Abbonamento
+    </a>
+
+    <div>
+      <button
+        onclick="toggleDropdown('mobileCategories')"
+        class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+      >
+        Categorie
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="mobileCategories" class="hidden pl-4 mt-2 space-y-2">
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Tutte le Categorie</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Mente</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Corpo</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Anima</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Imprenditorialità</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Carriera</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Relazioni</a>
+      </div>
+    </div>
+
+    <div>
+      <button
+        onclick="toggleDropdown('mobileCommunity')"
+        class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+      >
+        Comunità
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="mobileCommunity" class="hidden pl-4 mt-2 space-y-2">
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Comunità Prima</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Eventi Globali</a>
+      </div>
+    </div>
+
+    <a href="./coming-soon.it.html" class="block font-semibold hover:text-purple-600 transition">
+      Risultati
+    </a>
+
+    <div>
+      <button
+        onclick="toggleDropdown('mobileAtwork')"
+        class="w-full flex justify-between items-center font-semibold hover:text-purple-600"
+      >
+        Al Lavoro
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="mobileAtwork" class="hidden pl-4 mt-2 space-y-2">
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Business</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Trova un Coach</a>
+        <a href="./coming-soon.it.html" class="block hover:text-purple-600">Diventa Coach</a>
+      </div>
+    </div>
+
+    <a href="#" class="block font-semibold hover:text-purple-600 transition">Supporto</a>
+
+    <div class="border-t border-gray-200 pt-4 space-y-3">
+      <a href="#" class="block font-semibold hover:text-purple-600 transition">Accedi</a>
+      <a
+        href="#"
+        class="block w-full text-center px-5 py-3 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition"
+      >
+        Crea un account
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <script>
+      // Drop animation on load
+      window.addEventListener("load", () => {
+        document.getElementById("navbar").classList.remove("-translate-y-full");
+      });
+
+      function toggleDropdown(id) {
+        const el = document.getElementById(id);
+        if (el) el.classList.toggle("hidden");
+      }
+
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    <section
+  class="relative w-full h-screen bg-cover bg-center mt-20 overflow-hidden flex items-center justify-center text-center"
+  style="background-image: url('https://images.pexels.com/photos/10424708/pexels-photo-10424708.jpeg')"
+>
+  <div class="relative max-w-5xl mx-auto text-white z-10">
+    <p
+      class="text-sm font-medium text-white mb-2 opacity-0"
+      data-aos="fade-down"
+      data-aos-delay="200"
+    >
+      Insieme ci eleviamo — per noi stessi, per gli altri, per il mondo.
+    </p>
+
+    <h1
+      class="text-5xl text-white md:text-8xl font-extrabold mb-4 opacity-0"
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1000"
+    >
+      Informare. Educare. <br class="hidden sm:block" />
+      Risvegliare la consapevolezza.
+    </h1>
+
+    <p
+      class="text-lg max-w-2xl text-white mx-auto mb-10 opacity-0"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      La conoscenza è l’inizio di ogni trasformazione, il ponte tra la paura e l’opportunità.
+    </p>
+  </div>
+</section>
+
+<section
+  class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+>
+  <!-- Left Content -->
+  <div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+      La nostra missione: nutrire le menti, plasmare il futuro
+    </h2>
+
+    <p class="text-gray-700 mb-6">
+      In Pharos Learning, la nostra missione è guidare le persone verso
+      consapevolezza e progresso attraverso un’educazione accessibile e
+      innovativa. Crediamo che la conoscenza sia un diritto universale, non
+      un privilegio per pochi. Unendo tecnologia e connessione umana
+      autentica, creiamo percorsi di apprendimento che ispirano la crescita,
+      trasformando la curiosità in competenza e l’ambizione in risultati
+      concreti.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+      Oltre ai programmi, coltiviamo una cultura dell’apprendimento continuo,
+      dove ogni individuo si sente ispirato a evolvere. Con percorsi
+      personalizzati, metodi moderni e una comunità inclusiva, rimuoviamo le
+      barriere che frenano il potenziale.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+      Misuriamo il successo non nei certificati, ma nella trasformazione di
+      fiducia, creatività e capacità di contribuire in modo significativo al
+      mondo.
+    </p>
+  </div>
+
+  <!-- Right Image -->
+  <div class="flex justify-center">
+    <img
+      src="./images/mission-section-1.jpg"
+      alt="Mission Driven"
+      class="rounded-xl w-full max-w-lg object-cover"
+    />
+  </div>
+</section>
+
+
+
+<section
+  class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+>
+  <!-- Left Image -->
+  <div class="flex justify-center">
+    <img
+      src="./images/mission.png"
+      alt="Mission Driven"
+      class="rounded-xl shadow-lg w-full max-w-lg object-cover"
+    />
+  </div>
+
+  <!-- Right Content -->
+  <div>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+      Conoscenza. Certezza. Professionalità.
+    </h2>
+
+    <p class="text-gray-700 mb-6">
+      In Pharos, diamo forza a persone e comunità offrendo mentalità, strumenti
+      e supporto per prosperare in un mondo che cambia. Ogni nostra azione è
+      guidata da valori che trasformano l’intenzione in impatto reale.
+    </p>
+
+    <h3 class="font-bold text-lg mb-4">Ecco come viviamo la nostra missione:</h3>
+
+    <ul class="space-y-5">
+      <li class="flex gap-3 items-start">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-purple-600 flex-shrink-0"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p>
+          <strong>La conoscenza ispira coraggio</strong><br />
+          Trasformiamo la paura in crescita offrendo accesso a saggezza e
+          strumenti che generano vero cambiamento.
+        </p>
+      </li>
+
+      <li class="flex gap-3 items-start">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-purple-600 flex-shrink-0"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p>
+          <strong>La certezza genera fiducia</strong><br />
+          Aiutiamo le persone a prendere decisioni consapevoli, fondate su
+          chiarezza e verità.
+        </p>
+      </li>
+
+      <li class="flex gap-3 items-start">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-purple-600 flex-shrink-0"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <p>
+          <strong>La professionalità crea impatto</strong><br />
+          Il nostro team agisce con integrità, coerenza ed eccellenza.
+        </p>
+      </li>
+    </ul>
+
+    <p class="mt-8 text-gray-700">
+      <strong>Questo è il cuore della nostra missione:</strong> costruire un
+      movimento condiviso di crescita, dove la trasformazione è consapevole,
+      sostenibile e collettiva.
+    </p>
+
+    <div class="mt-6">
+      <a
+        href="#"
+        class="inline-block px-6 py-3 rounded-full bg-purple-600 text-white font-semibold hover:bg-purple-700 transition"
+      >
+        Join the Mission
+      </a>
+    </div>
+  </div>
+</section>
+
+
+ <section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">
+      I Nostri Valori Fondamentali
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Knowledge -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-purple-300 hover:shadow-2xl transition"
+      >
+        <div
+          class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-purple-600 text-white mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422A12.083 12.083 0 0118 20.944M12 14l-6.16-3.422A12.083 12.083 0 006 20.944m6 0a12.083 12.083 0 006-1.056m-6 1.056a12.083 12.083 0 01-6-1.056"
+            />
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold mb-2">Conoscenza</h3>
+        <p class="text-gray-600">Dalla paura all’azione</p>
+      </div>
+
+      <!-- Certainty -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-purple-300 hover:shadow-2xl transition"
+      >
+        <div
+          class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-purple-600 text-white mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12l2 2l4-4m5 2a9 9 0 11-18 0a9 9 0 0118 0z"
+            />
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold mb-2">Certezza</h3>
+        <p class="text-gray-600">Decisioni su basi solide</p>
+      </div>
+
+      <!-- Professionalism -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-purple-300 hover:shadow-2xl transition"
+      >
+        <div
+          class="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-purple-600 text-white mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12h6m-9 8h12a2 2 0 002-2V8a2 2 0 00-2-2h-3V4a1 1 0 00-1-1H9a1 1 0 00-1 1v2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold mb-2">Professionalità</h3>
+        <p class="text-gray-600">Esperti affidabili e coerenti</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
+  <div
+    class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
+  >
+    <!-- Programs -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Programmi</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li>
+          <a href="./course.html" class="hover:text-purple-600"
+            >Tutti i Programmi</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Scarica l'App</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Diventa Membro</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Coach Certificato</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- About Us -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Chi Siamo</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">La Nostra Storia</a></li>
+        <li><a href="#" class="hover:text-purple-600">Press</a></li>
+        <li><a href="#" class="hover:text-purple-600">Carriere</a></li>
+        <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Events -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Eventi</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li>
+          <a href="./membership.html" class="hover:text-purple-600"
+            >Iscrizione</a
+          >
+        </li>
+        <li>
+          <a href="./coming-soon.html" class="hover:text-purple-600"
+            >Eventi</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Pharos University</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Pharos Show</a></li>
+        <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+        <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+        <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Contatti</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Supporto</a></li>
+        <li><a href="#" class="hover:text-purple-600">Contattaci</a></li>
+        <li><a href="#" class="hover:text-purple-600">Partnership</a></li>
+        <li><a href="#" class="hover:text-purple-600">Business</a></li>
+      </ul>
+    </div>
+
+    <!-- Our Brands -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">I Nostri Brand</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Pharos States</a></li>
+        <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+        <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+        <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+        <li><a href="#" class="hover:text-purple-600">Pharos Talks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div
+    class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
+  >
+    <p class="font-bold">
+      © 2025 Pharos Learning, Inc. ·
+      <a href="#" class="hover:text-purple-600">Termini</a> ·
+      <a href="#" class="hover:text-purple-600">Privacy</a>
+    </p>
+
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 text-gray-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3.6 9h16.8M3.6 15h16.8"
+          />
+        </svg>
+        <span class="font-bold">Italiano (IT)</span>
+      </div>
+      <div class="flex gap-4 text-gray-600">
+        <a href="#" class="hover:text-purple-600">Fb</a>
+        <a href="#" class="hover:text-purple-600">X</a>
+        <a href="#" class="hover:text-purple-600">IG</a>
+        <a href="#" class="hover:text-purple-600">YT</a>
+        <a href="#" class="hover:text-purple-600">IN</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-out-cubic",
+      });
+
+      btn.addEventListener("click", () => {
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+          menu.classList.add("flex");
+        } else {
+          menu.classList.add("hidden");
+          menu.classList.remove("flex");
+        }
+      });
+    </script>
+  </body>
+</html>

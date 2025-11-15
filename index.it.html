@@ -216,339 +216,335 @@
   </style>
   <body>
     <!-- Navbar -->
-    <header
-      class="absolute top-0 left-0 w-full z-30"
-      data-aos="fade-down"
-      data-aos-duration="700"
-    >
-      <div
-        class="max-w-8xl mt-auto mx-auto flex items-center justify-between px-6 py-4"
-      >
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img
-            src="images/logo.png"
-            alt="Logo"
-            class="h-22 w-auto object-contain mr-3"
-          />
-        </div>
-
-        <!-- Nav Links (Desktop) -->
-        <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
-          <a href="./membership.html" class="hover:text-gray-200 transition"
-            >Membership</a
-          >
-
-          <!-- Categories Dropdown -->
-          <div class="relative">
-            <button
-              onclick="toggleDropdown('categoriesMenu')"
-              class="hover:text-gray-200 transition flex items-center gap-1"
-            >
-              Categories
-              <svg
-                class="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              id="categoriesMenu"
-              class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
-            >
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>All Categories</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Mind</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Body</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Soul</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Entrepreneurship</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Career</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-              <a
-                href="coming-soon.html"
-                class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
-              >
-                <span>Relationships</span>
-                <span class="text-xs text-gray-500">coming soon</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Community Dropdown -->
-          <div class="relative">
-            <button
-              onclick="toggleDropdown('communityMenu')"
-              class="hover:text-gray-200 transition flex items-center gap-1"
-            >
-              Community
-              <svg
-                class="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              id="communityMenu"
-              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
-            >
-              <a
-                href="./coming-soon.html"
-                class="block px-4 py-2 hover:bg-gray-100"
-                >Community First</a
-              >
-              <a
-                href="./coming-soon.html"
-                class="block px-4 py-2 hover:bg-gray-100"
-                >Global Events</a
-              >
-            </div>
-          </div>
-
-          <!-- At Work Dropdown -->
-          <div class="relative">
-            <button
-              onclick="toggleDropdown('atworkMenu')"
-              class="hover:text-gray-200 transition flex items-center gap-1"
-            >
-              At Work
-              <svg
-                class="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <div
-              id="atworkMenu"
-              class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
-            >
-              <a
-                href="./coming-soon.html"
-                class="block px-4 py-2 hover:bg-gray-100"
-                >Business</a
-              >
-              <a
-                href="./coming-soon.html"
-                class="block px-4 py-2 hover:bg-gray-100"
-                >Find a Coach</a
-              >
-              <a
-                href="./coming-soon.html"
-                class="block px-4 py-2 hover:bg-gray-100"
-                >Become a Coach</a
-              >
-            </div>
-          </div>
-
-          <a href="#results" class="hover:text-gray-200 transition">Results</a>
-          <a href="mission.html" class="hover:text-gray-200 transition"
-            >Mission</a
-          >
-          <a href="vision.html" class="hover:text-gray-200 transition"
-            >Vision</a
-          >
-        </nav>
-
-        <!-- Dropdown Toggle Script -->
-        <script>
-          function toggleDropdown(id) {
-            document.querySelectorAll('[id$="Menu"]').forEach((menu) => {
-              if (menu.id === id) {
-                menu.classList.toggle("hidden");
-              } else {
-                menu.classList.add("hidden");
-              }
-            });
-          }
-        </script>
-
-        <!-- Right Side (Desktop) -->
-        <div class="hidden lg:flex items-center gap-6 text-white font-medium">
-       <div class="relative">
-  <div
-    class="flex items-center gap-2 cursor-pointer"
-    onclick="document.getElementById('langMenu').classList.toggle('hidden')"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-5 w-5 text-white"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
-      />
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.6 9h16.8M3.6 15h16.8"
-      />
-    </svg>
-    <span id="currentLang">EN</span>
-  </div>
-
-  <!-- Dropdown -->
-  <div
-    id="langMenu"
-    class="absolute right-0 mt-2 bg-white text-black rounded shadow hidden w-24"
-  >
-    <div
-      class="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-      onclick=" window.location.href='index.html';"
-    >
-      English
-    </div>
-
-    <div
-      class="px-3 py-2 hover:bg-gray-100 cursor-pointer"
-      onclick="window.location.href='index.it.html';"
-    >
-      Italiano
-    </div>
-  </div>
-</div>
-
-
-
-          <a href="#" class="font-semibold hover:text-gray-200">Log in</a>
-         <a
-  href="#"
-  class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition whitespace-nowrap"
+  <header
+  class="absolute top-0 left-0 w-full z-30"
+  data-aos="fade-down"
+  data-aos-duration="700"
 >
-  Create an account
-</a>
+  <div
+    class="max-w-8xl mt-auto mx-auto flex items-center justify-between px-6 py-4"
+  >
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img
+        src="images/logo.png"
+        alt="Logo"
+        class="h-22 w-auto object-contain mr-3"
+      />
+    </div>
 
-        </div>
+    <!-- Nav Links (Desktop) -->
+    <nav class="hidden lg:flex items-center gap-8 text-white font-medium">
+      <a href="./membership.it.html" class="hover:text-gray-200 transition"
+        >Iscrizione</a
+      >
 
-        <!-- Mobile Menu Button -->
+      <!-- Categories Dropdown -->
+      <div class="relative">
         <button
-          id="mobile-menu-btn"
-          class="lg:hidden text-white text-3xl focus:outline-none"
+          onclick="toggleDropdown('categoriesMenu')"
+          class="hover:text-gray-200 transition flex items-center gap-1"
+        >
+          Categorie
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div
+          id="categoriesMenu"
+          class="hidden absolute left-0 mt-2 w-56 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Tutte le categorie</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Mente</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Corpo</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Anima</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Imprenditorialità</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Carriera</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+          <a
+            href="coming-soon.it.html"
+            class="flex justify-between items-center px-4 py-2 hover:bg-gray-100"
+          >
+            <span>Relazioni</span>
+            <span class="text-xs text-gray-500">in arrivo</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Community Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleDropdown('communityMenu')"
+          class="hover:text-gray-200 transition flex items-center gap-1"
+        >
+          Comunità
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div
+          id="communityMenu"
+          class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a
+            href="./coming-soon.it.html"
+            class="block px-4 py-2 hover:bg-gray-100"
+            >Prima la comunità</a
+          >
+          <a
+            href="./coming-soon.it.html"
+            class="block px-4 py-2 hover:bg-gray-100"
+            >Eventi globali</a
+          >
+        </div>
+      </div>
+
+      <!-- At Work Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleDropdown('atworkMenu')"
+          class="hover:text-gray-200 transition flex items-center gap-1"
+        >
+          Al lavoro
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div
+          id="atworkMenu"
+          class="hidden absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg overflow-hidden"
+        >
+          <a
+            href="./coming-soon.it.html"
+            class="block px-4 py-2 hover:bg-gray-100"
+            >Business</a
+          >
+          <a
+            href="./coming-soon.it.html"
+            class="block px-4 py-2 hover:bg-gray-100"
+            >Trova un coach</a
+          >
+          <a
+            href="./coming-soon.it.html"
+            class="block px-4 py-2 hover:bg-gray-100"
+            >Diventa coach</a
+          >
+        </div>
+      </div>
+
+      <a href="#results" class="hover:text-gray-200 transition">Risultati</a>
+      <a href="mission.it.html" class="hover:text-gray-200 transition"
+        >Missione</a
+      >
+      <a href="vision.it.html" class="hover:text-gray-200 transition"
+        >Visione</a
+      >
+    </nav>
+
+    <!-- Dropdown Toggle Script -->
+    <script>
+      function toggleDropdown(id) {
+        document.querySelectorAll('[id$="Menu"]').forEach((menu) => {
+          if (menu.id === id) {
+            menu.classList.toggle("hidden");
+          } else {
+            menu.classList.add("hidden");
+          }
+        });
+      }
+    </script>
+
+    <!-- Right Side (Desktop) -->
+    <div class="hidden lg:flex items-center gap-6 text-white font-medium">
+      <div class="relative">
+        <div
+          class="flex items-center gap-2 cursor-pointer"
+          onclick="document.getElementById('langMenu').classList.toggle('hidden')"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8"
+            class="h-5 w-5 text-white"
             fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
           >
-            <path d="M4 6h16M4 12h16M4 18h16" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.6 9h16.8M3.6 15h16.8"
+            />
           </svg>
-        </button>
+          <span id="currentLang">IT</span>
+        </div>
+
+        <!-- Dropdown -->
+        <div
+          id="langMenu"
+          class="absolute right-0 mt-2 bg-white text-black rounded shadow hidden w-24"
+        >
+          <div
+            class="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+            onclick="window.location.href='index.it.html';"
+          >
+            Italiano
+          </div>
+          <div
+            class="px-3 py-2 hover:bg-gray-100 cursor-pointer"
+            onclick=" window.location.href='index.html';"
+          >
+            English
+          </div>
+        </div>
       </div>
 
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+      <a href="#" class="font-semibold hover:text-gray-200">Accedi</a>
+      <a
+        href="#"
+        class="px-5 py-2 rounded-full border border-white hover:bg-white hover:text-purple-700 transition whitespace-nowrap"
       >
-        <a
-          href="./membership.html"
-          class="block font-semibold hover:text-purple-600 transition"
-          >Membership</a
-        >
-        <a
-          href="./coming-soon.html"
-          class="block font-semibold hover:text-purple-600 transition"
-          >Categories</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >Community</a
-        >
-        <a
-          href="#results"
-          class="block font-semibold hover:text-purple-600 transition"
-          >Results</a
-        >
-        <a href="#" class="block font-semibold hover:text-purple-600 transition"
-          >At Work</a
-        >
-        <a
-          href="mission.html"
-          class="block font-semibold hover:text-purple-600 transition"
-          >Mission</a
-        >
+        Crea un account
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-btn"
+      class="lg:hidden text-white text-3xl focus:outline-none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden flex-col bg-white shadow-lg text-gray-800 px-6 py-6 space-y-4 lg:hidden rounded-b-2xl"
+  >
+    <a
+      href="./membership.it.html"
+      class="block font-semibold hover:text-purple-600 transition"
+      >Iscrizione</a
+    >
+    <a
+      href="./coming-soon.it.html"
+      class="block font-semibold hover:text-purple-600 transition"
+      >Categorie</a
+    >
+    <a href="#" class="block font-semibold hover:text-purple-600 transition"
+      >Comunità</a
+    >
+    <a
+      href="#results"
+      class="block font-semibold hover:text-purple-600 transition"
+      >Risultati</a
+    >
+    <a href="#" class="block font-semibold hover:text-purple-600 transition"
+      >Al lavoro</a
+    >
+    <a
+      href="mission.it.html"
+      class="block font-semibold hover:text-purple-600 transition"
+      >Missione</a
+    >
 
     <div class="border-t border-gray-200 pt-4 flex items-center gap-3">
       <a
         href="#"
         class="font-semibold hover:text-purple-600 transition whitespace-nowrap"
       >
-        Login
+        Accedi
       </a>
       <a
         href="#"
         class="px-5 py-2 rounded-full border-2 border-purple-600 text-purple-600 font-semibold hover:bg-purple-600 hover:text-white transition whitespace-nowrap"
       >
-        Create an account
+        Crea un account
       </a>
     </div>
+  </div>
+</header>
 
-      </div>
-    </header>
 
     <!-- Hero section  -->
     <!-- <section
@@ -649,65 +645,63 @@
 
   <!-- Content -->
 <div style="margin-left: 40px; max-width: 900px; text-align: left">
-        <p
-          style="
-            color: #fff;
-            font-size: 1.25rem;
-            margin-top: 20px;
-            text-align: left !important;
-          "
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
-          Why choose
-        </p>
+  <p
+    style="
+      color: #fff;
+      font-size: 1.25rem;
+      margin-top: 20px;
+      text-align: left !important;
+    "
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
+    Perché scegliere
+  </p>
 
-        <h1
-          class="custom-heading"
-          style="
-            text-align: left !important;
-            margin: 0 !important;
-            margin-right: auto !important;
-          "
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        >
-          Pharos
-        </h1>
+  <h1
+    class="custom-heading"
+    style="
+      text-align: left !important;
+      margin: 0 !important;
+      margin-right: auto !important;
+    "
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    data-aos-delay="200"
+  >
+    Pharos
+  </h1>
 
-        <h1
-          class="custom-heading"
-          style="
-            text-align: left !important;
-            margin: 0 !important;
-            margin-right: auto !important;
-          "
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-        >
-          Learning?
-        </h1>
+  <h1
+    class="custom-heading"
+    style="
+      text-align: left !important;
+      margin: 0 !important;
+      margin-right: auto !important;
+    "
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-delay="400"
+  >
+    Learning?
+  </h1>
 
-        <p
-          class="custom-para"
-          style="
-            text-align: left !important;
-            margin: 10px 0 0 0 !important;
-            max-width: 700px;
-          "
-          data-aos="zoom-in-up"
-          data-aos-duration="1200"
-          data-aos-delay="600"
-        >
-          Join a community that turns learning into
-          clarity, and clarity into action.
+  <p
+    class="custom-para"
+    style="
+      text-align: left !important;
+      margin: 10px 0 0 0 !important;
+      max-width: 700px;
+    "
+    data-aos="zoom-in-up"
+    data-aos-duration="1200"
+    data-aos-delay="600"
+  >
+    Entra in una comunità che trasforma l’apprendimento in chiarezza e la chiarezza in azione.  
+    Qui, il cambiamento inizia dalla comprensione.
+  </p>
+</div>
 
-          Here, transformation begins with
-          understanding.
-        </p>
-      </div>
 </section>
 
 <script>
@@ -1031,224 +1025,142 @@
     </section> -->
 
     <section class="bg-white py-12 md:py-20 text-gray-900">
-      <div
-        class="mb-8 md:mb-12 max-w-6xl mx-auto text-left px-4"
-        data-aos="fade-up"
-        data-aos-duration="800"
-      >
-        <p
-          class="text-sm font-semibold uppercase tracking-widest text-gray-500"
-          data-aos="fade-down"
-          data-aos-delay="100"
-        >
-          Begin your journey
-        </p>
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mt-2 mb-4 sm:mb-6 leading-tight"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          A better you
+<div
+  class="mb-8 md:mb-12 max-w-6xl mx-auto text-left px-4"
+  data-aos="fade-up"
+  data-aos-duration="800"
+>
+  <p
+    class="text-sm font-semibold uppercase tracking-widest text-gray-500"
+    data-aos="fade-down"
+    data-aos-delay="100"
+  >
+    Inizia il tuo percorso
+  </p>
+
+  <h2
+    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mt-2 mb-4 sm:mb-6 leading-tight"
+    data-aos="fade-up"
+    data-aos-delay="200"
+  >
+    Una versione migliore di te
+  </h2>
+
+  <p
+    class="text-base sm:text-lg md:text-xl text-gray-600 font-medium"
+    data-aos="fade-up"
+    data-aos-delay="300"
+  >
+    Espandi le tue competenze, rafforza la tua carriera, coltiva relazioni autentiche e ritrova l’equilibrio.
+    <br />
+    <strong>Raccontaci i tuoi obiettivi —</strong> e trasforma la crescita in una scelta consapevole.
+  </p>
+</div>
+
+
+ <div class="relative max-w-7xl mx-auto mt-6 sm:mt-10 px-4">
+  <div
+    id="slider"
+    class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
+  >
+
+    <!-- CARD 1 -->
+    <div
+      class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="100"
+    >
+      <img src="./images/slider1.png" class="w-full h-full object-cover" />
+      <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+        <p class="text-sm sm:text-lg">Voglio</p>
+       <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+        MIGLIORARE IL MIO CORPO
         </h2>
-        <p
-          class="text-base sm:text-lg md:text-xl text-gray-600 font-medium"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          Expand your skills, strengthen your career,
-          nurture real connections, and rediscover
-          balance.
 
-          <br />
-          <strong>Share your goals —</strong>, 
-           and let growth become a
-          conscious choice.
-        </p>
       </div>
+    </div>
 
-      <div class="relative max-w-7xl mx-auto mt-6 sm:mt-10 px-4">
-        <div
-          id="slider"
-          class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth"
-        >
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="100"
-          >
-            <img
-              src="./images/slider1.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m ready to</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                MASTER MY BODY
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >
-            <img
-              src="./images/slider3.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m navigating a </p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                  LIFE TRANSITION
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="300"
-          >
-            <img
-              src="./images/slider1.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m seeking</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-               AUTHENTIC  CONNECTION
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="400"
-          >
-            <img
-              src="./images/slider4.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I am a</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                 SEEKER OF MEANING
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="500"
-          >
-            <img
-              src="./images/slider5.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m PURSUING </p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                CAREER GROWTH
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="600"
-          >
-            <img
-              src="./images/slider3.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m looking to</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                GROW MY BUSINESS
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="700"
-          >
-            <img
-              src="./images/slider1.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I’m searching for</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                DEEP CONNECTION
-              </h2>
-            </div>
-          </div>
-
-          <div
-            class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="800"
-          >
-            <img
-              src="./images/slider6.png"
-              class="w-full h-full object-cover"
-            />
-            <div
-              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2"
-            >
-              <p class="text-sm sm:text-lg">I want to</p>
-              <h2 class="text-xl sm:text-4xl text-white font-extrabold">
-                ELEVATE MY SPIRIT
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center items-center gap-4 mt-6">
-          <button id="prev" class="bg-gray-200 w-10 h-10 rounded-full">
-            ‹
-          </button>
-          <a
-            target="_blank"
-            href="./course.html"
-            class="px-4 sm:px-6 py-2 bg-[#1877F2] hover:bg-[#0F5DC8] text-white rounded-full shadow-lg text-sm sm:text-base"
-          >
-            Select path
-          </a>
-
-          <button id="next" class="bg-gray-200 w-10 h-10 rounded-full">
-            ›
-          </button>
-        </div>
+    <!-- CARD 2 -->
+    <div
+      class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="200"
+    >
+      <img src="./images/slider3.png" class="w-full h-full object-cover" />
+      <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+        <p class="text-sm sm:text-lg">Sto attraversando</p>
+        <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+          UNA FASE DI CAMBIAMENTO
+        </h2>
       </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div
+      class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="300"
+    >
+      <img src="./images/slider1.png" class="w-full h-full object-cover" />
+      <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+        <p class="text-sm sm:text-lg">Cerco</p>
+        <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+          CONNESSIONI AUTENTICHE
+        </h2>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div
+      class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="400"
+    >
+      <img src="./images/slider4.png" class="w-full h-full object-cover" />
+      <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+        <p class="text-sm sm:text-lg">Sono un</p>
+        <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+          RICERCATORE DI SENSO
+        </h2>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div
+      class="card min-w-[75%] sm:min-w-[240px] h-[300px] sm:h-[360px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-delay="500"
+    >
+      <img src="./images/slider5.png" class="w-full h-full object-cover" />
+      <div class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-2">
+        <p class="text-sm sm:text-lg">Desidero</p>
+        <h2 class="text-xl sm:text-4xl text-white font-extrabold">
+          CRESCERE NELLA MIA CARRIERA
+        </h2>
+      </div>
+    </div>
+
+    <!-- The other English cards you can keep or remove for Italian version -->
+  </div>
+
+  <div class="flex justify-center items-center gap-4 mt-6">
+    <button id="prev" class="bg-gray-200 w-10 h-10 rounded-full">‹</button>
+    <a
+      target="_blank"
+      href="./course.html"
+      class="px-4 sm:px-6 py-2 bg-[#1877F2] hover:bg-[#0F5DC8] text-white rounded-full shadow-lg text-sm sm:text-base"
+    >
+      Seleziona il percorso
+    </a>
+    <button id="next" class="bg-gray-200 w-10 h-10 rounded-full">›</button>
+  </div>
+</div>
+
     </section>
 
     <script>
@@ -1432,34 +1344,35 @@
       </div>
     </section> -->
 
-    <section
-      class="w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-pink-50 to-green-50 px-4 py-12"
+ <section
+  class="w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-pink-50 to-green-50 px-4 py-12"
+>
+  <div class="max-w-3xl text-center">
+    <h2
+      class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight"
     >
-      <div class="max-w-3xl text-center">
-        <h2
-          class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight"
-        >
-          Get started soon
-        </h2>
+      Presto si comincia
+    </h2>
 
-        <p
-          class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-700"
-        >
-          Your learning journey is about to begin.
+    <p
+      class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-700"
+    >
+      Il tuo percorso di apprendimento sta per iniziare.<br />
+      Prezzi e modalità di iscrizione saranno comunicati a breve.
+      <span class="font-semibold">In arrivo*</span>
+    </p>
 
-Pricing and memberships will be announced
-shortly. <span class="font-semibold">Coming Soon*</span>
-        </p>
-        <p class="text-sm text-gray-500">*Pricing will be announced shortly</p>
+    <p class="text-sm text-gray-500">*I dettagli sui prezzi saranno comunicati a breve</p>
 
-        <a
-          href="./membership.html"
-          class="inline-block mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#1877F2] to-[#0F5DC8] text-white text-base sm:text-lg font-semibold shadow-lg hover:from-[#0F5DC8] hover:to-[#0C4AA8] transition"
-        >
-          Become a member
-        </a>
-      </div>
-    </section>
+    <a
+      href="./membership.html"
+      class="inline-block mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#1877F2] to-[#0F5DC8] text-white text-base sm:text-lg font-semibold shadow-lg hover:from-[#0F5DC8] hover:to-[#0C4AA8] transition"
+    >
+      Diventa membro
+    </a>
+  </div>
+</section>
+
 
     <section class="bg-white py-20">
       <div class="max-w-6xl mx-auto text-center">
@@ -1480,21 +1393,22 @@ shortly. <span class="font-semibold">Coming Soon*</span>
           class="relative mt-12 rounded-2xl overflow-hidden text-left shadow-xl"
         >
           <!-- Coming Soon Overlay -->
-          <div
-            class="absolute inset-0 bg-white/60 backdrop-blur-md flex items-center justify-center z-20"
-          >
-            <div class="text-center mt-16 sm:mt-24">
-              <span
-                class="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-wide drop-shadow"
-              >
-                Coming Soon
-              </span>
-              <p class="mt-4 text-lg sm:text-xl text-gray-700 font-medium">
-                Something new is being built — for those who
-      believe in growth through knowledge.
-              </p>
-            </div>
-          </div>
+      <div
+  class="absolute inset-0 bg-white/60 backdrop-blur-md flex items-center justify-center z-20"
+>
+  <div class="text-center mt-16 sm:mt-24">
+    <span
+      class="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-wide drop-shadow"
+    >
+      In arrivo presto
+    </span>
+
+    <p class="mt-4 text-lg sm:text-xl text-gray-700 font-medium">
+      Stiamo costruendo qualcosa di nuovo — per chi crede nella crescita attraverso la conoscenza.
+    </p>
+  </div>
+</div>
+
 
           <!-- Card Content (hidden underneath for later use) -->
           <div class="p-8 bg-gray-50">
@@ -1529,16 +1443,18 @@ shortly. <span class="font-semibold">Coming Soon*</span>
           <div
             class="absolute inset-0 bg-white/60 backdrop-blur-md flex items-center justify-center z-20"
           >
-            <div class="text-center mt-16 sm:mt-24">
-              <span
-                class="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-wide drop-shadow"
-              >
-                Coming Soon
-              </span>
-              <p class="mt-4 text-lg sm:text-xl text-gray-700 font-medium">
-                Stay tuned for something exciting
-              </p>
-            </div>
+           <div class="text-center mt-16 sm:mt-24">
+  <span
+    class="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-wide drop-shadow"
+  >
+    In arrivo
+  </span>
+
+  <p class="mt-4 text-lg sm:text-xl text-gray-700 font-medium">
+    Resta connesso, qualcosa di speciale sta arrivando.
+  </p>
+</div>
+
           </div>
 
           <!-- Card Content (hidden underneath for later use) -->
@@ -1603,10 +1519,10 @@ shortly. <span class="font-semibold">Coming Soon*</span>
               <span
                 class="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-wide drop-shadow"
               >
-                Coming Soon
+                In arrivo
               </span>
               <p class="mt-4 text-lg sm:text-xl text-gray-700 font-medium">
-                Stay tuned for something exciting
+                Resta connesso, qualcosa di speciale sta arrivando.
               </p>
             </div>
           </div>
@@ -1638,224 +1554,225 @@ shortly. <span class="font-semibold">Coming Soon*</span>
       </div>
     </section>
 
-    <section class="bg-gradient-to-b from-pink-50 to-green-50 py-16">
-      <div
-        class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
-      >
-        <div class="flex justify-center">
-          <div class="rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="./images/person.png"
-              alt="Founder"
-              class="w-full max-w-sm object-cover"
-            />
-            <div class="bg-black text-white text-center py-3">
-              <h3 class="text-2xl text-white font-extrabold tracking-wide">
-                Daniele GREGGIO
-              </h3>
-              <p class="text-xs uppercase">
-                Founder and CEO of Pharos Learning
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Content -->
-        <div class="text-center md:text-left">
-          <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            Become 1% Better <br class="hidden sm:block" />
-            Every Day
-          </h2>
-
-          <p
-            class="mt-4 text-lg font-semibold text-gray-800"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            Strengthen your mind. Refine your habits.
-Shape your tomorrow.
-          </p>
-
-          <p
-            class="mt-4 text-gray-600 text-base leading-relaxed"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
-        Subscribe to Pharos Learning Daily and receive
-insights on growth, balance, and performance
-— straight to your inbox.
-          </p>
-
-          <!-- Form -->
-          <form
-            class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 sm:rounded-lg sm:overflow-hidden max-w-lg mx-auto md:mx-0"
-            data-aos="zoom-in-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
-          >
-            <input
-              type="email"
-              placeholder="Your email address"
-              class="flex-1 border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-purple-500"
-            />
-            <button
-              type="submit"
-              class="bg-gradient-to-r from-[#1877F2] to-[#0F5DC8] text-white px-6 py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-semibold hover:opacity-90 transition"
-            >
-              Subscribe
-            </button>
-          </form>
-
-          <p
-            class="mt-3 text-xs text-gray-500"
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="800"
-          >
-            Your data is safe with us. Unsubscribe anytime.
+<section class="bg-gradient-to-b from-pink-50 to-green-50 py-16">
+  <div
+    class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center"
+  >
+    <div class="flex justify-center">
+      <div class="rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src="./images/person.png"
+          alt="Founder"
+          class="w-full max-w-sm object-cover"
+        />
+        <div class="bg-black text-white text-center py-3">
+          <h3 class="text-2xl text-white font-extrabold tracking-wide">
+            Daniele GREGGIO
+          </h3>
+          <p class="text-xs uppercase">
+            Founder e CEO di Pharos Learning
           </p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Right Content -->
+    <div class="text-center md:text-left">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        Diventa ogni giorno <br class="hidden sm:block" />
+        l’1% migliore
+      </h2>
+
+      <p
+        class="mt-4 text-lg font-semibold text-gray-800"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+      >
+        Allena la mente. Affina le tue abitudini. Dai forma al tuo domani.
+      </p>
+
+      <p
+        class="mt-4 text-gray-600 text-base leading-relaxed"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="400"
+      >
+        Iscriviti a Pharos Learning Daily e ricevi ispirazioni su crescita,
+        equilibrio e performance — direttamente nella tua casella email.
+      </p>
+
+      <!-- Form -->
+      <form
+        class="mt-6 flex flex-col sm:flex-row gap-4 sm:gap-0 sm:rounded-lg sm:overflow-hidden max-w-lg mx-auto md:mx-0"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        data-aos-delay="600"
+      >
+        <input
+          type="email"
+          placeholder="Il tuo indirizzo email"
+          class="flex-1 border border-gray-300 px-4 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-purple-500"
+        />
+        <button
+          type="submit"
+          class="bg-gradient-to-r from-[#1877F2] to-[#0F5DC8] text-white px-6 py-3 rounded-lg sm:rounded-r-lg sm:rounded-l-none font-semibold hover:opacity-90 transition"
+        >
+          Iscriviti
+        </button>
+      </form>
+
+      <p
+        class="mt-3 text-xs text-gray-500"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="800"
+      >
+        I tuoi dati sono al sicuro. Puoi annullare l’iscrizione in qualsiasi momento.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <footer class="bg-white border-t border-gray-200 pt-12 pb-6">
-      <div
-        class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
-      >
-        <!-- Programs -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">Programs</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-purple-600">All Programs</a></li>
-            <li>
-              <a href="#" class="hover:text-purple-600">Download The App</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-purple-600">Become A Member</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-purple-600">Certified Coach</a>
-            </li>
-          </ul>
-        </div>
+  <div
+    class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-sm"
+  >
+    <!-- Programs -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Programmi</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Tutti i Programmi</a></li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Scarica l’App</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Diventa Membro</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Coach Certificato</a>
+        </li>
+      </ul>
+    </div>
 
-        <!-- About Us -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">About Us</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-purple-600">Who We Are</a></li>
-            <li><a href="#" class="hover:text-purple-600">Press</a></li>
-            <li><a href="#" class="hover:text-purple-600">Careers</a></li>
-            <li><a href="#" class="hover:text-purple-600">Blog</a></li>
-          </ul>
-        </div>
+    <!-- About Us -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Chi Siamo</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">La Nostra Storia</a></li>
+        <li><a href="#" class="hover:text-purple-600">Stampa</a></li>
+        <li><a href="#" class="hover:text-purple-600">Carriere</a></li>
+        <li><a href="#" class="hover:text-purple-600">Blog</a></li>
+      </ul>
+    </div>
 
-        <!-- Events -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">Events</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li>
-              <a href="./membership.html" class="hover:text-purple-600"
-                >Membership</a
-              >
-            </li>
-            <li>
-              <a href="./coming-soon.html" class="hover:text-purple-600"
-                >Events</a
-              >
-            </li>
-            <li>
-              <a href="#" class="hover:text-purple-600">Pharos University</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Events -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Eventi</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li>
+          <a href="./membership.html" class="hover:text-purple-600"
+            >Membership</a
+          >
+        </li>
+        <li>
+          <a href="./coming-soon.html" class="hover:text-purple-600"
+            >Eventi</a
+          >
+        </li>
+        <li>
+          <a href="#" class="hover:text-purple-600">Pharos University</a>
+        </li>
+      </ul>
+    </div>
 
-        <!-- Social Media -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-purple-600">Pharos Show</a></li>
-            <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
-            <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
-            <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
-            <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
-          </ul>
-        </div>
+    <!-- Social Media -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Social Media</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Pharos Show</a></li>
+        <li><a href="#" class="hover:text-purple-600">Instagram</a></li>
+        <li><a href="#" class="hover:text-purple-600">Facebook</a></li>
+        <li><a href="#" class="hover:text-purple-600">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-purple-600">YouTube</a></li>
+      </ul>
+    </div>
 
-        <!-- Contact -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">Contact Us</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-purple-600">Support</a></li>
-            <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
-            <li><a href="#" class="hover:text-purple-600">Partnerships</a></li>
-            <li><a href="#" class="hover:text-purple-600">Business</a></li>
-          </ul>
-        </div>
+    <!-- Contact -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">Contatti</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Supporto</a></li>
+        <li><a href="#" class="hover:text-purple-600">Contattaci</a></li>
+        <li><a href="#" class="hover:text-purple-600">Partnership</a></li>
+        <li><a href="#" class="hover:text-purple-600">Business</a></li>
+      </ul>
+    </div>
 
-        <!-- Our Brands -->
-        <div>
-          <h4 class="font-bold mb-3 text-gray-900">Our Brands</h4>
-          <ul class="space-y-2 text-gray-600">
-            <li><a href="#" class="hover:text-purple-600">Pharos States</a></li>
-            <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
-            <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
-            <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
-            <li><a href="#" class="hover:text-purple-600">Pharos Talks</a></li>
-          </ul>
-        </div>
+    <!-- Our Brands -->
+    <div>
+      <h4 class="font-bold mb-3 text-gray-900">I Nostri Brand</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="#" class="hover:text-purple-600">Pharos States</a></li>
+        <li><a href="#" class="hover:text-purple-600">LifePath</a></li>
+        <li><a href="#" class="hover:text-purple-600">WELLFIT</a></li>
+        <li><a href="#" class="hover:text-purple-600">EverCoach</a></li>
+        <li><a href="#" class="hover:text-purple-600">Pharos Talks</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div
+    class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
+  >
+    <p class="font-bold">
+      © 2025 Pharos Learning, Inc. ·
+      <a href="#" class="hover:text-purple-600">Termini</a> ·
+      <a href="#" class="hover:text-purple-600">Privacy</a>
+    </p>
+
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4 w-4 text-gray-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3.6 9h16.8M3.6 15h16.8"
+          />
+        </svg>
+        <span class="font-bold">Italiano (IT)</span>
       </div>
 
-      <!-- Bottom Bar -->
-      <div
-        class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 gap-4"
-      >
-        <p class="font-bold">
-          © 2025 Pharos Learning, Inc. ·
-          <a href="#" class="hover:text-purple-600">Terms</a> ·
-          <a href="#" class="hover:text-purple-600">Privacy</a>
-        </p>
-
-        <div class="flex items-center gap-6">
-          <div class="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 text-gray-600"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zm0 0c2.21 0 4 4.03 4 9s-1.79 9-4 9-4-4.03-4-9 1.79-9 4-9z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3.6 9h16.8M3.6 15h16.8"
-              />
-            </svg>
-            <span class="font-bold">English (EN)</span>
-          </div>
-          <div class="flex gap-4 text-gray-600">
-            <a href="#" class="hover:text-purple-600">Fb</a>
-            <a href="#" class="hover:text-purple-600">X</a>
-            <a href="#" class="hover:text-purple-600">IG</a>
-            <a href="#" class="hover:text-purple-600">YT</a>
-            <a href="#" class="hover:text-purple-600">IN</a>
-          </div>
-        </div>
+      <div class="flex gap-4 text-gray-600">
+        <a href="#" class="hover:text-purple-600">Fb</a>
+        <a href="#" class="hover:text-purple-600">X</a>
+        <a href="#" class="hover:text-purple-600">IG</a>
+        <a href="#" class="hover:text-purple-600">YT</a>
+        <a href="#" class="hover:text-purple-600">IN</a>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>

@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="shortcut icon" href="./images/favicon.ico" />
+    <title>Discover Membership at Pharos Learning | Membership</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Join the Pharos Learning membership for exclusive access to courses, mentorship, community and resources tailored for your success.">
+
+    <script
+      type="module"
+      crossorigin
+      src="assets/testi-swiper-CGY6TrK8.js"
+    ></script>
+    <link rel="stylesheet" crossorigin href="assets/app-CSEaomlL.css" />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="assets/testi-swiper-BUrcyj0q.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <style>
+      * {
+        font-family: "Sansation", sans-serif !important;
+      }
+      .featured {
+        /* height: 150px; */ /* ye hata do */
+        padding: 20px 0;
+      }
+
+      .featured .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap; /* wrap allow karo */
+      }
+
+      .active-tab {
+        color: #6d28d9;
+      }
+      .featured .logos img {
+        height: 30px;
+        max-width: 120px;
+        object-fit: contain;
+      }
+      @keyframes slider_marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .slider_marquee {
+        display: flex;
+        white-space: nowrap;
+      }
+      .slider_marquee .track {
+        display: flex;
+        animation: slider_marquee 40s linear infinite;
+      }
+      .slider_marquee .cloned {
+        display: flex;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE/Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+    <!-- Navbar -->
+    <nav class="border-b bg-white">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="images/logo-purple.png" alt="Logo" class="h-10 lg:h-12" />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="text-sm text-gray-800 font-bold">Home</a>
+          <a href="#" class="text-sm text-gray-800 font-bold">Support</a>
+          <button
+            class="border border-gray-400 rounded-full px-6 py-2 font-bold text-sm hover:border-gray-600 transition"
+          >
+            Log in
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button
+          class="md:hidden flex items-center text-gray-800 focus:outline-none"
+          onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-6 pb-4">
+        <a href="index.html" class="block py-2 text-gray-800 font-bold">Home</a>
+        <a href="#" class="block py-2 text-gray-800 font-bold">Support</a>
+        <button
+          class="mt-2 w-full border border-gray-400 rounded-full px-6 py-2 font-bold text-sm hover:border-gray-600 transition"
+        >
+          Log in
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero (hidden until country loads) -->
+  <section
+  id="hero"
+  class="max-w-7xl mx-auto text-center py-16 px-4 opacity-0 invisible"
+  data-aos="fade-up"
+>
+  <p
+    id="country-text"
+    class="text-lg sm:text-2xl text-gray-800 mb-2 font-bold"
+  >
+    Ora disponibile in Italia
+  </p>
+
+  <h1
+    class="text-4xl sm:text-6xl lg:text-8xl font-extrabold mb-4 leading-tight"
+  >
+    Pharos Learning Membership
+  </h1>
+
+  <p
+    class="text-base sm:text-xl lg:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto"
+  >
+    Ogni giorno, un passo consapevole verso il tuo
+    pieno potenziale.  
+    Impara, cresci e vivi con intenzione.
+  </p>
+
+  <a
+    href="#"
+    class="bg-[#1877F2] hover:bg-[#0F5DC8] text-white text-base sm:text-lg font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition"
+  >
+    Diventa un membro
+  </a>
+</section>
+
+    <!-- Featured Section -->
+
+    <!-- Sticky Nav -->
+    <div class="border bg-white sticky top-0 z-50 shadow-sm">
+  <div
+    class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3"
+  >
+    <!-- Tabs (scrollable on mobile) -->
+    <div
+      id="sectionTabs"
+      class="flex gap-4 sm:gap-6 overflow-x-auto no-scrollbar whitespace-nowrap text-xs sm:text-sm font-medium text-gray-700"
+    >
+      <a href="#who" class="tab pb-2">Per chi è</a>
+      <a href="#membership" class="tab pb-2">Membership Pharos Learning</a>
+      <a href="#people" class="tab pb-2">Cosa dicono le persone</a>
+      <a href="#faqs" class="tab pb-2">Domande frequenti</a>
+    </div>
+
+    <!-- CTA (hidden on mobile, shows after sm) -->
+    <div class="hidden sm:flex items-center gap-4 ml-4">
+      <span
+        class="text-[10px] sm:text-xs text-gray-600 leading-tight text-right"
+      >
+        L’importo è in fase di definizione<br />Torna presto
+      </span>
+      <a
+        href="#"
+        class="bg-orange-500 hover:bg-orange-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold"
+      >
+        Diventa membro
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- Section 1 -->
+<section
+  id="who"
+  class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 py-16 px-4 sm:px-6 items-center"
+>
+  <div class="md:hidden" data-aos="zoom-in" data-aos-duration="1000">
+    <img
+      src="https://storyblok-cdn.mindvalley.com/f/60579/1000x1000/c72223397e/mm-callout-hook-2.jpg?quality=60&auto=webp"
+      alt="Mindvalley"
+      class="rounded-lg shadow-lg w-full"
+    />
+  </div>
+
+  <div data-aos="fade-right" data-aos-duration="1000">
+    <h2
+      class="text-4xl sm:text-5xl font-extrabold mb-4"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      Cerchi un’evoluzione concreta nella tua vita o nella tua carriera?
+    </h2>
+
+    <p
+      class="text-gray-700 mb-4 leading-relaxed"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      Pharos Learning accompagna la tua crescita personale e professionale con percorsi
+      strutturati e guida reale. Che tu stia ritrovando fiducia, ampliando la tua attività,
+      migliorando il benessere o coltivando consapevolezza, Pharos ti offre chiarezza
+      e continuità per andare avanti.
+    </p>
+
+    <p
+      class="text-gray-700 mb-4 leading-relaxed"
+      data-aos="fade-up"
+      data-aos-delay="500"
+    >
+      Non si tratta di superare un ostacolo una volta, ma di sviluppare la mentalità
+      e la disciplina per andare oltre, ogni giorno.
+    </p>
+
+    <p
+      class="font-semibold text-lg"
+      data-aos="fade-up"
+      data-aos-delay="700"
+    >
+      Diventa la tua versione più capace con Pharos Learning Membership.
+    </p>
+  </div>
+
+  <div
+    class="hidden md:block"
+    data-aos="zoom-in"
+    data-aos-duration="1000"
+    data-aos-delay="400"
+  >
+    <img
+      src="./images/person1.png"
+      alt="Mindvalley"
+      class="rounded-lg max-w-sm object-cover shadow-lg w-full"
+    />
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid gap-8 md:grid-cols-3">
+    <!-- Card 1 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="100"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "For those of you who don't know us, I urge you to check it out"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Think TED meets personal development, meets entrepreneurship,
+            meets education — all in one magical place.
+          </p>
+          <p class="font-semibold text-lg">Miki Agrawal</p>
+          <p class="text-md text-gray-500">Founder, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "Never experienced such a big shift in my 22 years of practising sports"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            I have never experienced such a big shift in performance and mindset in my sports career.
+          </p>
+          <p class="font-semibold text-lg">Bianca Ioana</p>
+          <p class="text-md text-gray-500">World Karate Champion, Romania</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="500"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "I couldn’t be more grateful for creating this app"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            It’s packed with divine knowledge. It’s such a great community to be part of.
+          </p>
+          <p class="font-semibold text-lg">Heidy De La Rosa</p>
+          <p class="text-md text-gray-500">Actress, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid gap-8 md:grid-cols-3">
+    <!-- Card 1 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="100"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "For those of you who don't know us, I urge you to check it out"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Think TED meets personal development, meets entrepreneurship,
+            meets education — all in one magical place.
+          </p>
+          <p class="font-semibold text-lg">Miki Agrawal</p>
+          <p class="text-md text-gray-500">Founder, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "Never experienced such a big shift in my 22 years of practising sports"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            I have never experienced such a big shift in performance and mindset in my sports career.
+          </p>
+          <p class="font-semibold text-lg">Bianca Ioana</p>
+          <p class="text-md text-gray-500">World Karate Champion, Romania</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="500"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "I couldn’t be more grateful for creating this app"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            It’s packed with divine knowledge. It’s such a great community to be part of.
+          </p>
+          <p class="font-semibold text-lg">Heidy De La Rosa</p>
+          <p class="text-md text-gray-500">Actress, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid gap-8 md:grid-cols-3">
+    <!-- Card 1 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="100"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?q=80&w=687&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "For those of you who don't know us, I urge you to check it out"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Think TED meets personal development, meets entrepreneurship,
+            meets education — all in one magical place.
+          </p>
+          <p class="font-semibold text-lg">Miki Agrawal</p>
+          <p class="text-md text-gray-500">Founder, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "Never experienced such a big shift in my 22 years of practising sports"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            I have never experienced such a big shift in performance and mindset in my sports career.
+          </p>
+          <p class="font-semibold text-lg">Bianca Ioana</p>
+          <p class="text-md text-gray-500">World Karate Champion, Romania</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="relative bg-white rounded-xl shadow-md overflow-hidden"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-delay="500"
+    >
+      <div class="blur-sm pointer-events-none select-none">
+        <img
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1740&auto=format&fit=crop"
+          alt="Member"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <p class="font-bold text-2xl mb-2">
+            "I couldn’t be more grateful for creating this app"
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            It’s packed with divine knowledge. It’s such a great community to be part of.
+          </p>
+          <p class="font-semibold text-lg">Heidy De La Rosa</p>
+          <p class="text-md text-gray-500">Actress, United States</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+        <span class="text-white text-3xl font-bold tracking-wide">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- <section id="membership" class="w-full bg-gray-50 py-16 px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2
+          class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          Introducing Pharos Learning Membership
+        </h2>
+
+        <h3
+          class="text-xl md:text-2xl font-bold text-gray-800 mb-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          Your life-changing transformation begins with Pharos Learning
+          Membership
+        </h3>
+
+        <p
+          class="text-gray-600 leading-relaxed mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+        >
+          As a Pharos Learning Member, you get everything you need to become a
+          better you every day. Including today’s best teachers and experts as
+          your mentors. The world’s most uplifting community supporting you
+          every step of the way. And a personalized curriculum of programs,
+          events, and experiences designed to transform every dimension of your
+          life – and turn your goals into reality.
+        </p>
+
+        <p
+          class="text-3xl font-semibold text-gray-900"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+        >
+          Learn from the world’s best
+        </p>
+      </div>
+    </section> -->
+
+    <!-- Section 2 -->
+    <!-- <section class="py-6 bg-gray-50">
+      <div class="relative max-w-7xl mx-auto px-4">
+        <div
+          id="slider"
+          class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
+        >
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/c05886f500/mv_hp_author_keith-ferrazzi_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m looking to</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                MASTER MY BODY
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/a240fa8e31/mv_hp_author_jim-kwik_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m going through a</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                TRANSITION IN LIFE
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/49bd1d8af4/mv_hp_author_shefali_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m looking for</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                LOVE CONNECTION
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/956727e42c/mv_hp_author_marisa-peer_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I am a</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                SPIRITUAL SEEKER
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/4a93e85a01/archetype_health_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m seeking</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                CAREER GROWTH
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/750x1120/902d74bef4/archetype_transition_bg-img_m.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m looking to</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                GROW MY BUSINESS
+              </h2>
+            </div>
+          </div>
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/4e1065712a/mv_hp_author_sadhguru_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I’m searching for</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                DEEP CONNECTION
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="card flex-shrink-0 w-[80%] sm:w-[260px] h-[320px] sm:h-[380px] relative snap-center rounded-lg overflow-hidden shadow-lg"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <img
+              src="https://storyblok-cdn.mindvalley.com/f/60579/564x846/4e1065712a/mv_hp_author_sadhguru_2-3.jpg"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-4 inset-x-0 text-center z-10 text-white px-3"
+            >
+              <p class="text-sm sm:text-base">I want to</p>
+              <h2 class="text-white text-xl sm:text-3xl font-extrabold">
+                ELEVATE MY SPIRIT
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="w-full bg-white py-20 px-6">
+      <h1
+        class="text-sm sm:text-5xl lg:text-7xl font-extrabold mb-4 leading-tight text-center"
+      >
+        What You Get
+      </h1>
+
+     <div class="relative mt-2 max-w-6xl mx-auto">
+  <!-- Blur content -->
+  <div
+    class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12 filter blur-sm select-none pointer-events-none"
+  >
+    <!-- Left content -->
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">
+        01
+      </h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        100+ programs in 6 categories
+      </h2>
+      <p
+        class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium"
+      >
+        Transformational online programs that level up your life in just 20
+        minutes a day.
+      </p>
+    </div>
+
+    <!-- Right image -->
+    <div class="flex justify-center">
+      <img
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x901/f3a2a1d21c/mm-what-you-get-03.png?quality=60&auto=webp&dpr=0.800000011920929&width=718"
+        alt="Community Preview"
+        class="max-w-full h-auto"
+      />
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-2xl"
+  >
+    <span
+      class="text-white text-4xl md:text-5xl font-extrabold tracking-wide drop-shadow-lg"
+    >
+      Coming Soon
+    </span>
+  </div>
+</div>
+<!-- Section 02 -->
+<div class="relative max-w-6xl mt-6 mx-auto">
+  <!-- Blurred content -->
+  <div
+    class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12 filter blur-sm select-none pointer-events-none"
+  >
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">
+        02
+      </h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        Community
+      </h2>
+      <p
+        class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium"
+      >
+        Access to Pharo's private social network, where you can connect,
+        share wisdom, and grow with fellow members in your city and around
+        the world.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <img
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x901/f3a2a1d21c/mm-what-you-get-03.png?quality=60&auto=webp&dpr=0.800000011920929&width=718"
+        alt="Community Preview"
+        class="max-w-full h-auto"
+      />
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-2xl"
+  >
+    <span
+      class="text-white text-4xl md:text-5xl font-extrabold tracking-wide drop-shadow-lg"
+    >
+      Coming Soon
+    </span>
+  </div>
+</div>
+
+<!-- Section 03 -->
+<div class="relative max-w-6xl mt-6 mx-auto">
+  <!-- Blurred content -->
+  <div
+    class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-sm border border-gray-200 p-12 filter blur-sm select-none pointer-events-none"
+  >
+    <div class="text-center">
+      <h3 class="text-purple-600 text-3xl md:text-4xl font-extrabold mb-4">
+        03
+      </h3>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        AI guided curriculum
+      </h2>
+      <p
+        class="text-lg md:text-xl text-gray-700 leading-relaxed font-medium"
+      >
+        Get results that last a lifetime with AI guided curriculum personalised
+        to your needs.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <img
+        src="https://storyblok-cdn.mindvalley.com/f/60579/1600x900/90e50fc9d3/mm-what-you-get-04.png?quality=60&auto=webp&dpr=0.800000011920929&width=718"
+        alt="Community Preview"
+        class="max-w-full h-auto"
+      />
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div
+    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-2xl"
+  >
+    <span
+      class="text-white text-4xl md:text-5xl font-extrabold tracking-wide drop-shadow-lg"
+    >
+      Coming Soon
+    </span>
+  </div>
+</div>
+
+    </section>
+    <!-- <section class="bg-white py-20">
+      <div class="max-w-6xl mx-auto text-center px-6">
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-gray-500 mb-3"
+          data-aos="fade-down"
+          data-aos-duration="800"
+        >
+          What the press says
+        </p>
+
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          The world's most effective transformation platform
+        </h2>
+
+        <p
+          class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          From leading media platforms like CNN, CBS to influential voices like
+          Jay Shetty and Impact Theory, Pharos Learning is recognized worldwide
+          for empowering people to transform their mind, body, and
+          soul—unlocking their fullest potential and leading extraordinary
+          lives.
+        </p>
+
+        <div
+          class="rounded-2xl overflow-hidden shadow-2xl mb-16"
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-delay="600"
+        >
+          <video
+            id="main-video"
+            playsinline
+            controls
+            class="w-full h-[500px] object-cover rounded-2xl"
+          >
+            <source
+              src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section> -->
+
+    <script>
+      // Activate Plyr custom UI for top video
+      const player = new Plyr("#main-video");
+    </script>
+
+    <!-- Section 3 -->
+  <section id="people" class="w-full bg-white py-12">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2
+      class="text-6xl md:text-3xl font-extrabold text-gray-900"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      Cosa include la tua membership
+    </h2>
+
+    <p
+      class="mt-2 text-gray-600"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    >
+      Entra in Pharos Learning e accedi a uno spazio completo di crescita
+      personale e professionale, ovunque e in qualsiasi momento.
+
+      Corsi, sessioni guidate e una community che rafforza chiarezza,
+      performance ed equilibrio.
+    </p>
+  </div>
+
+  <div
+    class="mt-10 flex flex-col md:flex-row gap-4 px-4 md:px-0"
+    data-aos="zoom-in-up"
+    data-aos-duration="1200"
+    data-aos-delay="600"
+  >
+    <img
+      src="./images/collage-image.png"
+      alt="Pharos Learning Membership Collage"
+      class="w-full object-cover rounded-xl shadow-lg"
+    />
+  </div>
+</section>
+
+
+    <!-- <section
+      class="relative bg-cover bg-center text-white py-16 px-6"
+      style="
+        background-image: url('https://storyblok-cdn.mindvalley.com/f/60579/1440x536/9d5b183030/sums_vsl_ordermenu-d-1.png?quality=60&auto=webp&dpr=1&width=1585');
+      "
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+      >
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h2
+            class="text-3xl md:text-4xl text-white font-bold mb-6"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Begin your health transformation today <br />
+            with Pharos Learning
+          </h2>
+
+          <p
+            class="flex items-start mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>Unlimited access</strong> to Pharo's 100+
+              transformational programs</span
+            >
+          </p>
+
+          <p
+            class="flex items-start mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>1,000+ guided meditations</strong>, hypnotherapies,
+              breathwork & therapeutic sounds</span
+            >
+          </p>
+
+          <p class="flex items-start" data-aos="fade-up" data-aos-delay="600">
+            <svg
+              class="w-5 h-5 text-purple-400 mr-3"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414L8.414 15 4.293 10.879a1 1 0 011.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span
+              ><strong>Access to Pharo's private social network</strong> to
+              connect, share wisdom, and grow with other members</span
+            >
+          </p>
+        </div>
+
+        <div
+          class="bg-white text-gray-900 rounded-2xl shadow-xl p-8 max-w-sm mx-auto"
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-delay="800"
+        >
+          <div class="flex justify-center space-x-2 mb-6">
+            <button
+              id="monthlyBtn"
+              class="px-4 py-1 rounded-full border text-gray-600"
+            >
+              Monthly
+            </button>
+            <button
+              id="yearlyBtn"
+              class="px-4 py-1 rounded-full bg-purple-600 text-white font-semibold"
+            >
+              Yearly
+            </button>
+            <span class="text-sm text-orange-500 font-medium self-center">
+              Best value
+            </span>
+          </div>
+
+
+          <div class="min-h-[120px] flex flex-col justify-center">
+            <h3
+              id="priceBox"
+              class="text-4xl font-bold text-center mb-2 transition-all duration-500"
+            >
+              $199<span class="text-lg font-medium">/year</span>
+            </h3>
+            <p
+              id="priceDesc"
+              class="text-center text-gray-600 mb-6 transition-all duration-500"
+            >
+              That’s just $16.58/month, billed annually, cancel anytime.
+            </p>
+          </div>
+
+          <button
+            class="w-full bg-[#FF931F] hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full mb-6"
+          >
+            Become a member
+          </button>
+
+          <img
+            src="https://res.cloudinary.com/mindvalley/image/upload/v1686125042/MV-Launches/template/logos-cc-powered-by-stripe-white.svg"
+            alt="Stripe"
+            class="mx-auto h-16 w-full"
+          />
+
+          <p class="text-xs text-center text-gray-500 mt-3">
+            *VAT may apply based on billing address.
+          </p>
+          <p class="text-xs text-center text-gray-500">
+            For security, all orders are processed on a secured server.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+        <script>
+          const monthlyBtn = document.getElementById("monthlyBtn");
+          const yearlyBtn = document.getElementById("yearlyBtn");
+          const priceBox = document.getElementById("priceBox");
+          const priceDesc = document.getElementById("priceDesc");
+
+          function toggleActive(btn1, btn2) {
+            btn1.classList.add("bg-purple-600", "text-white", "font-semibold");
+            btn1.classList.remove("border", "text-gray-600");
+            btn2.classList.remove(
+              "bg-purple-600",
+              "text-white",
+              "font-semibold"
+            );
+            btn2.classList.add("border", "text-gray-600");
+          }
+
+          monthlyBtn.addEventListener("click", () => {
+            toggleActive(monthlyBtn, yearlyBtn);
+            priceBox.classList.add("opacity-0", "translate-y-2");
+            priceDesc.classList.add("opacity-0", "translate-y-2");
+            setTimeout(() => {
+              priceBox.innerHTML =
+                "$29<span class='text-lg font-medium'>/month</span>";
+              priceDesc.innerText = "Billed monthly, cancel anytime.";
+              priceBox.classList.remove("opacity-0", "translate-y-2");
+              priceDesc.classList.remove("opacity-0", "translate-y-2");
+            }, 300);
+          });
+
+          yearlyBtn.addEventListener("click", () => {
+            toggleActive(yearlyBtn, monthlyBtn);
+            priceBox.classList.add("opacity-0", "translate-y-2");
+            priceDesc.classList.add("opacity-0", "translate-y-2");
+            setTimeout(() => {
+              priceBox.innerHTML =
+                "$199<span class='text-lg font-medium'>/year</span>";
+              priceDesc.innerText =
+                "That’s just $16.58/month, billed annually, cancel anytime.";
+              priceBox.classList.remove("opacity-0", "translate-y-2");
+              priceDesc.classList.remove("opacity-0", "translate-y-2");
+            }, 300);
+          });
+        </script>
+    <!-- Section 4 -->
+    <section id="faq" class="bg-gray-50 py-12">
+      <!-- <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+ 
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Frequently asked questions
+          </h2>
+          <p class="text-gray-600">
+            Browse answers to your questions on program access, billing, and
+            Pharos Membership. Need more help? Reach out to us at
+            <a href="https://pharoslearning.com" class="text-purple-600 underline"
+              >https://pharoslearning.com</a
+            >
+            and we’ll get back to you ASAP.
+          </p>
+        </div> -->
+
+
+<!--    
+        <section id="faqs" class="space-y-4">
+          <div class="border-b pb-4">
+            <button
+              class="flex justify-between items-center w-full text-left font-semibold text-gray-900"
+              onclick="toggleFAQ(this)"
+            >
+              <span
+                >Can I enroll in a particular Quest without becoming a Pharos
+                Member?</span
+              >
+              <span class="text-xl">+</span>
+            </button>
+            <div class="hidden mt-2 text-gray-600">
+              No, Quests are only accessible with a Pharos Learning Membership.
+            </div>
+          </div>
+
+          <div class="border-b pb-4">
+            <button
+              class="flex justify-between items-center w-full text-left font-semibold text-gray-900"
+              onclick="toggleFAQ(this)"
+            >
+              <span>How do I choose the Quests I want to take?</span>
+              <span class="text-xl">+</span>
+            </button>
+            <div class="hidden mt-2 text-gray-600">
+              You can browse available Quests inside the Membership portal and
+              select any that interest you.
+            </div>
+          </div>
+
+          <div class="border-b pb-4">
+            <button
+              class="flex justify-between items-center w-full text-left font-semibold text-gray-900"
+              onclick="toggleFAQ(this)"
+            >
+              <span>How do I cancel or get a refund if I’m not satisfied?</span>
+              <span class="text-xl">+</span>
+            </button>
+            <div class="hidden mt-2 text-gray-600">
+              You can request a refund through your account settings or contact
+              our support team.
+            </div>
+          </div>
+
+          <div class="border-b pb-4">
+            <button
+              class="flex justify-between items-center w-full text-left font-semibold text-gray-900"
+              onclick="toggleFAQ(this)"
+            >
+              <span>Can I pay in instalments?</span>
+              <span class="text-xl">-</span>
+            </button>
+            <div class="mt-2 text-gray-600">
+              Unfortunately, this offer doesn’t include installment options.
+              However, you can select a monthly subscription to manage your
+              payments with greater flexibility.
+            </div>
+          </div>
+        </section> -->
+      <!-- </div>
+    </section> -->
+
+    <script>
+      function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("span:last-child");
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.textContent = "-";
+        } else {
+          content.classList.add("hidden");
+          icon.textContent = "+";
+        }
+      }
+    </script>
+
+    <script>
+      const sections = document.querySelectorAll("section");
+      const tabs = document.querySelectorAll("#sectionTabs .tab");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              tabs.forEach((tab) => tab.classList.remove("active-tab"));
+              const activeTab = document.querySelector(
+                `#sectionTabs a[href="#${entry.target.id}"]`
+              );
+              if (activeTab) activeTab.classList.add("active-tab");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      sections.forEach((sec) => observer.observe(sec));
+
+      // Smooth scroll on click
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(tab.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+  <script>
+  async function setCountry() {
+    try {
+      const res = await fetch("https://get.geojs.io/v1/ip/geo.json");
+      const data = await res.json();
+      document.getElementById("country-text").textContent =
+        "Ora disponibile in " + data.country;
+    } catch (e) {
+      document.getElementById("country-text").textContent =
+        "Ora disponibile in tutto il mondo";
+    }
+
+    // Show hero + trigger animations
+    const hero = document.getElementById("hero");
+    hero.classList.remove("opacity-0", "invisible");
+    AOS.init();
+  }
+
+  setCountry();
+</script>
+
+    <footer class="border-t mt-10">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500"
+      >
+        <!-- Left -->
+        <div
+          class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4"
+        >
+          <span>© 2025 Pharos Lea, Inc.</span>
+          <a href="#" class="hover:text-gray-700">Terms</a>
+          <a href="#" class="hover:text-gray-700">Privacy</a>
+        </div>
+
+        <!-- Right (socials) -->
+        <div class="flex space-x-4 mt-4 sm:mt-0">
+          <!-- Facebook -->
+          <a href="#" class="hover:text-gray-700" aria-label="Facebook">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12H18l-.5 3h-2.9v7A10 10 0 0 0 22 12Z"
+              />
+            </svg>
+          </a>
+          <!-- X (Twitter) -->
+          <a href="#" class="hover:text-gray-700" aria-label="X">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-5.4-7.2L4.7 22H2.6l7-7.9L2 2h7l4.9 6.6L18.9 2Zm-2.4 18h1.5L8.6 4H7L16.5 20Z"
+              />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="hover:text-gray-700" aria-label="Instagram">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7Zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10Zm-5 3.3A5.7 5.7 0 1 0 17.7 13 5.7 5.7 0 0 0 12 7.3Zm0 2A3.7 3.7 0 1 1 8.3 13 3.7 3.7 0 0 1 12 9.3Zm4.6-3.4a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+              />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="#" class="hover:text-gray-700" aria-label="YouTube">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M10 15V9l5.2 3L10 15Zm12-3c0-2.1-.2-3.6-.6-4.7-.3-1-1.1-1.8-2.1-2.1C18.2 5.8 12 5.8 12 5.8s-6.2 0-7.3.4c-1 .3-1.8 1.1-2.1 2.1C2.2 8.4 2 9.9 2 12c0 2.1.2 3.6.6 4.7.3 1 1.1 1.8 2.1 2.1 1.1.4 7.3.4 7.3.4s6.2 0 7.3-.4c1-.3 1.8-1.1 2.1-2.1.4-1.1.6-2.6.6-4.7Z"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="hover:text-gray-700" aria-label="LinkedIn">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.3 17v-7.2H5.8V17h2.5Zm-.1-8.2a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8ZM18 17v-4c0-2.2-1.1-3.2-2.7-3.2-1.2 0-1.8.7-2.1 1.2v-1H10v7.2h2.5v-3.6c0-.9.6-1.4 1.3-1.4s1.2.5 1.2 1.4V17H18Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
